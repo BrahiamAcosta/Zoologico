@@ -1,4 +1,6 @@
-package Entidades;
+package Usuarios;
+
+import Usuarios.Personas;
 
 /**
  *

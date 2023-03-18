@@ -1,5 +1,7 @@
 package Control;
 
+import Animales.Animales;
+
 /**
  *
  * @author brahiam.acosta
@@ -7,7 +9,8 @@ package Control;
 public class DptoLogistica {
     
     public void agregarAnimal(){
-                
+        
+        //Animales.cantAnimales += 1;
     }
     public void modificarAnimal(){
     }

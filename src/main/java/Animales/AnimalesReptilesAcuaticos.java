@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Entidades;
+package Animales;
 
 /**
  *
@@ -17,6 +17,7 @@ public class AnimalesReptilesAcuaticos extends AnimalesReptiles {
             int codigo, 
             String nombre, 
             String especie, 
+            String riesgoExtincion,
             int edad,
             String genero,
             float peso, 
@@ -37,13 +38,13 @@ public class AnimalesReptilesAcuaticos extends AnimalesReptiles {
             String nivelPeligrosidad,
             boolean venenoso,
             String tipoVeneno,
-            String[] precauciones,
-            int cantidad
+            String[] precauciones
     ) {
         super(
                 codigo,
                 nombre,
                 especie,
+                riesgoExtincion,
                 edad,
                 genero,
                 peso,
@@ -62,8 +63,7 @@ public class AnimalesReptilesAcuaticos extends AnimalesReptiles {
                 nivelPeligrosidad,
                 venenoso,
                 tipoVeneno,
-                precauciones,
-                cantidad
+                precauciones
         );
         this.metodoRespiracion = metodoRespiracion;
         this.numAletas = numAletas;

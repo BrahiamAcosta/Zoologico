@@ -2,19 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Entidades;
+package Animales;
 
 /**
  *
  * @author Alisser
  */
-public class AnimalesAvesAcuaticas extends AnimalesAves{
-    private String tiempoBuceo, tempHabitad;
+public class AnimalesAvesExoticas extends AnimalesAves{
+    private String origen, especiesCompatibles[];
     
-    public AnimalesAvesAcuaticas(
+    public AnimalesAvesExoticas(
             int codigo, 
             String nombre, 
             String especie, 
+            String riesgoExtincion,
             int edad,
             String genero,
             float peso, 
@@ -22,9 +23,8 @@ public class AnimalesAvesAcuaticas extends AnimalesAves{
             boolean vuela,
             String tipoPico,
             String colorPlumaje,
-            String tiempoBuceo,
+            String origen,
             String habitad,
-            String tempHabitad,
             String ubicacion,
             boolean gestacion,
             String tipoGestacion,
@@ -33,15 +33,16 @@ public class AnimalesAvesAcuaticas extends AnimalesAves{
             String dieta[],
             boolean peligroso,
             String nivelPeligrosidad,
+            String[] especiesCompatibles,
             boolean venenoso,
             String tipoVeneno,
-            String[] precauciones,
-            int cantidad
+            String[] precauciones
     ){
         super(
                 codigo, 
                 nombre, 
-                especie, 
+                especie,
+                riesgoExtincion,
                 edad, 
                 genero, 
                 peso,
@@ -60,10 +61,9 @@ public class AnimalesAvesAcuaticas extends AnimalesAves{
                 nivelPeligrosidad,
                 venenoso, 
                 tipoVeneno,
-                precauciones,
-                cantidad
+                precauciones
         );
-        this.tempHabitad = tempHabitad;
-        this.tiempoBuceo =tiempoBuceo;
+        this.especiesCompatibles = especiesCompatibles;
+        this.origen = origen;
     }
 }

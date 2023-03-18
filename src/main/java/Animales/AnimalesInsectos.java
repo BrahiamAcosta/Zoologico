@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Entidades;
+package Animales;
 
 /**
  *
@@ -17,6 +17,7 @@ public class AnimalesInsectos extends Animales {
         int codigo,
         String nombre,
         String especie, 
+        String riesgoExtincion,
         boolean metamorfosis,
         int paresPatas,
         int paresAlas,
@@ -35,6 +36,7 @@ public class AnimalesInsectos extends Animales {
                 codigo, 
                 nombre, 
                 especie, 
+                riesgoExtincion,
                 habitad, 
                 ubicacion,
                 dietaPrincipal, 
@@ -77,6 +79,30 @@ public class AnimalesInsectos extends Animales {
 
     public void setParesAlas(int paresAlas) {
         this.paresAlas = paresAlas;
+    }
+
+    public String getNivelPeligrosidad() {
+        return nivelPeligrosidad;
+    }
+
+    public void setNivelPeligrosidad(String nivelPeligrosidad) {
+        this.nivelPeligrosidad = nivelPeligrosidad;
+    }
+
+    public String[] getPrecauciones() {
+        return precauciones;
+    }
+
+    public void setPrecauciones(String[] precauciones) {
+        this.precauciones = precauciones;
+    }
+
+    public String getTipoVeneno() {
+        return tipoVeneno;
+    }
+
+    public void setTipoVeneno(String tipoVeneno) {
+        this.tipoVeneno = tipoVeneno;
     }
     
     

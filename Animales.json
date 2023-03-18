@@ -4,586 +4,994 @@
             "codigo": 1,
             "nombre": "León",
             "especie": "Panthera leo",
-            "edad": 6,
+            "edad": 7,
             "genero": "Macho",
             "peso": 190.5,
-            "dietaPrincipal": "Carnívoro",
-            "habitat": "Sabanas y bosques abiertos",
-            "ubicacion": "África",
-            "nivelPeligrosidad": "Alto",
+            "numeroPatas": 4,
+            "habitad": "Sabana",
+            "ubicacion": "Sector A",
             "gestacion": false,
             "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "dietaPrincipal": "Carnívoro",
             "dieta": [
-                "carne",
-                "huesos"
+                "Cebra",
+                "Antílope",
+                "Búfalo"
             ],
             "peligroso": true,
+            "nivelPeligrosidad": "Alto",
+            "comportamiento": "Solitario",
             "venenoso": false,
             "tipoVeneno": "",
-            "tiempoGestacion": "",
-            "numeroPatas": 4,
-            "comportamiento": "Solitario",
-            "cantidad": 12,
-            "precauciones": [
-                "Mantener una distancia segura",
-                "No molestar al animal"
-            ]
+            "precauciones": []
         },
         {
             "codigo": 2,
             "nombre": "Elefante",
             "especie": "Loxodonta africana",
-            "edad": 30,
+            "edad": 15,
             "genero": "Hembra",
-            "peso": 4500.2,
-            "dietaPrincipal": "Herbívoro",
-            "habitat": "Sabanas, bosques y selvas",
-            "ubicacion": "África",
-            "nivelPeligrosidad": "Moderado",
+            "peso": 4500.0,
+            "numeroPatas": 4,
+            "habitad": "Bosque",
+            "ubicacion": "Sector B",
             "gestacion": true,
-            "tipoGestacion": "Vivíparo",
+            "tipoGestacion": "Mamífero",
+            "tiempoGestacion": "22 meses",
+            "dietaPrincipal": "Herbívoro",
             "dieta": [
-                "plantas",
-                "hojas",
-                "frutas"
+                "Hierba",
+                "Hoja",
+                "Corteza"
             ],
             "peligroso": false,
+            "nivelPeligrosidad": "",
+            "comportamiento": "Social",
             "venenoso": false,
             "tipoVeneno": "",
-            "tiempoGestacion": "22 meses",
-            "numeroPatas": 4,
-            "comportamiento": "Gregarioso",
-            "cantidad": 6,
-            "precauciones": [
-                "No acercarse demasiado a los elefantes adultos",
-                "No acercarse a los elefantes durante la temporada de apareamiento"
-            ]
+            "precauciones": []
         },
         {
             "codigo": 3,
-            "nombre": "Oso negro",
-            "especie": "Ursus americanus",
-            "edad": 8,
-            "genero": "Macho",
-            "peso": 150.8,
-            "dietaPrincipal": "Omnívoro",
-            "habitat": "Bosques y montañas",
-            "ubicacion": "América del Norte",
-            "nivelPeligrosidad": "Alto",
-            "gestacion": false,
-            "tipoGestacion": "",
+            "nombre": "Jirafa",
+            "especie": "Giraffa camelopardalis",
+            "edad": 10,
+            "genero": "Hembra",
+            "peso": 1200.0,
+            "numeroPatas": 4,
+            "habitad": "Sabana",
+            "ubicacion": "Sector C",
+            "gestacion": true,
+            "tipoGestacion": "Mamífero",
+            "tiempoGestacion": "14 meses",
+            "dietaPrincipal": "Herbívoro",
             "dieta": [
-                "plantas",
-                "insectos",
-                "peces",
-                "carne"
+                "Acacia",
+                "Hoja",
+                "Corteza"
             ],
-            "peligroso": true,
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "comportamiento": "Solitario",
             "venenoso": false,
             "tipoVeneno": "",
-            "tiempoGestacion": "",
-            "numeroPatas": 4,
-            "comportamiento": "Solitario",
-            "cantidad": 4,
-            "precauciones": [
-                "Mantener una distancia segura",
-                "No acampar cerca de los osos"
-            ]
+            "precauciones": []
         }
     ],
     "animales_mamiferos_acuaticos": [
         {
             "codigo": 1,
             "nombre": "Delfín",
-            "especie": "Delphinus delphis",
+            "especie": "Tursiops truncatus",
             "edad": 12,
-            "genero": "Femenino",
-            "peso": 100.5,
-            "dietaPrincipal": "Peces",
+            "genero": "Hembra",
+            "peso": 150.0,
+            "numAletas": 2,
+            "capacidadBuceo": "Hasta 300 metros",
+            "mecanismoRespiracion": "Pulmonar",
             "habitad": "Océano",
-            "ubicacion": "Atlántico Sur",
-            "nivelPeligrosidad": "Bajo",
+            "ubicacion": "Sector A",
             "gestacion": true,
-            "tipoGestacion": "Vivípara",
+            "tipoGestacion": "Vivíparo",
+            "tiempoGestacion": "12 meses",
+            "dietaPrincipal": "Piscívoro",
+            "dieta": [
+                "Peces",
+                "Calamares",
+                "Pulpos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "especiesCompatibles": [
+                "Tiburón",
+                "Orca"
+            ],
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": []
+        },
+        {
+            "codigo": 2,
+            "nombre": "Foca",
+            "especie": "Phoca vitulina",
+            "edad": 8,
+            "genero": "Macho",
+            "peso": 100.0,
+            "numAletas": 4,
+            "capacidadBuceo": "Hasta 200 metros",
+            "mecanismoRespiracion": "Pulmonar",
+            "habitad": "Ártico",
+            "ubicacion": "Sector B",
+            "gestacion": true,
+            "tipoGestacion": "Vivíparo",
+            "tiempoGestacion": "9 meses",
+            "dietaPrincipal": "Piscívoro",
             "dieta": [
                 "Peces",
                 "Calamares"
             ],
             "peligroso": false,
+            "nivelPeligrosidad": "",
+            "especiesCompatibles": [
+                "Lobo marino",
+                "Morsa"
+            ],
             "venenoso": false,
             "tipoVeneno": "",
-            "numAletas": 2,
-            "capacidadBuceo": "Hasta 300 metros",
-            "especiesCompatibles": [
-                "Calderón común",
-                "Orca"
-            ],
-            "tiempoGestacion": "12 meses",
-            "mecanismoRespiracion": "Pulmonar",
-            "cantidad": 5,
-            "precauciones": [
-                "No molestarlos",
-                "No alimentarlos en su habitat natural"
-            ]
-        },
-        {
-            "codigo": 2,
-            "nombre": "Ballena jorobada",
-            "especie": "Megaptera novaeangliae",
-            "edad": 20,
-            "genero": "Masculino",
-            "peso": 35000,
-            "dietaPrincipal": "Krill",
-            "habitad": "Océano",
-            "ubicacion": "Costas de Chile",
-            "nivelPeligrosidad": "Bajo",
-            "gestacion": true,
-            "tipoGestacion": "Vivípara",
-            "dieta": [
-                "Krill",
-                "Peces pequeños"
-            ],
-            "peligroso": false,
-            "venenoso": false,
-            "tipoVeneno": "",
-            "numAletas": 2,
-            "capacidadBuceo": "Hasta 500 metros",
-            "especiesCompatibles": [
-                "Tiburón ballena",
-                "Calamar gigante"
-            ],
-            "tiempoGestacion": "11 meses",
-            "mecanismoRespiracion": "Pulmonar",
-            "cantidad": 3,
-            "precauciones": [
-                "No molestarlos",
-                "No acercarse demasiado"
-            ]
+            "precauciones": []
         },
         {
             "codigo": 3,
-            "nombre": "Nutria de mar",
-            "especie": "Enhydra lutris",
+            "nombre": "Nutria",
+            "especie": "Lontra canadensis",
             "edad": 5,
-            "genero": "Femenino",
-            "peso": 25,
-            "dietaPrincipal": "Mariscos",
-            "habitad": "Costa",
-            "ubicacion": "California",
-            "nivelPeligrosidad": "Bajo",
-            "gestacion": true,
-            "tipoGestacion": "Vivípara",
-            "dieta": [
-                "Almejas",
-                "Ostras"
-            ],
-            "peligroso": false,
-            "venenoso": false,
-            "tipoVeneno": "",
+            "genero": "Hembra",
+            "peso": 25.0,
             "numAletas": 4,
             "capacidadBuceo": "Hasta 5 minutos",
-            "especiesCompatibles": [
-                "Cangrejo rojo"
-            ],
-            "tiempoGestacion": "9 meses",
             "mecanismoRespiracion": "Pulmonar",
-            "cantidad": 3,
-            "precauciones": [
-                "No molestarlos",
-                "No acercarse demasiado"
-            ]
+            "habitad": "Río",
+            "ubicacion": "Sector C",
+            "gestacion": true,
+            "tipoGestacion": "Vivíparo",
+            "tiempoGestacion": "2 meses",
+            "dietaPrincipal": "Carnívoro",
+            "dieta": [
+                "Peces",
+                "Crustáceos",
+                "Moluscos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "especiesCompatibles": [
+                "Castor",
+                "Nadador experto"
+            ],
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": []
         }
     ],
     "animales_anfibios": [
         {
-            "codigo": 1,
-            "nombre": "Rana arlequín",
-            "especie": "Atelopus spumarius",
-            "edad": 5,
+            "codigo": 1001,
+            "nombre": "Rana arbórea",
+            "especie": "Hyla arborea",
+            "edad": 3,
             "genero": "Macho",
             "peso": 0.05,
+            "habitad": "Bosques húmedos",
+            "ubicacion": "Terrario 1",
+            "reproduccion": "Sexual",
+            "gestacion": true,
+            "tipoGestacion": "Oviparous",
+            "tiempoGestacion": "14 días",
             "dietaPrincipal": "Insectos",
-            "habitad": "Bosques tropicales",
-            "ubicacion": "América del Sur",
-            "peligroso": true,
+            "dieta": [
+                "Grillos",
+                "Hormigas",
+                "Mosquitos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "Ninguno",
             "venenoso": true,
-            "nivelPeligrosidad": "Alto",
-            "reproduccion": "Oviparidad",
+            "tipoVeneno": "Cutáneo",
+            "precauciones": [
+                "Lavarse las manos después de tocar",
+                "No tocar los ojos"
+            ],
+            "temperaturaHabitad": "Entre 20 y 30 grados"
+        },
+        {
+            "codigo": 1002,
+            "nombre": "Salamandra",
+            "especie": "Salamandra salamandra",
+            "edad": 2,
+            "genero": "Hembra",
+            "peso": 0.1,
+            "habitad": "Bosques templados",
+            "ubicacion": "Terrario 2",
+            "reproduccion": "Sexual",
+            "gestacion": true,
+            "tipoGestacion": "Ovoviviparous",
+            "tiempoGestacion": "6 meses",
+            "dietaPrincipal": "Insectos",
+            "dieta": [
+                "Mosquitos",
+                "Arañas",
+                "Grillos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "Ninguno",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [],
+            "temperaturaHabitad": "Entre 10 y 20 grados"
+        },
+        {
+            "codigo": 1003,
+            "nombre": "Sapo de espuelas",
+            "especie": "Pelobates cultripes",
+            "edad": 5,
+            "genero": "Macho",
+            "peso": 0.2,
+            "habitad": "Terrenos húmedos",
+            "ubicacion": "Terrario 3",
+            "reproduccion": "Sexual",
+            "gestacion": true,
+            "tipoGestacion": "Oviparous",
+            "tiempoGestacion": "21 días",
+            "dietaPrincipal": "Insectos",
+            "dieta": [
+                "Hormigas",
+                "Grillos",
+                "Arañas"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "Ninguno",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [],
+            "temperaturaHabitad": "Entre 15 y 25 grados"
+        }
+    ],
+    "animales_aves_acuaticas": [
+        {
+            "codigo": 1001,
+            "nombre": "Pato Real",
+            "especie": "Anas platyrhynchos",
+            "edad": 3,
+            "genero": "Macho",
+            "peso": 1.5,
+            "envergadura": "80 cm",
+            "vuela": true,
+            "tipoPico": "Aplanado y ancho",
+            "colorPlumaje": "Verde y marrón",
+            "tiempoBuceo": "20 segundos",
+            "habitad": "Lagos y estanques",
+            "tempHabitad": "12-20°C",
+            "ubicacion": "Aviario 1",
             "gestacion": false,
             "tipoGestacion": "",
-            "temperaturaHabitad": "25-30°C",
-            "dieta": [
-                "Insectos",
-                "Pequeñas arañas"
-            ],
-            "tipoVeneno": "Piel tóxica",
             "tiempoGestacion": "",
-            "cantidad": 20,
+            "dietaPrincipal": "Insectos, semillas y plantas acuáticas",
+            "dieta": [
+                "Peces pequeños",
+                "Crustáceos",
+                "Caracoles"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": []
+        },
+        {
+            "codigo": 1002,
+            "nombre": "Pelícano",
+            "especie": "Pelecanus occidentalis",
+            "edad": 5,
+            "genero": "Hembra",
+            "peso": 6.2,
+            "envergadura": "2.5 m",
+            "vuela": true,
+            "tipoPico": "Largo y ancho",
+            "colorPlumaje": "Blanco y gris",
+            "tiempoBuceo": "15 segundos",
+            "habitad": "Costas y manglares",
+            "tempHabitad": "22-30°C",
+            "ubicacion": "Laguna 2",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "dietaPrincipal": "Peces y crustáceos",
+            "dieta": [
+                "Calamares",
+                "Pulpos",
+                "Peces grandes"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": []
+        },
+        {
+            "codigo": 1003,
+            "nombre": "Cormorán",
+            "especie": "Phalacrocorax auritus",
+            "edad": 2,
+            "genero": "Macho",
+            "peso": 1.8,
+            "envergadura": "90 cm",
+            "vuela": true,
+            "tipoPico": "Largo y delgado",
+            "colorPlumaje": "Negro",
+            "tiempoBuceo": "30 segundos",
+            "habitad": "Ríos y lagos",
+            "tempHabitad": "15-25°C",
+            "ubicacion": "Estanque 3",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "dietaPrincipal": "Peces y crustáceos",
+            "dieta": [
+                "Anguilas",
+                "Morenas"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": []
+        }
+    ],
+    "animales_aves_terrestres": [
+        {
+            "codigo": 1,
+            "nombre": "Gallina",
+            "especie": "Gallus gallus domesticus",
+            "edad": 2,
+            "genero": "Hembra",
+            "peso": 1.5,
+            "aveDeCorral": true,
+            "comportamientoSocial": "Gregarious",
+            "envergadura": "No aplica",
+            "vuela": false,
+            "tipoPico": "Curvo",
+            "colorPlumaje": "Marrón",
+            "habitad": "Granjas",
+            "ubicacion": "Corral",
+            "gestacion": false,
+            "tipoGestacion": "No aplica",
+            "tiempoGestacion": "No aplica",
+            "dietaPrincipal": "Granos y semillas",
+            "dieta": [
+                "Granos",
+                "Semillas",
+                "Insectos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "No aplica",
+            "venenoso": false,
+            "tipoVeneno": "No aplica",
             "precauciones": [
-                "No tocar",
-                "Evitar contacto visual"
+                "No aplica"
             ]
         },
         {
             "codigo": 2,
-            "nombre": "Salamandra manchada",
-            "especie": "Salamandra salamandra",
-            "edad": 4,
-            "genero": "Hembra",
-            "peso": 0.2,
-            "dietaPrincipal": "Insectos, lombrices",
-            "habitad": "Bosques húmedos",
-            "ubicacion": "Europa",
-            "peligroso": false,
-            "venenoso": true,
-            "nivelPeligrosidad": "Bajo",
-            "reproduccion": "Oviparidad",
-            "gestacion": false,
-            "tipoGestacion": "",
-            "temperaturaHabitad": "15-20°C",
-            "dieta": [
-                "Insectos",
-                "Lombrices",
-                "Crustáceos"
-            ],
-            "tipoVeneno": "Toxina cutánea",
-            "tiempoGestacion": "",
-            "cantidad": 5,
-            "precauciones": [
-                "No manipular",
-                "Lavarse las manos después de tocar"
-            ]
-        },
-        {
-            "codigo": 3,
-            "nombre": "Sapo común",
-            "especie": "Bufo bufo",
+            "nombre": "Pavo real",
+            "especie": "Pavo cristatus",
             "edad": 3,
             "genero": "Macho",
-            "peso": 0.3,
-            "dietaPrincipal": "Insectos, pequeños roedores",
-            "habitad": "Bosques, zonas húmedas",
-            "ubicacion": "Europa, Asia",
-            "peligroso": true,
-            "venenoso": true,
-            "nivelPeligrosidad": "Medio",
-            "reproduccion": "Oviparidad",
+            "peso": 6.5,
+            "aveDeCorral": false,
+            "comportamientoSocial": "Sedentary",
+            "envergadura": "1.5 m",
+            "vuela": false,
+            "tipoPico": "No curvo",
+            "colorPlumaje": "Multicolor",
+            "habitad": "Bosques",
+            "ubicacion": "Aviario",
             "gestacion": false,
-            "tipoGestacion": "",
-            "temperaturaHabitad": "10-20°C",
-            "dieta": [
-                "Insectos",
-                "Pequeños roedores",
-                "Lombrices"
-            ],
-            "tipoVeneno": "Bufotoxinas",
-            "tiempoGestacion": "",
-            "cantidad": 8,
-            "precauciones": [
-                "No tocar",
-                "Lavarse las manos después de manipular"
-            ]
-        }
-    ],
-    "animales_insectos": [
-        {
-            "codigo": 1,
-            "nombre": "Hormiga",
-            "especie": "Formicidae",
-            "dietaPrincipal": "Omnívoro",
-            "habitad": "Terrestre",
-            "ubicacion": "Mundial",
-            "peligroso": false,
-            "venenoso": false,
-            "cantidad": 100,
+            "tipoGestacion": "No aplica",
+            "tiempoGestacion": "No aplica",
+            "dietaPrincipal": "Frutas y semillas",
             "dieta": [
                 "Frutas",
                 "Semillas",
                 "Insectos"
             ],
-            "metamorfosis": true,
-            "paresPatas": 3,
-            "paresAlas": 0,
+            "peligroso": false,
+            "nivelPeligrosidad": "No aplica",
+            "venenoso": false,
+            "tipoVeneno": "No aplica",
             "precauciones": [
-                "Evitar dejar alimentos expuestos",
-                "No aplastar las hormigas"
-            ]
-        },
-        {
-            "codigo": 2,
-            "nombre": "Abeja",
-            "especie": "Apis mellifera",
-            "dietaPrincipal": "Polen y néctar",
-            "habitad": "Terrestre",
-            "ubicacion": "Mundial",
-            "peligroso": true,
-            "venenoso": true,
-            "cantidad": 50,
-            "dieta": [
-                "Polen",
-                "Néctar"
-            ],
-            "metamorfosis": true,
-            "paresPatas": 3,
-            "paresAlas": 2,
-            "precauciones": [
-                "No molestar a las abejas",
-                "Mantenerse alejado de las colmenas"
+                "No aplica"
             ]
         },
         {
             "codigo": 3,
-            "nombre": "Mariquita",
-            "especie": "Coccinellidae",
-            "dietaPrincipal": "Aphididae",
-            "habitad": "Terrestre",
-            "ubicacion": "Mundial",
-            "peligroso": false,
-            "venenoso": false,
-            "cantidad": 20,
+            "nombre": "Avestruz",
+            "especie": "Struthio camelus",
+            "edad": 5,
+            "genero": "Hembra",
+            "peso": 100.0,
+            "aveDeCorral": false,
+            "comportamientoSocial": "Social",
+            "envergadura": "2.7 m",
+            "vuela": false,
+            "tipoPico": "Plano",
+            "colorPlumaje": "Marrón y blanco",
+            "habitad": "Savanas",
+            "ubicacion": "Parque",
+            "gestacion": true,
+            "tipoGestacion": "Oviparo",
+            "tiempoGestacion": "42 dias",
+            "dietaPrincipal": "Vegetación y pequeños animales",
             "dieta": [
-                "Aphididae"
+                "Plantas",
+                "Insectos",
+                "Pequeños animales"
             ],
+            "peligroso": false,
+            "nivelPeligrosidad": "No aplica",
+            "venenoso": false,
+            "tipoVeneno": "No aplica",
+            "precauciones": [
+                "No aplica"
+            ]
+        }
+    ],
+    "animales_aves_exoticas": [
+        {
+            "codigo": 101,
+            "nombre": "Loro arcoiris",
+            "especie": "Psittacidae",
+            "edad": 5,
+            "genero": "Macho",
+            "peso": 0.5,
+            "envergadura": "30 cm",
+            "vuela": true,
+            "tipoPico": "Curvado",
+            "colorPlumaje": "Verde, rojo, azul, amarillo",
+            "origen": "América del Sur",
+            "habitad": "Bosques húmedos",
+            "ubicacion": "Jardín Zoológico",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "dietaPrincipal": "Frutas, semillas, nueces",
+            "dieta": [
+                "Manzanas",
+                "Naranjas",
+                "Piñas",
+                "Almendras",
+                "Nueces"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "especiesCompatibles": [
+                "Guacamayo azul",
+                "Cotorra argentina"
+            ],
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": []
+        },
+        {
+            "codigo": 102,
+            "nombre": "Faisán dorado",
+            "especie": "Chrysolophus pictus",
+            "edad": 3,
+            "genero": "Hembra",
+            "peso": 1.5,
+            "envergadura": "90 cm",
+            "vuela": true,
+            "tipoPico": "Recto",
+            "colorPlumaje": "Dorado, verde, azul, rojo",
+            "origen": "China",
+            "habitad": "Bosques de montaña",
+            "ubicacion": "Aviario",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "dietaPrincipal": "Semillas, insectos, pequeños animales",
+            "dieta": [
+                "Maíz",
+                "Avena",
+                "Gusanos",
+                "Ratones"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "especiesCompatibles": [
+                "Faisán plateado",
+                "Faisán común"
+            ],
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": []
+        },
+        {
+            "codigo": 103,
+            "nombre": "Avestruz",
+            "especie": "Struthio camelus",
+            "edad": 8,
+            "genero": "Macho",
+            "peso": 150,
+            "envergadura": "2,5 m",
+            "vuela": false,
+            "tipoPico": "Plano y ancho",
+            "colorPlumaje": "Negro y blanco",
+            "origen": "África",
+            "habitad": "Sábana",
+            "ubicacion": "Granja Zoológica",
+            "gestacion": true,
+            "tipoGestacion": "Oviparo",
+            "tiempoGestacion": "42 días",
+            "dietaPrincipal": "Vegetación, pequeños animales",
+            "peligroso": true,
+            "nivelPeligrosidad": "medio",
+            "especiesCompatibles": [
+                "Faisán plateado",
+                "Faisán común"
+            ],
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": []
+        }
+    ],
+    "animales_aves_carroña_rapiña": [
+        {
+            "codigo": 1,
+            "nombre": "Buitre negro",
+            "especie": "Aegypius monachus",
+            "edad": 8,
+            "genero": "Macho",
+            "peso": 8.5,
+            "envergadura": "2.5 metros",
+            "vuela": true,
+            "tipoPico": "Curvo y afilado",
+            "colorPlumaje": "Negro",
+            "habitad": "Zonas montañosas y boscosas",
+            "ubicacion": "Europa y Asia",
+            "gestacion": false,
+            "tipoGestacion": null,
+            "tiempoGestacion": null,
+            "dietaPrincipal": "Carne en descomposición",
+            "dieta": [
+                "Restos de animales muertos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": null,
+            "especiesCompatibles": [
+                "Otras aves de carroña"
+            ],
+            "venenoso": false,
+            "tipoVeneno": null,
+            "precauciones": null
+        },
+        {
+            "codigo": 2,
+            "nombre": "Cóndor andino",
+            "especie": "Vultur gryphus",
+            "edad": 12,
+            "genero": "Hembra",
+            "peso": 14.5,
+            "envergadura": "3.3 metros",
+            "vuela": true,
+            "tipoPico": "Ganchudo y fuerte",
+            "colorPlumaje": "Marrón y negro",
+            "habitad": "Zonas montañosas y desérticas",
+            "ubicacion": "Sudamérica",
+            "gestacion": false,
+            "tipoGestacion": null,
+            "tiempoGestacion": null,
+            "dietaPrincipal": "Carne en descomposición",
+            "dieta": [
+                "Restos de animales muertos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": null,
+            "especiesCompatibles": [
+                "Otras aves de carroña"
+            ],
+            "venenoso": false,
+            "tipoVeneno": null,
+            "precauciones": null
+        },
+        {
+            "codigo": 3,
+            "nombre": "Cóndor de California",
+            "especie": "Gymnogyps californianus",
+            "edad": 5,
+            "genero": "Macho",
+            "peso": 12.2,
+            "envergadura": "2.9 metros",
+            "vuela": true,
+            "tipoPico": "Ganchudo y fuerte",
+            "colorPlumaje": "Negro",
+            "habitad": "Cañones y desfiladeros",
+            "ubicacion": "Oeste de los Estados Unidos y México",
+            "gestacion": false,
+            "tipoGestacion": null,
+            "tiempoGestacion": null,
+            "dietaPrincipal": "Carne en descomposición",
+            "dieta": [
+                "Restos de animales muertos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": null,
+            "especiesCompatibles": [
+                "Otras aves de carroña"
+            ],
+            "venenoso": false,
+            "tipoVeneno": null,
+            "precauciones": null
+        }
+    ],
+    "animales_insectos": [
+        {
+            "codigo": 1,
+            "nombre": "Mariposa monarca",
+            "especie": "Danaus plexippus",
             "metamorfosis": true,
             "paresPatas": 3,
             "paresAlas": 2,
-            "precauciones": [
-                "No rociar pesticidas cerca de ellas"
-            ]
+            "habitad": "Bosque",
+            "ubicacion": "Mexico",
+            "dietaPrincipal": "Néctar",
+            "dieta": [
+                "Néctar",
+                "Polen"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "Bajo",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [],
+            "cantidad": 500
         },
         {
-            "codigo": 4,
-            "nombre": "Langosta",
-            "especie": "Schistocerca americana",
-            "dietaPrincipal": "Plantas",
-            "habitad": "Terrestre",
-            "ubicacion": "América del Norte y Central",
-            "peligroso": false,
-            "venenoso": false,
-            "cantidad": 5,
-            "dieta": [
-                "Plantas"
-            ],
+            "codigo": 2,
+            "nombre": "Hormiga",
+            "especie": "Atta cephalotes",
             "metamorfosis": true,
-            "paresPatas": 6,
-            "paresAlas": 2,
-            "precauciones": [
-                "Controlar su población en caso de plaga"
-            ]
+            "paresPatas": 3,
+            "paresAlas": 0,
+            "habitad": "Bosque tropical",
+            "ubicacion": "America Central y del Sur",
+            "dietaPrincipal": "Hojas",
+            "dieta": [
+                "Hojas",
+                "Hongos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "Bajo",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [],
+            "cantidad": 1000
+        },
+        {
+            "codigo": 3,
+            "nombre": "Escarabajo rinoceronte",
+            "especie": "Xyloryctes jamaicensis",
+            "metamorfosis": true,
+            "paresPatas": 3,
+            "paresAlas": 0,
+            "habitad": "Bosque",
+            "ubicacion": "Jamaica",
+            "dietaPrincipal": "Madera en descomposición",
+            "dieta": [
+                "Madera",
+                "Hojas",
+                "Frutas"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "Bajo",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [],
+            "cantidad": 50
         }
     ],
     "animales_peces": [
         {
             "codigo": 1,
-            "nombre": "Pez Globo",
-            "especie": "Tetraodontidae",
+            "nombre": "Pez payaso",
+            "especie": "Amphiprion ocellaris",
             "edad": 2,
             "genero": "Macho",
-            "peso": 0.3,
-            "dietaPrincipal": "Crustáceos y moluscos",
-            "habitad": "Agua salada",
+            "peso": 0.1,
+            "coloracion": "Naranja y blanco",
+            "habitad": "Arrecifes de coral",
             "ubicacion": "Océano Pacífico",
-            "peligrosidad": true,
-            "nivelPeligrosidad": "Alto",
-            "tipoAgua": "Salada",
-            "temperaturaAcuario": "22-26°C",
-            "coloracion": "Amarillo y negro",
-            "reproduccion": "Oviparos",
+            "tipoAgua": "Agua salada",
+            "temperaturaAcuario": "24 - 27°C",
+            "reproduccion": "Ovíparo",
             "gestacion": false,
             "tipoGestacion": "",
-            "dieta": [
-                "Crustáceos",
-                "Moluscos",
-                "Peces pequeños"
-            ],
-            "especiesCompatibles": [
-                "Tiburón gato",
-                "Cangrejo ermitaño"
-            ],
-            "peligroso": true,
-            "venenoso": true,
-            "tipoVeneno": "Tetrodotoxina",
             "tiempoGestacion": "",
-            "cantidad": 1,
-            "precauciones": [
-                "No tocar",
-                "Mantener en agua salada"
-            ]
+            "dietaPrincipal": "Omnívoro",
+            "dieta": [
+                "Pienso para peces",
+                "Algas",
+                "Crustáceos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [],
+            "especiesCompatibles": [
+                "Gobios",
+                "Cangrejos ermitaños"
+            ],
+            "cantidad": 5
         },
         {
             "codigo": 2,
-            "nombre": "Pez Payaso",
-            "especie": "Amphiprioninae",
-            "edad": 1,
+            "nombre": "Pez globo",
+            "especie": "Tetraodontidae",
+            "edad": 3,
             "genero": "Hembra",
-            "peso": 0.1,
-            "dietaPrincipal": "Algas y pequeños invertebrados",
+            "peso": 0.3,
+            "coloracion": "Verde y amarillo",
             "habitad": "Arrecifes de coral",
             "ubicacion": "Océano Índico",
-            "peligrosidad": false,
-            "nivelPeligrosidad": "Bajo",
-            "tipoAgua": "Salada",
-            "temperaturaAcuario": "24-26°C",
-            "coloracion": "Naranja y blanco",
-            "reproduccion": "Oviparos",
+            "tipoAgua": "Agua salada",
+            "temperaturaAcuario": "24 - 27°C",
+            "reproduccion": "Ovíparo",
             "gestacion": false,
             "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "dietaPrincipal": "Carnívoro",
             "dieta": [
-                "Algas",
-                "Plancton",
-                "Invertebrados"
+                "Crustáceos",
+                "Moluscos",
+                "Algas"
+            ],
+            "peligroso": true,
+            "nivelPeligrosidad": "Alto",
+            "venenoso": true,
+            "tipoVeneno": "Tetrodotoxina",
+            "precauciones": [
+                "No consumir su carne",
+                "Manejar con cuidado"
             ],
             "especiesCompatibles": [
-                "Pez cirujano",
-                "Pez ángel"
+                "Cangrejos",
+                "Estrellas de mar"
+            ],
+            "cantidad": 2
+        },
+        {
+            "codigo": 3,
+            "nombre": "Pez ángel",
+            "especie": "Pterophyllum scalare",
+            "edad": 1,
+            "genero": "Desconocido",
+            "peso": 0.2,
+            "coloracion": "Plateado y negro",
+            "habitad": "Ríos y lagos",
+            "ubicacion": "Sudamérica",
+            "tipoAgua": "Agua dulce",
+            "temperaturaAcuario": "24 - 28°C",
+            "reproduccion": "Ovíparo",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "dietaPrincipal": "Omnívoro",
+            "dieta": [
+                "Pienso para peces"
             ],
             "peligroso": false,
+            "nivelPeligrosidad": "",
             "venenoso": false,
             "tipoVeneno": "",
-            "tiempoGestacion": "",
-            "cantidad": 2,
-            "precauciones": [
-                "Mantener en agua salada",
-                "Evitar cambios bruscos de temperatura"
-            ]
+            "precauciones": [],
+            "especiesCompatibles": [
+                "Gobios",
+                "Cangrejos ermitaños"
+            ],
+            "cantidad": 5
         }
     ],
     "animales_reptiles_acuaticos": [
         {
             "codigo": 1,
-            "nombre": "Tortuga marina",
-            "especie": "Cheloniidae",
-            "edad": 10,
-            "genero": "Femenino",
-            "peso": 200.5,
-            "dietaPrincipal": "Algas y crustáceos",
-            "habitad": "Océanos",
-            "ubicacion": "Costa de California",
+            "nombre": "Tortuga marina verde",
+            "especie": "Chelonia mydas",
+            "edad": 20,
+            "genero": "Hembra",
+            "peso": 150.5,
+            "tipoPiel": "Escamosa",
+            "numAletas": 4,
+            "coloracion": "Verde oscuro",
+            "metodoRespiracion": "Pulmonar",
+            "habitad": "Marino",
+            "ubicacion": "Océano Pacífico",
+            "reproduccion": "Sexual",
+            "gestacion": true,
+            "tipoGestacion": "Oviparidad",
+            "tiempoGestacion": "45-75 días",
+            "tempEncubacion": "29-33 °C",
+            "dietaPrincipal": "Algas marinas",
+            "dieta": [
+                "Crustáceos",
+                "Moluscos"
+            ],
             "peligroso": false,
-            "nivelPeligrosidad": "Bajo",
-            "tempEncubacion": "45 días",
+            "nivelPeligrosidad": "Inofensivo",
             "venenoso": false,
             "tipoVeneno": "",
-            "tipoPiel": "Escamosa",
-            "coloracion": "Verde y marrón",
-            "reproduccion": "Oviparous",
-            "gestacion": true,
-            "tipoGestacion": "Oviparous",
-            "dieta": [
-                "Algas",
-                "Crustáceos"
-            ],
-            "tiempoGestacion": "45 días",
-            "metodoRespiracion": "Pulmonar",
-            "numAletas": 4,
-            "cantidad": 1,
-            "precauciones": [
-                "No tocar los huevos",
-                "Mantener la playa limpia"
-            ]
+            "precauciones": [],
+            "cantidad": 100000
         },
         {
             "codigo": 2,
             "nombre": "Cocodrilo de agua salada",
             "especie": "Crocodylus porosus",
-            "edad": 20,
-            "genero": "Masculino",
-            "peso": 1000.0,
-            "dietaPrincipal": "Peces y aves",
-            "habitad": "Ríos y lagos",
-            "ubicacion": "Norte de Australia",
-            "peligroso": true,
-            "nivelPeligrosidad": "Alto",
-            "tempEncubacion": "80 días",
-            "venenoso": false,
-            "tipoVeneno": "",
+            "edad": 30,
+            "genero": "Macho",
+            "peso": 1000,
             "tipoPiel": "Escamosa",
+            "numAletas": 4,
             "coloracion": "Marrón oscuro",
-            "reproduccion": "Oviparous",
-            "gestacion": true,
-            "tipoGestacion": "Oviparous",
+            "metodoRespiracion": "Pulmonar",
+            "habitad": "Marino",
+            "ubicacion": "Australia, Nueva Guinea",
+            "reproduccion": "Sexual",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "tempEncubacion": "80-90 días",
+            "dietaPrincipal": "Peces",
             "dieta": [
-                "Peces",
+                "Mamíferos",
                 "Aves"
             ],
-            "tiempoGestacion": "80 días",
-            "metodoRespiracion": "Pulmonar",
-            "numAletas": 4,
-            "cantidad": 1,
+            "peligroso": true,
+            "nivelPeligrosidad": "Muy peligroso",
+            "venenoso": false,
+            "tipoVeneno": "",
             "precauciones": [
-                "Mantener una distancia segura",
-                "No alimentar a los cocodrilos"
-            ]
+                "No acercarse a su hábitat natural",
+                "No nadar en aguas donde se sabe que habita"
+            ],
+            "cantidad": 1000
+        },
+        {
+            "codigo": 3,
+            "nombre": "Serpiente marina",
+            "especie": "Hydrophis cyanocinctus",
+            "edad": 5,
+            "genero": "Macho",
+            "peso": 2.5,
+            "tipoPiel": "Escamosa",
+            "numAletas": 0,
+            "coloracion": "Negro con franjas amarillas",
+            "metodoRespiracion": "Bucal",
+            "habitad": "Marino",
+            "ubicacion": "Océano Índico",
+            "reproduccion": "Sexual",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "tempEncubacion": "80-90 días",
+            "dietaPrincipal": "Peces",
+            "dieta": [
+                "Mamíferos",
+                "Aves"
+            ],
+            "peligroso": true,
+            "nivelPeligrosidad": "Muy peligroso",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [
+                "No acercarse a su hábitat natural",
+                "No nadar en aguas donde se sabe que habita"
+            ],
+            "cantidad": 1000
         }
     ],
     "animales_reptiles_terrestres": [
         {
             "codigo": 1,
-            "nombre": "Serpiente de cascabel",
-            "especie": "Crotalus atrox",
-            "edad": 5,
-            "genero": "Hembra",
-            "peso": 2.5,
-            "dietaPrincipal": "Roedores",
-            "habitad": "Desiertos y praderas",
-            "ubicacion": "América del Norte",
-            "peligroso": true,
-            "nivelPeligrosidad": "Alto",
-            "tempEncubacion": "21-28°C",
-            "venenoso": true,
-            "tipoVeneno": "Neurotóxico",
-            "tipoPiel": "Escamosa",
-            "coloracion": "Marrón con manchas oscuras",
-            "reproduccion": "Oviparous",
-            "gestacion": false,
-            "tipoGestacion": "",
+            "nombre": "Iguana verde",
+            "especie": "Iguana iguana",
+            "edad": 8,
+            "genero": "Macho",
+            "peso": 4.5,
+            "tipoPiel": "Escarlata",
+            "coloracion": "Verde",
+            "numPatas": 4,
+            "habitad": "Selva tropical",
+            "ubicacion": "Centro y Sudamérica",
+            "reproduccion": "Sexual",
+            "gestacion": true,
+            "tipoGestacion": "Oviparidad",
+            "tiempoGestacion": "65-75 días",
+            "tempEncubacion": "29-32 °C",
+            "dietaPrincipal": "Hoja de árboles",
             "dieta": [
-                "Roedores",
-                "Aves",
-                "Lagartijas"
+                "Flores",
+                "Frutas"
             ],
-            "tiempoGestacion": "",
-            "numPatas": 0,
-            "cantidad": 1,
-            "precauciones": [
-                "Mantener distancia",
-                "No molestar",
-                "Llamar a profesionales en caso de encuentro"
-            ]
+            "peligroso": false,
+            "nivelPeligrosidad": "Inofensivo",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [],
+            "cantidad": 500
         },
         {
             "codigo": 2,
-            "nombre": "Iguana verde",
-            "especie": "Iguana iguana",
-            "edad": 3,
-            "genero": "Macho",
-            "peso": 1.8,
-            "dietaPrincipal": "Vegetales",
-            "habitad": "Bosques tropicales",
-            "ubicacion": "América Central y del Sur",
-            "peligroso": false,
-            "nivelPeligrosidad": "Bajo",
-            "tempEncubacion": "28-32°C",
-            "venenoso": false,
-            "tipoVeneno": "",
+            "nombre": "Cocodrilo del Nilo",
+            "especie": "Crocodylus niloticus",
+            "edad": 25,
+            "genero": "Hembra",
+            "peso": 400,
             "tipoPiel": "Escamosa",
-            "coloracion": "Verde con manchas negras",
-            "reproduccion": "Oviparous",
+            "coloracion": "Verde oliva",
+            "numPatas": 4,
+            "habitad": "Río y lagos",
+            "ubicacion": "África subsahariana",
+            "reproduccion": "Sexual",
             "gestacion": false,
             "tipoGestacion": "",
-            "dieta": [
-                "Vegetales",
-                "Frutas",
-                "Flores"
-            ],
             "tiempoGestacion": "",
-            "numPatas": 4,
-            "cantidad": 1,
+            "tempEncubacion": "90-100 días",
+            "dietaPrincipal": "Peces",
+            "dieta": [
+                "Mamíferos",
+                "Aves"
+            ],
+            "peligroso": true,
+            "nivelPeligrosidad": "Muy peligroso",
+            "venenoso": false,
+            "tipoVeneno": "",
             "precauciones": [
-                "No alimentar con carne",
-                "Proporcionar un ambiente cálido",
-                "Mantener alejado de animales domésticos"
-            ]
+                "No acercarse a su hábitat natural",
+                "No nadar en aguas donde se sabe que habita"
+            ],
+            "cantidad": 10
+        },
+        {
+            "codigo": 3,
+            "nombre": "Serpiente rey de California",
+            "especie": "Lampropeltis californiae",
+            "edad": 4,
+            "genero": "Hembra",
+            "peso": 1.2,
+            "tipoPiel": "Lisos",
+            "coloracion": "Negro con rayas blancas",
+            "numPatas": 0,
+            "habitad": "Desierto",
+            "ubicacion": "Suroeste de Estados Unidos y noroeste de México",
+            "reproduccion": "Sexual",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "tempEncubacion": "55-65 días",
+            "dietaPrincipal": "Roedores",
+            "dieta": [
+                "Mamíferos",
+                "Aves"
+            ],
+            "peligroso": true,
+            "nivelPeligrosidad": "Muy peligroso",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [
+                "No acercarse a su hábitat natural",
+                "No nadar en aguas donde se sabe que habita"
+            ],
+            "cantidad": 10
         }
     ]
 }

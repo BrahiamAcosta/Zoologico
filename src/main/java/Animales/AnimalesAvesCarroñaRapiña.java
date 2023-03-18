@@ -2,19 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Entidades;
+package Animales;
 
 /**
  *
  * @author Alisser
  */
-public class AnimalesAvesExoticas extends AnimalesAves{
-    private String origen, especiesCompatibles[];
+public class AnimalesAvesCarroñaRapiña extends AnimalesAves{
+    private String especiesCompatibles[];
     
-    public AnimalesAvesExoticas(
+    public AnimalesAvesCarroñaRapiña(
             int codigo, 
             String nombre, 
             String especie, 
+            String riesgoExtincion,
             int edad,
             String genero,
             float peso, 
@@ -22,7 +23,6 @@ public class AnimalesAvesExoticas extends AnimalesAves{
             boolean vuela,
             String tipoPico,
             String colorPlumaje,
-            String origen,
             String habitad,
             String ubicacion,
             boolean gestacion,
@@ -35,13 +35,13 @@ public class AnimalesAvesExoticas extends AnimalesAves{
             String[] especiesCompatibles,
             boolean venenoso,
             String tipoVeneno,
-            String[] precauciones,
-            int cantidad
+            String[] precauciones
     ){
         super(
                 codigo, 
                 nombre, 
                 especie, 
+                riesgoExtincion,
                 edad, 
                 genero, 
                 peso,
@@ -60,10 +60,17 @@ public class AnimalesAvesExoticas extends AnimalesAves{
                 nivelPeligrosidad,
                 venenoso, 
                 tipoVeneno,
-                precauciones,
-                cantidad
+                precauciones
         );
         this.especiesCompatibles = especiesCompatibles;
-        this.origen = origen;
     }
+
+    public String[] getEspeciesCompatibles() {
+        return especiesCompatibles;
+    }
+
+    public void setEspeciesCompatibles(String[] especiesCompatibles) {
+        this.especiesCompatibles = especiesCompatibles;
+    }
+    
 }

@@ -1,4 +1,4 @@
-package Entidades;
+package Animales;
 
 /**
  *
@@ -6,8 +6,9 @@ package Entidades;
  */
 
 public class Animales {
+    public static int cantAnimales = 0;
     private int codigo, edad, cantidad;
-    private String nombre, especie, genero, dietaPrincipal, dieta[], habitad, ubicacion;
+    private String nombre, especie, genero, dietaPrincipal, dieta[], habitad, ubicacion, riesgoExtincion;
     private float peso;
     private boolean peligroso, venenoso, gestacion;
     //Constructores
@@ -17,6 +18,7 @@ public class Animales {
             int codigo,
             String nombre,
             String especie,
+            String riesgoExtincion,
             String habitad,
             String ubicacion,
             String dietaPrincipal,
@@ -35,13 +37,74 @@ public class Animales {
         this.venenoso = venenoso;
         this.cantidad = cantidad;
         this.dieta = dieta;
+        this.riesgoExtincion = riesgoExtincion;
     }
+    
+    //Constructor para peces
+    public Animales(
+            int codigo, 
+            String nombre, 
+            String especie, 
+            String riesgoExtincion,
+            String genero,
+            String habitad,
+            String ubicacion,
+            String dietaPrincipal,
+            String dieta[],
+            boolean peligroso,
+            boolean venenoso,
+            int cantidad
+    )
+    {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.especie = especie;
+        this.genero = genero;
+        this.dietaPrincipal = dietaPrincipal;
+        this.habitad = habitad;
+        this.ubicacion = ubicacion;
+        this.peligroso = peligroso;
+        this.venenoso = venenoso;
+        this.dieta = dieta;
+        this.cantidad = cantidad;
+        this.riesgoExtincion = riesgoExtincion;
+    }
+    
+    //Constructor anfibios
+    public Animales(
+            int codigo, 
+            String nombre, 
+            String especie, 
+            String riesgoExtincion,
+            String genero,
+            String habitad,
+            String ubicacion,
+            String dietaPrincipal,
+            String dieta[],
+            boolean peligroso,
+            boolean venenoso
+    )
+    {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.especie = especie;
+        this.genero = genero;
+        this.dietaPrincipal = dietaPrincipal;
+        this.habitad = habitad;
+        this.ubicacion = ubicacion;
+        this.peligroso = peligroso;
+        this.venenoso = venenoso;
+        this.dieta = dieta;
+        this.riesgoExtincion = riesgoExtincion;
+    }
+    
     
     //Constructor resto animales
     public Animales(
             int codigo, 
             String nombre, 
             String especie, 
+            String riesgoExtincion,
             int edad,
             String genero,
             float peso, 
@@ -51,8 +114,7 @@ public class Animales {
             String dietaPrincipal,
             String dieta[],
             boolean peligroso,
-            boolean venenoso,
-            int cantidad
+            boolean venenoso
     )
     {
         this.codigo = codigo;
@@ -67,8 +129,8 @@ public class Animales {
         this.peligroso = peligroso;
         this.venenoso = venenoso;
         this.gestacion = gestacion;
-        this.cantidad = cantidad;
         this.dieta = dieta;
+        this.riesgoExtincion = riesgoExtincion;
     }
 
     public int getCodigo() {
@@ -173,6 +235,14 @@ public class Animales {
 
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
+    }
+
+    public String[] getDieta() {
+        return dieta;
+    }
+
+    public void setDieta(String[] dieta) {
+        this.dieta = dieta;
     }
     
     

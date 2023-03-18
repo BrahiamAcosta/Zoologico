@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Entidades;
+package Animales;
 
 /**
  *
@@ -12,25 +12,19 @@ public class AnimalesAnfibios extends Animales{
     private String 
             tipoVeneno, 
             reproduccion, 
-            tipoGestacion, 
             temperaturaHabitad, 
             nivelPeligrosidad, 
-            tiempoGestacion,
             precauciones[];
     
     public AnimalesAnfibios(
         int codigo, 
         String nombre, 
         String especie, 
-        int edad,
+        String riesgoExtincion,
         String genero,
-        float peso, 
         String habitad,
         String ubicacion,
         String reproduccion, 
-        boolean gestacion,
-        String tipoGestacion,
-        String tiempoGestacion,
         String dietaPrincipal,
         String dieta[],
         boolean peligroso,
@@ -38,7 +32,6 @@ public class AnimalesAnfibios extends Animales{
         boolean venenoso,
         String tipoVeneno,
         String[] precauciones,
-        int cantidad,   
         String temperaturaHabitad
     )
     {
@@ -46,27 +39,20 @@ public class AnimalesAnfibios extends Animales{
                 codigo, 
                 nombre, 
                 especie, 
-                edad, 
+                riesgoExtincion,
                 genero, 
-                peso, 
                 habitad, 
                 ubicacion,
-                gestacion,
                 dietaPrincipal, 
                 dieta,
                 peligroso, 
-                venenoso, 
-                cantidad               
+                venenoso              
         );
         if (peligroso){
             this.nivelPeligrosidad = nivelPeligrosidad;
             this.precauciones = precauciones;
         }
         this.reproduccion = reproduccion;
-        if(gestacion){
-            this.tipoGestacion = tipoGestacion;
-            this.tiempoGestacion = tiempoGestacion;
-        }
         this.temperaturaHabitad = temperaturaHabitad;
         if(venenoso){
             this.tipoVeneno = tipoVeneno;
@@ -79,14 +65,6 @@ public class AnimalesAnfibios extends Animales{
 
     public void setReproduccion(String reproduccion) {
         this.reproduccion = reproduccion;
-    }
-
-    public String getTipoGestacion() {
-        return tipoGestacion;
-    }
-
-    public void setTipoGestacion(String tipoGestacion) {
-        this.tipoGestacion = tipoGestacion;
     }
 
     public String getTemperaturaHabitad() {
@@ -111,14 +89,6 @@ public class AnimalesAnfibios extends Animales{
 
     public void setTipoVeneno(String tipoVeneno) {
         this.tipoVeneno = tipoVeneno;
-    }
-
-    public String getTiempoGestacion() {
-        return tiempoGestacion;
-    }
-
-    public void setTiempoGestacion(String tiempoGestacion) {
-        this.tiempoGestacion = tiempoGestacion;
     }
 
     public String[] getPrecauciones() {

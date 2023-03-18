@@ -2,30 +2,30 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Entidades;
+package Animales;
 
 /**
  *
  * @author Alisser
  */
-public class AnimalesAvesTerrestres extends AnimalesAves{
-    private boolean aveDeCorral;
-    private String comportamientoSocial;
+public class AnimalesAvesAcuaticas extends AnimalesAves{
+    private String tiempoBuceo, tempHabitad;
     
-    public AnimalesAvesTerrestres(
+    public AnimalesAvesAcuaticas(
             int codigo, 
             String nombre, 
             String especie, 
+            String riesgoExtincion,
             int edad,
             String genero,
             float peso, 
-            boolean aveDeCorral,
-            String comportamientoSocial,
             String envergadura,
             boolean vuela,
             String tipoPico,
             String colorPlumaje,
+            String tiempoBuceo,
             String habitad,
+            String tempHabitad,
             String ubicacion,
             boolean gestacion,
             String tipoGestacion,
@@ -36,13 +36,13 @@ public class AnimalesAvesTerrestres extends AnimalesAves{
             String nivelPeligrosidad,
             boolean venenoso,
             String tipoVeneno,
-            String[] precauciones,
-            int cantidad
+            String[] precauciones
     ){
         super(
                 codigo, 
                 nombre, 
                 especie, 
+                riesgoExtincion,
                 edad, 
                 genero, 
                 peso,
@@ -61,8 +61,9 @@ public class AnimalesAvesTerrestres extends AnimalesAves{
                 nivelPeligrosidad,
                 venenoso, 
                 tipoVeneno,
-                precauciones,
-                cantidad
+                precauciones
         );
+        this.tempHabitad = tempHabitad;
+        this.tiempoBuceo =tiempoBuceo;
     }
 }

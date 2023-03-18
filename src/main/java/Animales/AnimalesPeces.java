@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Entidades;
+package Animales;
 
 /**
  *
@@ -15,28 +15,22 @@ public class AnimalesPeces extends Animales{
             nivelPeligrosidad, 
             coloracion, 
             reproduccion, 
-            tipoGestacion, 
             especiesCompatibles[],
             tipoVeneno,
-            tiempoGestacion,
             precauciones[];
     
     public AnimalesPeces(
         int codigo, 
         String nombre, 
         String especie, 
-        int edad,
+        String riesgoExtincion,
         String genero,
-        float peso, 
         String coloracion,
         String habitad,
         String ubicacion,
          String tipoAgua,
         String temperaturaAcuario,
         String reproduccion,
-        boolean gestacion,
-        String tipoGestacion,
-        String tiempoGestacion,
         String dietaPrincipal,
         String dieta[],
         boolean peligroso,
@@ -51,12 +45,10 @@ public class AnimalesPeces extends Animales{
                 codigo, 
                 nombre, 
                 especie, 
-                edad, 
+                riesgoExtincion,
                 genero, 
-                peso, 
                 habitad, 
                 ubicacion,
-                gestacion,
                 dietaPrincipal, 
                 dieta,
                 peligroso, 
@@ -73,10 +65,6 @@ public class AnimalesPeces extends Animales{
         this.nivelPeligrosidad = nivelPeligrosidad;
         this.reproduccion = reproduccion;
         this.temperaturaAcuario = temperaturaAcuario;
-        if(gestacion){
-            this.tipoGestacion = tipoGestacion;
-            this.tiempoGestacion = tiempoGestacion;
-        }
         if(venenoso){
             this.tipoVeneno = tipoVeneno;
         }
@@ -122,14 +110,6 @@ public class AnimalesPeces extends Animales{
         this.reproduccion = reproduccion;
     }
 
-    public String getTipoGestacion() {
-        return tipoGestacion;
-    }
-
-    public void setTipoGestacion(String tipoGestacion) {
-        this.tipoGestacion = tipoGestacion;
-    }
-
     public String[] getEspeciesCompatibles() {
         return especiesCompatibles;
     }
@@ -144,14 +124,6 @@ public class AnimalesPeces extends Animales{
 
     public void setTipoVeneno(String tipoVeneno) {
         this.tipoVeneno = tipoVeneno;
-    }
-
-    public String getTiempoGestacion() {
-        return tiempoGestacion;
-    }
-
-    public void setTiempoGestacion(String tiempoGestacion) {
-        this.tiempoGestacion = tiempoGestacion;
     }
 
     public String[] getPrecauciones() {

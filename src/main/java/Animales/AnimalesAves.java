@@ -2,53 +2,54 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Entidades;
+package Animales;
 
 /**
  *
  * @author Alisser
  */
-public class AnimalesReptiles extends Animales{
+public class AnimalesAves extends Animales{
     private String 
-            nivelPeligrosidad,
-            tempEncubacion,
-            tipoVeneno,
-            tipoPiel,
-            coloracion,
-            reproduccion,
-            tipoGestacion,
+            nivelPeligrosidad, 
+            envergadura, 
+            tipoPico, 
+            colorPlumaje, 
+            tipoVeneno, 
+            tipoGestacion, 
             tiempoGestacion,
             precauciones[];
+    private boolean vuela;
     
-    public AnimalesReptiles(
+    public AnimalesAves(
         int codigo, 
         String nombre, 
         String especie, 
+        String riesgoExtincion,
         int edad,
         String genero,
         float peso, 
-        String tipoPiel,
-        String coloracion,
+        String envergadura,
+        boolean vuela,
+        String tipoPico,
+        String colorPlumaje,
         String habitad,
         String ubicacion,
-        String reproduccion,
         boolean gestacion,
         String tipoGestacion,
         String tiempoGestacion,
-        String tempEncubacion,
         String dietaPrincipal,
         String dieta[],
         boolean peligroso,
         String nivelPeligrosidad,
         boolean venenoso,
         String tipoVeneno,
-        String[] precauciones,
-        int cantidad
+        String[] precauciones
     ){
         super(
                 codigo, 
                 nombre, 
                 especie, 
+                riesgoExtincion,
                 edad, 
                 genero, 
                 peso, 
@@ -58,24 +59,23 @@ public class AnimalesReptiles extends Animales{
                 dietaPrincipal, 
                 dieta,
                 peligroso, 
-                venenoso, 
-                cantidad 
+                venenoso
         );
         if (peligroso){
             this.nivelPeligrosidad = nivelPeligrosidad;
             this.precauciones = precauciones;
         }
-        this.coloracion = coloracion;
-        this.reproduccion = reproduccion;
-        this.tempEncubacion = tempEncubacion;
         if(gestacion){
             this.tipoGestacion = tipoGestacion;
             this.tiempoGestacion = tiempoGestacion;
         }
-        this.tipoPiel = tipoPiel;
+        this.envergadura = envergadura;
+        this.tipoPico = tipoPico;
+        this.colorPlumaje = colorPlumaje;
         if(venenoso){
             this.tipoVeneno = tipoVeneno;
         }
+        this.vuela = vuela;
     }
 
     public String getNivelPeligrosidad() {
@@ -86,12 +86,28 @@ public class AnimalesReptiles extends Animales{
         this.nivelPeligrosidad = nivelPeligrosidad;
     }
 
-    public String getTempEncubacion() {
-        return tempEncubacion;
+    public String getEnvergadura() {
+        return envergadura;
     }
 
-    public void setTempEncubacion(String tempEncubacion) {
-        this.tempEncubacion = tempEncubacion;
+    public void setEnvergadura(String envergadura) {
+        this.envergadura = envergadura;
+    }
+
+    public String getTipoPico() {
+        return tipoPico;
+    }
+
+    public void setTipoPico(String tipoPico) {
+        this.tipoPico = tipoPico;
+    }
+
+    public String getColorPlumaje() {
+        return colorPlumaje;
+    }
+
+    public void setColorPlumaje(String colorPlumaje) {
+        this.colorPlumaje = colorPlumaje;
     }
 
     public String getTipoVeneno() {
@@ -100,30 +116,6 @@ public class AnimalesReptiles extends Animales{
 
     public void setTipoVeneno(String tipoVeneno) {
         this.tipoVeneno = tipoVeneno;
-    }
-
-    public String getTipoPiel() {
-        return tipoPiel;
-    }
-
-    public void setTipoPiel(String tipoPiel) {
-        this.tipoPiel = tipoPiel;
-    }
-
-    public String getColoracion() {
-        return coloracion;
-    }
-
-    public void setColoracion(String coloracion) {
-        this.coloracion = coloracion;
-    }
-
-    public String getReproduccion() {
-        return reproduccion;
-    }
-
-    public void setReproduccion(String reproduccion) {
-        this.reproduccion = reproduccion;
     }
 
     public String getTipoGestacion() {
@@ -141,15 +133,4 @@ public class AnimalesReptiles extends Animales{
     public void setTiempoGestacion(String tiempoGestacion) {
         this.tiempoGestacion = tiempoGestacion;
     }
-
-    public String[] getPrecauciones() {
-        return precauciones;
-    }
-
-    public void setPrecauciones(String[] precauciones) {
-        this.precauciones = precauciones;
-    }
-    
-    
-    
 }
