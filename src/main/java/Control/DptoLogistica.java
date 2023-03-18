@@ -1,7 +1,4 @@
 package Control;
-import Entidades.AnimalesAcuaticos;
-import Entidades.AnimalesMenores;
-import Entidades.AnimalesTerrestres;
 
 /**
  *
