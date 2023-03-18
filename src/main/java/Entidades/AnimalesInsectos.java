@@ -9,40 +9,50 @@ package Entidades;
  * @author Alisser
  */
 public class AnimalesInsectos extends Animales {
-    private String dieta[];
+    private String nivelPeligrosidad, precauciones[], tipoVeneno;
     private boolean metaforfosis;
-    private int paresPatas;
-    private int paresAlas;
+    private int paresPatas, paresAlas;
     
     public AnimalesInsectos(
         int codigo,
         String nombre,
         String especie, 
-        String dietaPrincipal,
-        String habitad,
-        String ubicacion,
-        boolean peligroso,
-        boolean venenoso,
-        int cantidad,
-        String dieta[],
         boolean metamorfosis,
         int paresPatas,
         int paresAlas,
-        String[] precauciones
+        String habitad,
+        String ubicacion,
+        String dietaPrincipal,
+        String dieta[],
+        boolean peligroso,
+        String nivelPeligrosidad,
+        boolean venenoso,
+        String tipoVeneno,
+        String[] precauciones,
+        int cantidad
     ){
-        super(codigo, nombre, especie, dietaPrincipal, habitad, ubicacion, peligroso, venenoso, cantidad, precauciones);
-        this.dieta = dieta;
+        super(
+                codigo, 
+                nombre, 
+                especie, 
+                habitad, 
+                ubicacion,
+                dietaPrincipal, 
+                dieta,
+                peligroso, 
+                venenoso, 
+                cantidad  
+        );
+        if(peligroso){
+            this.nivelPeligrosidad = nivelPeligrosidad;
+            this.precauciones = precauciones;
+        }
+        if(venenoso){
+            this.tipoVeneno = tipoVeneno;
+        }
         this.metaforfosis = metamorfosis;
         this.paresAlas = paresAlas;
         this.paresPatas = paresPatas;
-    }
-
-    public String[] getDieta() {
-        return dieta;
-    }
-
-    public void setDieta(String[] dieta) {
-        this.dieta = dieta;
     }
 
     public boolean isMetaforfosis() {

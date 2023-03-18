@@ -10,34 +10,32 @@ package Entidades;
  */
 public class AnimalesMamiferosAcuaticos extends AnimalesMamiferos {
     private int numAletas;
-    private String capacidadBuceo;
-    private String[] especiesCompatibles;
-    private String mecanismoRespiracion;
+    private String capacidadBuceo, especiesCompatibles[], mecanismoRespiracion;
     
     public AnimalesMamiferosAcuaticos(
         int codigo, 
         String nombre, 
         String especie, 
-        int edad, 
-        String genero, 
+        int edad,
+        String genero,
         float peso, 
-        String dietaPrincipal, 
-        String habitad, 
-        String ubicacion,
-        String nivelPeligrosidad,
-        boolean gestacion,
-        String tipoGestacion,
-        String[] dieta,
-        boolean peligroso,
-        boolean venenoso,
-        String tipoVeneno,
         int numAletas,
         String capacidadBuceo,
-        String[] especiesCompatibles,
-        String tiempoGestacion,
         String mecanismoRespiracion,
-        int cantidad,
-        String[] precauciones
+        String habitad,
+        String ubicacion,
+        boolean gestacion,
+        String tipoGestacion,
+        String tiempoGestacion,
+        String dietaPrincipal,
+        String dieta[],
+        boolean peligroso,
+        String nivelPeligrosidad,
+        String[] especiesCompatibles,
+        boolean venenoso,
+        String tipoVeneno,
+        String[] precauciones,
+        int cantidad 
     ){
         super(
                 codigo, 
@@ -46,18 +44,19 @@ public class AnimalesMamiferosAcuaticos extends AnimalesMamiferos {
                 edad, 
                 genero, 
                 peso, 
-                dietaPrincipal, 
-                habitad, ubicacion, 
-                nivelPeligrosidad, 
+                habitad, 
+                ubicacion,
                 gestacion, 
-                tipoGestacion, 
-                dieta, 
-                peligroso, 
+                tipoGestacion,
+                tiempoGestacion,
+                dietaPrincipal, 
+                dieta,
+                peligroso,
+                nivelPeligrosidad, 
                 venenoso, 
                 tipoVeneno, 
-                tiempoGestacion,
-                cantidad,
-                precauciones
+                precauciones,
+                cantidad
         );
         this.numAletas = numAletas;
         this.capacidadBuceo = capacidadBuceo;

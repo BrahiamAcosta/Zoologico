@@ -6,32 +6,24 @@ package Entidades;
  */
 
 public class Animales {
-    private int codigo;
-    private String nombre;
-    private String especie;
-    private int edad;
-    private String genero;
+    private int codigo, edad, cantidad;
+    private String nombre, especie, genero, dietaPrincipal, dieta[], habitad, ubicacion;
     private float peso;
-    private String dietaPrincipal;
-    private String habitad;
-    private String ubicacion;
-    private boolean peligroso;
-    private boolean venenoso;
-    private boolean gestacion;
-    private int cantidad;
-    private String[] precauciones;
+    private boolean peligroso, venenoso, gestacion;
     //Constructores
+    
+    //Constructor Insectos
     public Animales(
             int codigo,
             String nombre,
             String especie,
-            String dietaPrincipal,
             String habitad,
             String ubicacion,
+            String dietaPrincipal,
+            String dieta[],
             boolean peligroso,
             boolean venenoso,
-            int cantidad,
-            String[] precauciones
+            int cantidad          
     ){
         this.codigo = codigo;
         this.nombre = nombre;
@@ -42,9 +34,10 @@ public class Animales {
         this.peligroso = peligroso;
         this.venenoso = venenoso;
         this.cantidad = cantidad;
-        this.precauciones = precauciones;
+        this.dieta = dieta;
     }
-
+    
+    //Constructor resto animales
     public Animales(
             int codigo, 
             String nombre, 
@@ -52,14 +45,14 @@ public class Animales {
             int edad,
             String genero,
             float peso, 
-            String dietaPrincipal,
             String habitad,
             String ubicacion,
+            boolean gestacion,
+            String dietaPrincipal,
+            String dieta[],
             boolean peligroso,
             boolean venenoso,
-            boolean gestacion,
-            int cantidad,
-            String[] precauciones
+            int cantidad
     )
     {
         this.codigo = codigo;
@@ -75,7 +68,7 @@ public class Animales {
         this.venenoso = venenoso;
         this.gestacion = gestacion;
         this.cantidad = cantidad;
-        this.precauciones = precauciones;
+        this.dieta = dieta;
     }
 
     public int getCodigo() {
@@ -180,14 +173,6 @@ public class Animales {
 
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
-    }
-
-    public String[] getPrecauciones() {
-        return precauciones;
-    }
-
-    public void setPrecauciones(String[] precauciones) {
-        this.precauciones = precauciones;
     }
     
     

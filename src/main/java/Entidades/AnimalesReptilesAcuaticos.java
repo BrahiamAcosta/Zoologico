@@ -14,56 +14,56 @@ public class AnimalesReptilesAcuaticos extends AnimalesReptiles {
     private int numAletas;
 
     public AnimalesReptilesAcuaticos(
-            int codigo,
-            String nombre,
-            String especie,
+            int codigo, 
+            String nombre, 
+            String especie, 
             int edad,
             String genero,
-            float peso,
-            String dietaPrincipal,
+            float peso, 
+            String tipoPiel,
+            int numAletas,
+            String coloracion,
+            String metodoRespiracion,
             String habitad,
             String ubicacion,
-            boolean peligroso,
-            String nivelPeligrosidad,
-            String tempEncubacion,
-            boolean venenoso,
-            String tipoVeneno,
-            String tipoPiel,
-            String coloracion,
             String reproduccion,
             boolean gestacion,
             String tipoGestacion,
-            String[] dieta,
             String tiempoGestacion,
-            String metodoRespiracion,
-            int numAletas,
-            int cantidad,
-            String[] precauciones
+            String tempEncubacion,
+            String dietaPrincipal,
+            String dieta[],
+            boolean peligroso,
+            String nivelPeligrosidad,
+            boolean venenoso,
+            String tipoVeneno,
+            String[] precauciones,
+            int cantidad
     ) {
         super(
                 codigo,
-                nombre, 
-                especie, 
-                edad, 
-                genero, 
-                peso, 
-                dietaPrincipal, 
-                habitad, 
-                ubicacion, 
-                peligroso, 
-                nivelPeligrosidad, 
-                tempEncubacion, 
-                venenoso,
-                tipoVeneno,
+                nombre,
+                especie,
+                edad,
+                genero,
+                peso,
                 tipoPiel,
                 coloracion,
+                habitad,
+                ubicacion,
                 reproduccion,
                 gestacion,
                 tipoGestacion,
-                dieta,
                 tiempoGestacion,
-                cantidad,
-                precauciones
+                tempEncubacion,
+                dietaPrincipal,
+                dieta,
+                peligroso,
+                nivelPeligrosidad,
+                venenoso,
+                tipoVeneno,
+                precauciones,
+                cantidad
         );
         this.metodoRespiracion = metodoRespiracion;
         this.numAletas = numAletas;
@@ -84,6 +84,5 @@ public class AnimalesReptilesAcuaticos extends AnimalesReptiles {
     public void setNumAletas(int numAletas) {
         this.numAletas = numAletas;
     }
-    
-    
+
 }

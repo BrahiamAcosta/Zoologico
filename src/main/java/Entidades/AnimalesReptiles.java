@@ -9,40 +9,41 @@ package Entidades;
  * @author Alisser
  */
 public class AnimalesReptiles extends Animales{
-    private String nivelPeligrosidad;
-    private String tempEncubacion;
-    private String tipoVeneno;
-    private String tipoPiel;
-    private String coloracion;
-    private String reproduccion;
-    private String tipoGestacion;
-    private String[] dieta;
-    private String tiempoGestacion;
+    private String 
+            nivelPeligrosidad,
+            tempEncubacion,
+            tipoVeneno,
+            tipoPiel,
+            coloracion,
+            reproduccion,
+            tipoGestacion,
+            tiempoGestacion,
+            precauciones[];
     
     public AnimalesReptiles(
         int codigo, 
         String nombre, 
         String especie, 
-        int edad, 
-        String genero, 
+        int edad,
+        String genero,
         float peso, 
-        String dietaPrincipal, 
-        String habitad, 
-        String ubicacion,
-        boolean peligroso,
-        String nivelPeligrosidad,
-        String tempEncubacion,
-        boolean venenoso,
-        String tipoVeneno,
         String tipoPiel,
         String coloracion,
+        String habitad,
+        String ubicacion,
         String reproduccion,
         boolean gestacion,
         String tipoGestacion,
-        String[] dieta,
         String tiempoGestacion,
-        int cantidad,
-        String[] precauciones
+        String tempEncubacion,
+        String dietaPrincipal,
+        String dieta[],
+        boolean peligroso,
+        String nivelPeligrosidad,
+        boolean venenoso,
+        String tipoVeneno,
+        String[] precauciones,
+        int cantidad
     ){
         super(
                 codigo, 
@@ -51,20 +52,20 @@ public class AnimalesReptiles extends Animales{
                 edad, 
                 genero, 
                 peso, 
-                dietaPrincipal, 
                 habitad, 
-                ubicacion, 
+                ubicacion,
+                gestacion,
+                dietaPrincipal, 
+                dieta,
                 peligroso, 
                 venenoso, 
-                gestacion,
-                cantidad,
-                precauciones
+                cantidad 
         );
         if (peligroso){
             this.nivelPeligrosidad = nivelPeligrosidad;
+            this.precauciones = precauciones;
         }
         this.coloracion = coloracion;
-        this.dieta = dieta;
         this.reproduccion = reproduccion;
         this.tempEncubacion = tempEncubacion;
         if(gestacion){
@@ -133,12 +134,20 @@ public class AnimalesReptiles extends Animales{
         this.tipoGestacion = tipoGestacion;
     }
 
-    public String[] getDieta() {
-        return dieta;
+    public String getTiempoGestacion() {
+        return tiempoGestacion;
     }
 
-    public void setDieta(String[] dieta) {
-        this.dieta = dieta;
+    public void setTiempoGestacion(String tiempoGestacion) {
+        this.tiempoGestacion = tiempoGestacion;
+    }
+
+    public String[] getPrecauciones() {
+        return precauciones;
+    }
+
+    public void setPrecauciones(String[] precauciones) {
+        this.precauciones = precauciones;
     }
     
     

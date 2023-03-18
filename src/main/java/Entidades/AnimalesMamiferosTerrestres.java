@@ -14,27 +14,27 @@ public class AnimalesMamiferosTerrestres extends AnimalesMamiferos {
     private String comportamiento;
 
     public AnimalesMamiferosTerrestres(
-        int codigo,
-        String nombre,
-        String especie,
+        int codigo, 
+        String nombre, 
+        String especie, 
         int edad,
         String genero,
-        float peso,
-        String dietaPrincipal,
+        float peso, 
+        int numeroPatas,
         String habitad,
         String ubicacion,
-        String nivelPeligrosidad,
         boolean gestacion,
         String tipoGestacion,
-        String[] dieta,
+        String tiempoGestacion,
+        String dietaPrincipal,
+        String dieta[],
         boolean peligroso,
+        String nivelPeligrosidad,
+        String comportamiento,
         boolean venenoso,
         String tipoVeneno,
-        String tiempoGestacion,
-        int numeroPatas,
-        String comportamiento,
-        int cantidad,
-        String[] precauciones
+        String[] precauciones,
+        int cantidad  
     ) 
     {
         super(
@@ -44,19 +44,19 @@ public class AnimalesMamiferosTerrestres extends AnimalesMamiferos {
                 edad, 
                 genero, 
                 peso, 
-                dietaPrincipal, 
                 habitad, 
-                ubicacion, 
-                nivelPeligrosidad, 
+                ubicacion,
                 gestacion, 
-                tipoGestacion, 
-                dieta, 
-                peligroso, 
+                tipoGestacion,
+                tiempoGestacion,
+                dietaPrincipal, 
+                dieta,
+                peligroso,
+                nivelPeligrosidad, 
                 venenoso, 
                 tipoVeneno, 
-                tiempoGestacion,
-                cantidad,
-                precauciones
+                precauciones,
+                cantidad
         );
         this.comportamiento = comportamiento;
         this.numeroPatas = numeroPatas;

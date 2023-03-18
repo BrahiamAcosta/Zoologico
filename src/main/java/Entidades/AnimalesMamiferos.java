@@ -9,32 +9,33 @@ package Entidades;
  * @author Alisser
  */
 public class AnimalesMamiferos extends Animales{
-    private String tipoGestacion;
-    private String nivelPeligrosidad;
-    private String[] dieta;
-    private String tipoVeneno;
-    private String tiempoGestacion;
+    private String 
+            tipoGestacion, 
+            nivelPeligrosidad, 
+            tipoVeneno, 
+            tiempoGestacion,
+            precauciones[];
     
     public AnimalesMamiferos(
             int codigo, 
             String nombre, 
             String especie, 
-            int edad, 
-            String genero, 
+            int edad,
+            String genero,
             float peso, 
-            String dietaPrincipal, 
-            String habitad, 
+            String habitad,
             String ubicacion,
-            String nivelPeligrosidad,
             boolean gestacion,
             String tipoGestacion,
-            String[] dieta,
+            String tiempoGestacion,
+            String dietaPrincipal,
+            String dieta[],
             boolean peligroso,
+            String nivelPeligrosidad,
             boolean venenoso,
             String tipoVeneno,
-            String tiempoGestacion,
-            int cantidad,
-            String[] precauciones
+            String[] precauciones,
+            int cantidad           
     ){
         super(
                 codigo, 
@@ -43,23 +44,23 @@ public class AnimalesMamiferos extends Animales{
                 edad, 
                 genero, 
                 peso, 
-                dietaPrincipal, 
                 habitad, 
-                ubicacion, 
+                ubicacion,
+                gestacion,
+                dietaPrincipal, 
+                dieta,
                 peligroso, 
                 venenoso, 
-                gestacion,
-                cantidad,
-                precauciones
+                cantidad
         );
         if (peligroso){
             this.nivelPeligrosidad = nivelPeligrosidad;
+            this.precauciones = precauciones;
         }
         if(gestacion){
             this.tipoGestacion = tipoGestacion;
             this.tiempoGestacion = tiempoGestacion;
         }
-        this.dieta = dieta;
         if(venenoso){
             this.tipoVeneno = tipoVeneno;
         }
@@ -81,14 +82,6 @@ public class AnimalesMamiferos extends Animales{
         this.nivelPeligrosidad = nivelPeligrosidad;
     }
 
-    public String[] getDieta() {
-        return dieta;
-    }
-
-    public void setDieta(String[] dieta) {
-        this.dieta = dieta;
-    }
-
     public String getTipoVeneno() {
         return tipoVeneno;
     }
@@ -103,6 +96,14 @@ public class AnimalesMamiferos extends Animales{
 
     public void setTiempoGestacion(String tiempoGestacion) {
         this.tiempoGestacion = tiempoGestacion;
+    }
+
+    public String[] getPrecauciones() {
+        return precauciones;
+    }
+
+    public void setPrecauciones(String[] precauciones) {
+        this.precauciones = precauciones;
     }
     
     

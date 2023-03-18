@@ -9,38 +9,41 @@ package Entidades;
  * @author Alisser
  */
 public class AnimalesAves extends Animales{
-    private String nivelPeligrosidad;
-    private String envergadura;
-    private String tipoPico;
-    private String colorPlumaje;
-    private String[] dieta;
-    private String tipoVeneno;
-    private String tipoGestacion;
-    private String tiempoGestacion;
+    private String 
+            nivelPeligrosidad, 
+            envergadura, 
+            tipoPico, 
+            colorPlumaje, 
+            tipoVeneno, 
+            tipoGestacion, 
+            tiempoGestacion,
+            precauciones[];
+    private boolean vuela;
     
     public AnimalesAves(
-    int codigo, 
+        int codigo, 
         String nombre, 
         String especie, 
-        int edad, 
-        String genero, 
+        int edad,
+        String genero,
         float peso, 
-        String dietaPrincipal, 
-        String habitad, 
-        String ubicacion,
-        boolean peligroso,
-        String nivelPeligrosidad,
         String envergadura,
+        boolean vuela,
         String tipoPico,
         String colorPlumaje,
-        String[] dieta,
-        boolean venenoso,
-        String tipoVeneno,
+        String habitad,
+        String ubicacion,
         boolean gestacion,
         String tipoGestacion,
         String tiempoGestacion,
-        int cantidad,
-        String[] precauciones
+        String dietaPrincipal,
+        String dieta[],
+        boolean peligroso,
+        String nivelPeligrosidad,
+        boolean venenoso,
+        String tipoVeneno,
+        String[] precauciones,
+        int cantidad
     ){
         super(
                 codigo, 
@@ -49,17 +52,18 @@ public class AnimalesAves extends Animales{
                 edad, 
                 genero, 
                 peso, 
-                dietaPrincipal, 
                 habitad, 
-                ubicacion, 
+                ubicacion,
+                gestacion,
+                dietaPrincipal, 
+                dieta,
                 peligroso, 
                 venenoso, 
-                gestacion,
-                cantidad,
-                precauciones
+                cantidad
         );
         if (peligroso){
             this.nivelPeligrosidad = nivelPeligrosidad;
+            this.precauciones = precauciones;
         }
         if(gestacion){
             this.tipoGestacion = tipoGestacion;
@@ -68,10 +72,10 @@ public class AnimalesAves extends Animales{
         this.envergadura = envergadura;
         this.tipoPico = tipoPico;
         this.colorPlumaje = colorPlumaje;
-        this.dieta = dieta;
         if(venenoso){
             this.tipoVeneno = tipoVeneno;
         }
+        this.vuela = vuela;
     }
 
     public String getNivelPeligrosidad() {
@@ -104,14 +108,6 @@ public class AnimalesAves extends Animales{
 
     public void setColorPlumaje(String colorPlumaje) {
         this.colorPlumaje = colorPlumaje;
-    }
-
-    public String[] getDieta() {
-        return dieta;
-    }
-
-    public void setDieta(String[] dieta) {
-        this.dieta = dieta;
     }
 
     public String getTipoVeneno() {

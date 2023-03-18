@@ -9,66 +9,66 @@ package Entidades;
  * @author Alisser
  */
 public class AnimalesPeces extends Animales{
-    private String tipoAgua;
-    private String temperaturaAcuario;
-    private String nivelPeligrosidad;
-    private String coloracion;
-    private String reproduccion;
-    private String tipoGestacion;
-    private String[] dieta;
-    private String[] especiesCompatibles;
-    private String tipoVeneno;
-    private String tiempoGestacion;
+    private String 
+            tipoAgua, 
+            temperaturaAcuario, 
+            nivelPeligrosidad, 
+            coloracion, 
+            reproduccion, 
+            tipoGestacion, 
+            especiesCompatibles[],
+            tipoVeneno,
+            tiempoGestacion,
+            precauciones[];
     
     public AnimalesPeces(
         int codigo, 
         String nombre, 
         String especie, 
-        int edad, 
-        String genero, 
+        int edad,
+        String genero,
         float peso, 
-        String dietaPrincipal, 
-        String habitad, 
-        String ubicacion,
-        boolean peligrosidad,
-        String nivelPeligrosidad,
-        String tipoAgua,
-        String temperaturaAcuario,
         String coloracion,
+        String habitad,
+        String ubicacion,
+         String tipoAgua,
+        String temperaturaAcuario,
         String reproduccion,
         boolean gestacion,
         String tipoGestacion,
-        String[] dieta,
-        String[] especiesCompatibles,
+        String tiempoGestacion,
+        String dietaPrincipal,
+        String dieta[],
         boolean peligroso,
+        String nivelPeligrosidad,
         boolean venenoso,
         String tipoVeneno,
-        String tiempoGestacion,
-        int cantidad,
-        String[] precauciones
+        String[] precauciones,
+        String[] especiesCompatibles,
+        int cantidad    
     ){
         super(
-                codigo,
-                nombre,
+                codigo, 
+                nombre, 
                 especie, 
                 edad, 
                 genero, 
                 peso, 
-                dietaPrincipal, 
                 habitad, 
-                ubicacion, 
+                ubicacion,
+                gestacion,
+                dietaPrincipal, 
+                dieta,
                 peligroso, 
                 venenoso, 
-                gestacion,
-                cantidad,
-                precauciones
+                cantidad 
         );
-        if (peligrosidad){
+        if (peligroso){
             this.nivelPeligrosidad = nivelPeligrosidad;
+            this.precauciones = precauciones;
         }
         this.tipoAgua = tipoAgua;
         this.coloracion = coloracion;
-        this.dieta = dieta;
         this.especiesCompatibles = especiesCompatibles;
         this.nivelPeligrosidad = nivelPeligrosidad;
         this.reproduccion = reproduccion;
@@ -130,14 +130,6 @@ public class AnimalesPeces extends Animales{
         this.tipoGestacion = tipoGestacion;
     }
 
-    public String[] getDieta() {
-        return dieta;
-    }
-
-    public void setDieta(String[] dieta) {
-        this.dieta = dieta;
-    }
-
     public String[] getEspeciesCompatibles() {
         return especiesCompatibles;
     }
@@ -160,6 +152,14 @@ public class AnimalesPeces extends Animales{
 
     public void setTiempoGestacion(String tiempoGestacion) {
         this.tiempoGestacion = tiempoGestacion;
+    }
+
+    public String[] getPrecauciones() {
+        return precauciones;
+    }
+
+    public void setPrecauciones(String[] precauciones) {
+        this.precauciones = precauciones;
     }
     
     

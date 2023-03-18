@@ -9,36 +9,37 @@ package Entidades;
  * @author Alisser
  */
 public class AnimalesAnfibios extends Animales{
-    private String tipoVeneno;
-    private String reproduccion;
-    private String tipoGestacion;
-    private String temperaturaHabitad;
-    private String nivelPeligrosidad;
-    private String[] dieta;
-    private String tiempoGestacion;
+    private String 
+            tipoVeneno, 
+            reproduccion, 
+            tipoGestacion, 
+            temperaturaHabitad, 
+            nivelPeligrosidad, 
+            tiempoGestacion,
+            precauciones[];
     
     public AnimalesAnfibios(
         int codigo, 
         String nombre, 
         String especie, 
-        int edad, 
-        String genero, 
+        int edad,
+        String genero,
         float peso, 
-        String dietaPrincipal, 
-        String habitad, 
+        String habitad,
         String ubicacion,
-        boolean peligroso,
-        boolean venenoso,
-        String nivelPeligrosidad,
-        String reproduccion,
+        String reproduccion, 
         boolean gestacion,
         String tipoGestacion,
-        String temperaturaHabitad,
-        String[] dieta,
-        String tipoVeneno,
         String tiempoGestacion,
-        int cantidad,
-        String[] precauciones
+        String dietaPrincipal,
+        String dieta[],
+        boolean peligroso,
+        String nivelPeligrosidad,
+        boolean venenoso,
+        String tipoVeneno,
+        String[] precauciones,
+        int cantidad,   
+        String temperaturaHabitad
     )
     {
         super(
@@ -48,17 +49,18 @@ public class AnimalesAnfibios extends Animales{
                 edad, 
                 genero, 
                 peso, 
-                dietaPrincipal, 
                 habitad, 
-                ubicacion, 
+                ubicacion,
+                gestacion,
+                dietaPrincipal, 
+                dieta,
                 peligroso, 
                 venenoso, 
-                gestacion,
-                cantidad,
-                precauciones
+                cantidad               
         );
         if (peligroso){
             this.nivelPeligrosidad = nivelPeligrosidad;
+            this.precauciones = precauciones;
         }
         this.reproduccion = reproduccion;
         if(gestacion){
@@ -66,7 +68,6 @@ public class AnimalesAnfibios extends Animales{
             this.tiempoGestacion = tiempoGestacion;
         }
         this.temperaturaHabitad = temperaturaHabitad;
-        this.dieta = dieta;
         if(venenoso){
             this.tipoVeneno = tipoVeneno;
         }
@@ -104,14 +105,6 @@ public class AnimalesAnfibios extends Animales{
         this.nivelPeligrosidad = nivelPeligrosidad;
     }
 
-    public String[] getDieta() {
-        return dieta;
-    }
-
-    public void setDieta(String[] dieta) {
-        this.dieta = dieta;
-    }
-
     public String getTipoVeneno() {
         return tipoVeneno;
     }
@@ -127,5 +120,15 @@ public class AnimalesAnfibios extends Animales{
     public void setTiempoGestacion(String tiempoGestacion) {
         this.tiempoGestacion = tiempoGestacion;
     }
+
+    public String[] getPrecauciones() {
+        return precauciones;
+    }
+
+    public void setPrecauciones(String[] precauciones) {
+        this.precauciones = precauciones;
+    }
+    
+    
     
 }

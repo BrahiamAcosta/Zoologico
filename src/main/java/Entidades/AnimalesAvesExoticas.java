@@ -8,23 +8,21 @@ package Entidades;
  *
  * @author Alisser
  */
-public class AnimalesAvesTerrestres extends AnimalesAves{
-    private boolean aveDeCorral;
-    private String comportamientoSocial;
+public class AnimalesAvesExoticas extends AnimalesAves{
+    private String origen, especiesCompatibles[];
     
-    public AnimalesAvesTerrestres(
+    public AnimalesAvesExoticas(
             int codigo, 
             String nombre, 
             String especie, 
             int edad,
             String genero,
             float peso, 
-            boolean aveDeCorral,
-            String comportamientoSocial,
             String envergadura,
             boolean vuela,
             String tipoPico,
             String colorPlumaje,
+            String origen,
             String habitad,
             String ubicacion,
             boolean gestacion,
@@ -34,6 +32,7 @@ public class AnimalesAvesTerrestres extends AnimalesAves{
             String dieta[],
             boolean peligroso,
             String nivelPeligrosidad,
+            String[] especiesCompatibles,
             boolean venenoso,
             String tipoVeneno,
             String[] precauciones,
@@ -64,5 +63,7 @@ public class AnimalesAvesTerrestres extends AnimalesAves{
                 precauciones,
                 cantidad
         );
+        this.especiesCompatibles = especiesCompatibles;
+        this.origen = origen;
     }
 }
