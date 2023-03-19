@@ -9,5 +9,5 @@ package Habitads;
  * @author Alisser
  */
 public class CasaReptilesAnfibios {
-    
+    private static final String zona = "Zona 1";
 }

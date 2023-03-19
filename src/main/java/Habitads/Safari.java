@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Animales.Caracteristicas;
+package Habitads;
 
 /**
  *
  * @author Alisser
  */
-public class Morfologia {
-    
+public class Safari {
+    private static final String zona = "Zona 1";
 }

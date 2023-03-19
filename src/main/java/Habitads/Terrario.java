@@ -8,6 +8,6 @@ package Habitads;
  *
  * @author Alisser
  */
-public class SafariTerrestre {
-    
+public class Terrario {
+    private static final String zona = "Zona 3";
 }

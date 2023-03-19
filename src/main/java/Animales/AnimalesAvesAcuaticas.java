@@ -4,66 +4,55 @@
  */
 package Animales;
 
+import Animales.Caracteristicas.CaracteristicasEspecie;
+import Animales.Caracteristicas.Dieta;
+import Animales.Caracteristicas.Peligrosidad;
+import Animales.Caracteristicas.Reproduccion;
+import Animales.Caracteristicas.Ubicacion;
+
 /**
  *
  * @author Alisser
  */
-public class AnimalesAvesAcuaticas extends AnimalesAves{
+public class AnimalesAvesAcuaticas extends AnimalesAves {
     private String tiempoBuceo, tempHabitad;
-    
+
     public AnimalesAvesAcuaticas(
-            int codigo, 
-            String nombre, 
-            String especie, 
-            String riesgoExtincion,
-            int edad,
-            String genero,
-            float peso, 
-            String envergadura,
-            boolean vuela,
-            String tipoPico,
-            String colorPlumaje,
-            String tiempoBuceo,
-            String habitad,
+            int codigo,
+            CaracteristicasEspecie morfologia,
+            Ubicacion ubicacion,
+            Reproduccion reproduccion,
+            Dieta dieta,
+            Peligrosidad peligrosidad,
             String tempHabitad,
-            String ubicacion,
-            boolean gestacion,
-            String tipoGestacion,
-            String tiempoGestacion,
-            String dietaPrincipal,
-            String dieta[],
-            boolean peligroso,
-            String nivelPeligrosidad,
-            boolean venenoso,
-            String tipoVeneno,
-            String[] precauciones
-    ){
+            String tiempoBuceo
+    ) {
         super(
-                codigo, 
-                nombre, 
-                especie, 
-                riesgoExtincion,
-                edad, 
-                genero, 
-                peso,
-                envergadura,
-                vuela,
-                tipoPico,
-                colorPlumaje,
-                habitad, 
+                codigo,
+                morfologia,
                 ubicacion,
-                gestacion,
-                tipoGestacion,
-                tiempoGestacion,
-                dietaPrincipal, 
+                reproduccion,
                 dieta,
-                peligroso, 
-                nivelPeligrosidad,
-                venenoso, 
-                tipoVeneno,
-                precauciones
+                peligrosidad
         );
         this.tempHabitad = tempHabitad;
-        this.tiempoBuceo =tiempoBuceo;
+        this.tiempoBuceo = tiempoBuceo;
     }
+
+    public String getTiempoBuceo() {
+        return tiempoBuceo;
+    }
+
+    public void setTiempoBuceo(String tiempoBuceo) {
+        this.tiempoBuceo = tiempoBuceo;
+    }
+
+    public String getTempHabitad() {
+        return tempHabitad;
+    }
+
+    public void setTempHabitad(String tempHabitad) {
+        this.tempHabitad = tempHabitad;
+    }
+    
 }

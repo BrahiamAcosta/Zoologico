@@ -4,6 +4,12 @@
  */
 package Animales;
 
+import Animales.Caracteristicas.Dieta;
+import Animales.Caracteristicas.CaracteristicasEspecie;
+import Animales.Caracteristicas.Peligrosidad;
+import Animales.Caracteristicas.Reproduccion;
+import Animales.Caracteristicas.Ubicacion;
+
 /**
  *
  * @author Alisser
@@ -18,87 +24,34 @@ public class AnimalesAnfibios extends Animales{
     
     public AnimalesAnfibios(
         int codigo, 
-        String nombre, 
-        String especie, 
-        String riesgoExtincion,
-        String genero,
-        String habitad,
-        String ubicacion,
-        String reproduccion, 
-        String dietaPrincipal,
-        String dieta[],
-        boolean peligroso,
-        String nivelPeligrosidad,
-        boolean venenoso,
-        String tipoVeneno,
-        String[] precauciones,
-        String temperaturaHabitad
+        CaracteristicasEspecie morfologia,
+        Ubicacion ubicacion,
+        Reproduccion reproduccion, 
+        Dieta dieta,
+        Peligrosidad peligrosidad
     )
     {
         super(
                 codigo, 
-                nombre, 
-                especie, 
-                riesgoExtincion,
-                genero, 
-                habitad, 
-                ubicacion,
-                dietaPrincipal, 
-                dieta,
-                peligroso, 
-                venenoso              
+                morfologia.getNombre(),  
+                morfologia.getEspecie(),
+                morfologia.getRiesgoExtincion(),
+                morfologia.getGenero(),
+                ubicacion.getHabitad(), 
+                ubicacion.getUbicacion(),
+                dieta.getDietaPrincipal(), 
+                dieta.getDieta(),
+                peligrosidad.isPeligroso(), 
+                peligrosidad.isVenenoso()
         );
-        if (peligroso){
-            this.nivelPeligrosidad = nivelPeligrosidad;
-            this.precauciones = precauciones;
+        if (peligrosidad.isPeligroso()){
+            this.nivelPeligrosidad = peligrosidad.getNivelPeligrosidad();
+            this.precauciones = peligrosidad.getPrecauciones();
         }
-        this.reproduccion = reproduccion;
-        this.temperaturaHabitad = temperaturaHabitad;
-        if(venenoso){
-            this.tipoVeneno = tipoVeneno;
+        this.reproduccion = reproduccion.getReproduccion();
+        this.temperaturaHabitad = morfologia.getTemperaturaHabitad();
+        if(peligrosidad.isVenenoso()){
+            this.tipoVeneno = peligrosidad.getTipoVeneno();
         }
     }
-
-    public String getReproduccion() {
-        return reproduccion;
-    }
-
-    public void setReproduccion(String reproduccion) {
-        this.reproduccion = reproduccion;
-    }
-
-    public String getTemperaturaHabitad() {
-        return temperaturaHabitad;
-    }
-
-    public void setTemperaturaHabitad(String temperaturaHabitad) {
-        this.temperaturaHabitad = temperaturaHabitad;
-    }
-
-    public String getNivelPeligrosidad() {
-        return nivelPeligrosidad;
-    }
-
-    public void setNivelPeligrosidad(String nivelPeligrosidad) {
-        this.nivelPeligrosidad = nivelPeligrosidad;
-    }
-
-    public String getTipoVeneno() {
-        return tipoVeneno;
-    }
-
-    public void setTipoVeneno(String tipoVeneno) {
-        this.tipoVeneno = tipoVeneno;
-    }
-
-    public String[] getPrecauciones() {
-        return precauciones;
-    }
-
-    public void setPrecauciones(String[] precauciones) {
-        this.precauciones = precauciones;
-    }
-    
-    
-    
 }

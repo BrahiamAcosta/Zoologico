@@ -9,5 +9,5 @@ package Habitads;
  * @author Alisser
  */
 public class Insectarium {
-    
+    private static final String zona = "Zona 2";
 }

@@ -4,11 +4,17 @@
  */
 package Animales;
 
+import Animales.Caracteristicas.Dieta;
+import Animales.Caracteristicas.CaracteristicasEspecie;
+import Animales.Caracteristicas.Peligrosidad;
+import Animales.Caracteristicas.Reproduccion;
+import Animales.Caracteristicas.Ubicacion;
+
 /**
  *
  * @author Alisser
  */
-public class AnimalesAves extends Animales{
+public abstract class AnimalesAves extends Animales{
     private String 
             nivelPeligrosidad, 
             envergadura, 
@@ -17,120 +23,54 @@ public class AnimalesAves extends Animales{
             tipoVeneno, 
             tipoGestacion, 
             tiempoGestacion,
-            precauciones[];
+            precauciones[],
+            comportamientoSocial,
+            caracter;
     private boolean vuela;
     
     public AnimalesAves(
         int codigo, 
-        String nombre, 
-        String especie, 
-        String riesgoExtincion,
-        int edad,
-        String genero,
-        float peso, 
-        String envergadura,
-        boolean vuela,
-        String tipoPico,
-        String colorPlumaje,
-        String habitad,
-        String ubicacion,
-        boolean gestacion,
-        String tipoGestacion,
-        String tiempoGestacion,
-        String dietaPrincipal,
-        String dieta[],
-        boolean peligroso,
-        String nivelPeligrosidad,
-        boolean venenoso,
-        String tipoVeneno,
-        String[] precauciones
+        CaracteristicasEspecie morfologia,
+        Ubicacion ubicacion,
+        Reproduccion reproduccion,
+        Dieta dieta,
+        Peligrosidad peligrosidad
     ){
         super(
                 codigo, 
-                nombre, 
-                especie, 
-                riesgoExtincion,
-                edad, 
-                genero, 
-                peso, 
-                habitad, 
-                ubicacion,
-                gestacion,
-                dietaPrincipal, 
-                dieta,
-                peligroso, 
-                venenoso
+                morfologia.getNombre(), 
+                morfologia.getEspecie(), 
+                morfologia.getRiesgoExtincion(),
+                morfologia.getEdad(), 
+                morfologia.getGenero(), 
+                morfologia.getPeso(), 
+                ubicacion.getHabitad(), 
+                ubicacion.getUbicacion(),
+                reproduccion.isGestacion(),
+                dieta.getDietaPrincipal(), 
+                dieta.getDieta(),
+                peligrosidad.isPeligroso(), 
+                peligrosidad.isVenenoso(),
+                peligrosidad.isMaltratado()
         );
-        if (peligroso){
-            this.nivelPeligrosidad = nivelPeligrosidad;
-            this.precauciones = precauciones;
+        if (peligrosidad.isPeligroso()){
+            this.nivelPeligrosidad = peligrosidad.getNivelPeligrosidad();
+            this.precauciones = peligrosidad.getPrecauciones();
         }
-        if(gestacion){
-            this.tipoGestacion = tipoGestacion;
-            this.tiempoGestacion = tiempoGestacion;
+        if(reproduccion.isGestacion()){
+            this.tipoGestacion = reproduccion.getTipoGestacion();
+            this.tiempoGestacion = reproduccion.getTiempoGestacion();
         }
-        this.envergadura = envergadura;
-        this.tipoPico = tipoPico;
-        this.colorPlumaje = colorPlumaje;
-        if(venenoso){
-            this.tipoVeneno = tipoVeneno;
+        this.envergadura = morfologia.getEnvergadura();
+        this.tipoPico = morfologia.getTipoPico();
+        this.colorPlumaje = morfologia.getColorPlumaje();
+        if(peligrosidad.isVenenoso()){
+            this.tipoVeneno = peligrosidad.getTipoVeneno();
         }
-        this.vuela = vuela;
-    }
-
-    public String getNivelPeligrosidad() {
-        return nivelPeligrosidad;
-    }
-
-    public void setNivelPeligrosidad(String nivelPeligrosidad) {
-        this.nivelPeligrosidad = nivelPeligrosidad;
-    }
-
-    public String getEnvergadura() {
-        return envergadura;
-    }
-
-    public void setEnvergadura(String envergadura) {
-        this.envergadura = envergadura;
-    }
-
-    public String getTipoPico() {
-        return tipoPico;
-    }
-
-    public void setTipoPico(String tipoPico) {
-        this.tipoPico = tipoPico;
-    }
-
-    public String getColorPlumaje() {
-        return colorPlumaje;
-    }
-
-    public void setColorPlumaje(String colorPlumaje) {
-        this.colorPlumaje = colorPlumaje;
-    }
-
-    public String getTipoVeneno() {
-        return tipoVeneno;
-    }
-
-    public void setTipoVeneno(String tipoVeneno) {
-        this.tipoVeneno = tipoVeneno;
-    }
-
-    public String getTipoGestacion() {
-        return tipoGestacion;
-    }
-
-    public void setTipoGestacion(String tipoGestacion) {
-        this.tipoGestacion = tipoGestacion;
-    }
-
-    public String getTiempoGestacion() {
-        return tiempoGestacion;
-    }
-
-    public void setTiempoGestacion(String tiempoGestacion) {
-        this.tiempoGestacion = tiempoGestacion;
+        if(peligrosidad.isMaltratado()){
+            this.comportamientoSocial = peligrosidad.getComportamientoSocial();
+            this.caracter = peligrosidad.getCaracter();
+        }
+        this.vuela = morfologia.isVuela();
     }
 }

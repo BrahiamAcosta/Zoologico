@@ -4,6 +4,12 @@
  */
 package Animales;
 
+import Animales.Caracteristicas.CaracteristicasEspecie;
+import Animales.Caracteristicas.Dieta;
+import Animales.Caracteristicas.Peligrosidad;
+import Animales.Caracteristicas.Reproduccion;
+import Animales.Caracteristicas.Ubicacion;
+
 /**
  *
  * @author Alisser
@@ -15,48 +21,22 @@ public class AnimalesMamiferosTerrestres extends AnimalesMamiferos {
 
     public AnimalesMamiferosTerrestres(
         int codigo, 
-        String nombre, 
-        String especie, 
-        String riesgoExtincion,
-        int edad,
-        String genero,
-        float peso, 
+        CaracteristicasEspecie morfologia,
+        Ubicacion ubicacion,
+        Reproduccion reproduccion,
+        Dieta dieta,
+        Peligrosidad peligrosidad,
         int numeroPatas,
-        String habitad,
-        String ubicacion,
-        boolean gestacion,
-        String tipoGestacion,
-        String tiempoGestacion,
-        String dietaPrincipal,
-        String dieta[],
-        boolean peligroso,
-        String nivelPeligrosidad,
-        String comportamiento,
-        boolean venenoso,
-        String tipoVeneno,
-        String[] precauciones
+        String comportamiento
     ) 
     {
         super(
                 codigo, 
-                nombre, 
-                especie,
-                riesgoExtincion,
-                edad, 
-                genero, 
-                peso, 
-                habitad, 
+                morfologia,
                 ubicacion,
-                gestacion, 
-                tipoGestacion,
-                tiempoGestacion,
-                dietaPrincipal, 
+                reproduccion,
                 dieta,
-                peligroso,
-                nivelPeligrosidad, 
-                venenoso, 
-                tipoVeneno, 
-                precauciones
+                peligrosidad
         );
         this.comportamiento = comportamiento;
         this.numeroPatas = numeroPatas;

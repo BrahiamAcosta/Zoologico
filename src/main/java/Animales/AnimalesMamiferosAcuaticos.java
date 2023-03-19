@@ -4,6 +4,12 @@
  */
 package Animales;
 
+import Animales.Caracteristicas.CaracteristicasEspecie;
+import Animales.Caracteristicas.Dieta;
+import Animales.Caracteristicas.Peligrosidad;
+import Animales.Caracteristicas.Reproduccion;
+import Animales.Caracteristicas.Ubicacion;
+
 /**
  *
  * @author Alisser
@@ -14,49 +20,23 @@ public class AnimalesMamiferosAcuaticos extends AnimalesMamiferos {
     
     public AnimalesMamiferosAcuaticos(
         int codigo, 
-        String nombre, 
-        String especie, 
-        String riesgoExtincion,
-        int edad,
-        String genero,
-        float peso, 
+        CaracteristicasEspecie morfologia,
+        Ubicacion ubicacion,
+        Reproduccion reproduccion,
+        Dieta dieta,
+        Peligrosidad peligrosidad,
         int numAletas,
         String capacidadBuceo,
-        String mecanismoRespiracion,
-        String habitad,
-        String ubicacion,
-        boolean gestacion,
-        String tipoGestacion,
-        String tiempoGestacion,
-        String dietaPrincipal,
-        String dieta[],
-        boolean peligroso,
-        String nivelPeligrosidad,
-        String[] especiesCompatibles,
-        boolean venenoso,
-        String tipoVeneno,
-        String[] precauciones
+        String especiesCompatibles[],
+        String mecanismoRespiracion
     ){
         super(
                 codigo, 
-                nombre, 
-                especie, 
-                riesgoExtincion,
-                edad, 
-                genero, 
-                peso, 
-                habitad, 
+                morfologia,
                 ubicacion,
-                gestacion, 
-                tipoGestacion,
-                tiempoGestacion,
-                dietaPrincipal, 
+                reproduccion,
                 dieta,
-                peligroso,
-                nivelPeligrosidad, 
-                venenoso, 
-                tipoVeneno, 
-                precauciones
+                peligrosidad
         );
         this.numAletas = numAletas;
         this.capacidadBuceo = capacidadBuceo;

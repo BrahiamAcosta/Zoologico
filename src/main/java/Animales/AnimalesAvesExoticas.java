@@ -4,6 +4,12 @@
  */
 package Animales;
 
+import Animales.Caracteristicas.CaracteristicasEspecie;
+import Animales.Caracteristicas.Dieta;
+import Animales.Caracteristicas.Peligrosidad;
+import Animales.Caracteristicas.Reproduccion;
+import Animales.Caracteristicas.Ubicacion;
+
 /**
  *
  * @author Alisser
@@ -12,58 +18,41 @@ public class AnimalesAvesExoticas extends AnimalesAves{
     private String origen, especiesCompatibles[];
     
     public AnimalesAvesExoticas(
-            int codigo, 
-            String nombre, 
-            String especie, 
-            String riesgoExtincion,
-            int edad,
-            String genero,
-            float peso, 
-            String envergadura,
-            boolean vuela,
-            String tipoPico,
-            String colorPlumaje,
+            int codigo,
+            CaracteristicasEspecie morfologia,
+            Ubicacion ubicacion,
+            Reproduccion reproduccion,
+            Dieta dieta,
+            Peligrosidad peligrosidad,
             String origen,
-            String habitad,
-            String ubicacion,
-            boolean gestacion,
-            String tipoGestacion,
-            String tiempoGestacion,
-            String dietaPrincipal,
-            String dieta[],
-            boolean peligroso,
-            String nivelPeligrosidad,
-            String[] especiesCompatibles,
-            boolean venenoso,
-            String tipoVeneno,
-            String[] precauciones
+            String[] especiesCompatibles
     ){
         super(
-                codigo, 
-                nombre, 
-                especie,
-                riesgoExtincion,
-                edad, 
-                genero, 
-                peso,
-                envergadura,
-                vuela,
-                tipoPico,
-                colorPlumaje,
-                habitad, 
+                codigo,
+                morfologia,
                 ubicacion,
-                gestacion,
-                tipoGestacion,
-                tiempoGestacion,
-                dietaPrincipal, 
+                reproduccion,
                 dieta,
-                peligroso, 
-                nivelPeligrosidad,
-                venenoso, 
-                tipoVeneno,
-                precauciones
+                peligrosidad
         );
         this.especiesCompatibles = especiesCompatibles;
         this.origen = origen;
     }
+
+    public String getOrigen() {
+        return origen;
+    }
+
+    public void setOrigen(String origen) {
+        this.origen = origen;
+    }
+
+    public String[] getEspeciesCompatibles() {
+        return especiesCompatibles;
+    }
+
+    public void setEspeciesCompatibles(String[] especiesCompatibles) {
+        this.especiesCompatibles = especiesCompatibles;
+    }
+    
 }

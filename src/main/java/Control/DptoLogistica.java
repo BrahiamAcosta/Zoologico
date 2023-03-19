@@ -7,10 +7,7 @@ import Animales.Animales;
  * @author brahiam.acosta
  */
 public class DptoLogistica {
-    
-    public void agregarAnimal(){
-        
-        //Animales.cantAnimales += 1;
+    public void añadirAnimal(){
     }
     public void modificarAnimal(){
     }

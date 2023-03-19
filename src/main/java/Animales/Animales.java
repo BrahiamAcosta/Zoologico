@@ -1,16 +1,32 @@
 package Animales;
 
+import java.util.ArrayList;
+import org.json.JSONObject;
+
 /**
  *
  * @author brahiam.acosta
  */
 
-public class Animales {
+public abstract class Animales {
     public static int cantAnimales = 0;
+    public static ArrayList<Animales> animales = new ArrayList<>();
+    public static int cantAnimalesReptiles = 0;
+    public static ArrayList<AnimalesReptiles> animalesReptiles = new ArrayList<>();
+    public static int cantAnimalesPeces = 0;
+    public static ArrayList<AnimalesPeces> animalesPeces = new ArrayList<>();
+    public static int cantAnimalesMamiferos = 0;
+    public static ArrayList<AnimalesMamiferos> animalesMamiferos = new ArrayList<>();
+    public static int cantAnimalesInsectos = 0;
+    public static ArrayList<AnimalesInsectos> animalesInsectos = new ArrayList<>();
+    public static int cantAnimalesAves = 0;
+    public static ArrayList<AnimalesAves> animalesAves = new ArrayList<>();
+    public static int cantAnimalesAnfibios = 0;
+    public static ArrayList<AnimalesAnfibios> animalesAnfibios = new ArrayList<>();
     private int codigo, edad, cantidad;
     private String nombre, especie, genero, dietaPrincipal, dieta[], habitad, ubicacion, riesgoExtincion;
     private float peso;
-    private boolean peligroso, venenoso, gestacion;
+    private boolean peligroso, venenoso, gestacion, maltratado;
     //Constructores
     
     //Constructor Insectos
@@ -114,7 +130,8 @@ public class Animales {
             String dietaPrincipal,
             String dieta[],
             boolean peligroso,
-            boolean venenoso
+            boolean venenoso,
+            boolean maltratado
     )
     {
         this.codigo = codigo;
@@ -131,6 +148,7 @@ public class Animales {
         this.gestacion = gestacion;
         this.dieta = dieta;
         this.riesgoExtincion = riesgoExtincion;
+        this.maltratado = maltratado;
     }
 
     public int getCodigo() {

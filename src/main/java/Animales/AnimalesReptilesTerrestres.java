@@ -4,6 +4,12 @@
  */
 package Animales;
 
+import Animales.Caracteristicas.CaracteristicasEspecie;
+import Animales.Caracteristicas.Dieta;
+import Animales.Caracteristicas.Peligrosidad;
+import Animales.Caracteristicas.Reproduccion;
+import Animales.Caracteristicas.Ubicacion;
+
 /**
  *
  * @author Alisser
@@ -12,55 +18,21 @@ public class AnimalesReptilesTerrestres extends AnimalesReptiles{
     private int numPatas;
     
     public AnimalesReptilesTerrestres(
-        int codigo, 
-        String nombre, 
-        String especie, 
-        String riesgoExtincion,
-        int edad,
-        String genero,
-        float peso, 
-        String tipoPiel,
-        String coloracion,
-        int numPatas,
-        String habitad,
-        String ubicacion,
-        String reproduccion,
-        boolean gestacion,
-        String tipoGestacion,
-        String tiempoGestacion,
-        String tempEncubacion,
-        String dietaPrincipal,
-        String dieta[],
-        boolean peligroso,
-        String nivelPeligrosidad,
-        boolean venenoso,
-        String tipoVeneno,
-        String[] precauciones
+        int codigo,
+            CaracteristicasEspecie morfologia,
+            Ubicacion ubicacion,
+            Reproduccion reproduccion,
+            Dieta dieta,
+            Peligrosidad peligrosidad,
+            int numPatas
     ){
         super(
                 codigo,
-                nombre,
-                especie,
-                riesgoExtincion,
-                edad,
-                genero,
-                peso,
-                tipoPiel,
-                coloracion,
-                habitad,
+                morfologia,
                 ubicacion,
                 reproduccion,
-                gestacion,
-                tipoGestacion,
-                tiempoGestacion,
-                tempEncubacion,
-                dietaPrincipal,
                 dieta,
-                peligroso,
-                nivelPeligrosidad,
-                venenoso,
-                tipoVeneno,
-                precauciones
+                peligrosidad
         );
         this.numPatas = numPatas;
     }

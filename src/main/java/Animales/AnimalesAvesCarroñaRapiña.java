@@ -4,6 +4,12 @@
  */
 package Animales;
 
+import Animales.Caracteristicas.CaracteristicasEspecie;
+import Animales.Caracteristicas.Dieta;
+import Animales.Caracteristicas.Peligrosidad;
+import Animales.Caracteristicas.Reproduccion;
+import Animales.Caracteristicas.Ubicacion;
+
 /**
  *
  * @author Alisser
@@ -12,55 +18,21 @@ public class AnimalesAvesCarroñaRapiña extends AnimalesAves{
     private String especiesCompatibles[];
     
     public AnimalesAvesCarroñaRapiña(
-            int codigo, 
-            String nombre, 
-            String especie, 
-            String riesgoExtincion,
-            int edad,
-            String genero,
-            float peso, 
-            String envergadura,
-            boolean vuela,
-            String tipoPico,
-            String colorPlumaje,
-            String habitad,
-            String ubicacion,
-            boolean gestacion,
-            String tipoGestacion,
-            String tiempoGestacion,
-            String dietaPrincipal,
-            String dieta[],
-            boolean peligroso,
-            String nivelPeligrosidad,
-            String[] especiesCompatibles,
-            boolean venenoso,
-            String tipoVeneno,
-            String[] precauciones
+            int codigo,
+            CaracteristicasEspecie morfologia,
+            Ubicacion ubicacion,
+            Reproduccion reproduccion,
+            Dieta dieta,
+            Peligrosidad peligrosidad,
+            String[] especiesCompatibles
     ){
         super(
-                codigo, 
-                nombre, 
-                especie, 
-                riesgoExtincion,
-                edad, 
-                genero, 
-                peso,
-                envergadura,
-                vuela,
-                tipoPico,
-                colorPlumaje,
-                habitad, 
+                codigo,
+                morfologia,
                 ubicacion,
-                gestacion,
-                tipoGestacion,
-                tiempoGestacion,
-                dietaPrincipal, 
+                reproduccion,
                 dieta,
-                peligroso, 
-                nivelPeligrosidad,
-                venenoso, 
-                tipoVeneno,
-                precauciones
+                peligrosidad
         );
         this.especiesCompatibles = especiesCompatibles;
     }

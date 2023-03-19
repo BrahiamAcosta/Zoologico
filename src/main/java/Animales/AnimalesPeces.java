@@ -4,6 +4,12 @@
  */
 package Animales;
 
+import Animales.Caracteristicas.Dieta;
+import Animales.Caracteristicas.CaracteristicasEspecie;
+import Animales.Caracteristicas.Peligrosidad;
+import Animales.Caracteristicas.Reproduccion;
+import Animales.Caracteristicas.Ubicacion;
+
 /**
  *
  * @author Alisser
@@ -21,52 +27,39 @@ public class AnimalesPeces extends Animales{
     
     public AnimalesPeces(
         int codigo, 
-        String nombre, 
-        String especie, 
-        String riesgoExtincion,
-        String genero,
-        String coloracion,
-        String habitad,
-        String ubicacion,
-         String tipoAgua,
+        CaracteristicasEspecie morfologia,
+        Ubicacion ubicacion,
+        String tipoAgua,
         String temperaturaAcuario,
-        String reproduccion,
-        String dietaPrincipal,
-        String dieta[],
-        boolean peligroso,
-        String nivelPeligrosidad,
-        boolean venenoso,
-        String tipoVeneno,
-        String[] precauciones,
-        String[] especiesCompatibles,
-        int cantidad    
+        Reproduccion reproduccion,
+        Dieta dieta,
+        Peligrosidad peligrosidad    
     ){
         super(
                 codigo, 
-                nombre, 
-                especie, 
-                riesgoExtincion,
-                genero, 
-                habitad, 
-                ubicacion,
-                dietaPrincipal, 
-                dieta,
-                peligroso, 
-                venenoso, 
-                cantidad 
+                morfologia.getNombre(), 
+                morfologia.getEspecie(), 
+                morfologia.getRiesgoExtincion(),
+                morfologia.getGenero(), 
+                ubicacion.getHabitad(), 
+                ubicacion.getUbicacion(),
+                dieta.getDietaPrincipal(), 
+                dieta.getDieta(),
+                peligrosidad.isPeligroso(), 
+                peligrosidad.isVenenoso(), 
+                morfologia.getCantidad()
         );
-        if (peligroso){
-            this.nivelPeligrosidad = nivelPeligrosidad;
-            this.precauciones = precauciones;
+        if (peligrosidad.isPeligroso()){
+            this.nivelPeligrosidad = peligrosidad.getNivelPeligrosidad();
+            this.precauciones = peligrosidad.getPrecauciones();
         }
         this.tipoAgua = tipoAgua;
-        this.coloracion = coloracion;
-        this.especiesCompatibles = especiesCompatibles;
-        this.nivelPeligrosidad = nivelPeligrosidad;
-        this.reproduccion = reproduccion;
+        this.coloracion = morfologia.getColoracion();
+        this.especiesCompatibles = peligrosidad.getEspeciesCompatibles();
+        this.reproduccion = reproduccion.getReproduccion();
         this.temperaturaAcuario = temperaturaAcuario;
-        if(venenoso){
-            this.tipoVeneno = tipoVeneno;
+        if(peligrosidad.isVenenoso()){
+            this.tipoVeneno = peligrosidad.getTipoVeneno();
         }
     }
 
@@ -85,54 +78,4 @@ public class AnimalesPeces extends Animales{
     public void setTemperaturaAcuario(String temperaturaAcuario) {
         this.temperaturaAcuario = temperaturaAcuario;
     }
-
-    public String getNivelPeligrosidad() {
-        return nivelPeligrosidad;
-    }
-
-    public void setNivelPeligrosidad(String nivelPeligrosidad) {
-        this.nivelPeligrosidad = nivelPeligrosidad;
-    }
-
-    public String getColoracion() {
-        return coloracion;
-    }
-
-    public void setColoracion(String coloracion) {
-        this.coloracion = coloracion;
-    }
-
-    public String getReproduccion() {
-        return reproduccion;
-    }
-
-    public void setReproduccion(String reproduccion) {
-        this.reproduccion = reproduccion;
-    }
-
-    public String[] getEspeciesCompatibles() {
-        return especiesCompatibles;
-    }
-
-    public void setEspeciesCompatibles(String[] especiesCompatibles) {
-        this.especiesCompatibles = especiesCompatibles;
-    }
-
-    public String getTipoVeneno() {
-        return tipoVeneno;
-    }
-
-    public void setTipoVeneno(String tipoVeneno) {
-        this.tipoVeneno = tipoVeneno;
-    }
-
-    public String[] getPrecauciones() {
-        return precauciones;
-    }
-
-    public void setPrecauciones(String[] precauciones) {
-        this.precauciones = precauciones;
-    }
-    
-    
 }
