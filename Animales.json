@@ -8,11 +8,11 @@
             "genero": "Macho",
             "peso": 190.5,
             "numeroPatas": 4,
-            "habitad": "Sabana",
-            "ubicacion": "Sector A",
+            "habitad": "Safari",
+            "ubicacion": "Zona 1",
             "gestacion": false,
-            "tipoGestacion": "",
-            "tiempoGestacion": "",
+            "tipoGestacion": null,
+            "tiempoGestacion": null,
             "dietaPrincipal": "Carnívoro",
             "dieta": [
                 "Cebra",
@@ -23,8 +23,12 @@
             "nivelPeligrosidad": "Alto",
             "comportamiento": "Solitario",
             "venenoso": false,
-            "tipoVeneno": "",
-            "precauciones": []
+            "tipoVeneno": null,
+            "precauciones": [
+                "Mantén una distancia segura",
+                "No los molestes",
+                "No estés solo"
+            ]
         },
         {
             "codigo": 2,
@@ -34,10 +38,10 @@
             "genero": "Hembra",
             "peso": 4500.0,
             "numeroPatas": 4,
-            "habitad": "Bosque",
-            "ubicacion": "Sector B",
+            "habitad": "Safari",
+            "ubicacion": "Zona 1",
             "gestacion": true,
-            "tipoGestacion": "Mamífero",
+            "tipoGestacion": "Vivíparo",
             "tiempoGestacion": "22 meses",
             "dietaPrincipal": "Herbívoro",
             "dieta": [
@@ -46,10 +50,10 @@
                 "Corteza"
             ],
             "peligroso": false,
-            "nivelPeligrosidad": "",
+            "nivelPeligrosidad": null,
             "comportamiento": "Social",
             "venenoso": false,
-            "tipoVeneno": "",
+            "tipoVeneno": null,
             "precauciones": []
         },
         {
@@ -60,10 +64,10 @@
             "genero": "Hembra",
             "peso": 1200.0,
             "numeroPatas": 4,
-            "habitad": "Sabana",
-            "ubicacion": "Sector C",
+            "habitad": "Safari",
+            "ubicacion": "Zona 1",
             "gestacion": true,
-            "tipoGestacion": "Mamífero",
+            "tipoGestacion": "Vivíparo",
             "tiempoGestacion": "14 meses",
             "dietaPrincipal": "Herbívoro",
             "dieta": [
@@ -72,16 +76,16 @@
                 "Corteza"
             ],
             "peligroso": false,
-            "nivelPeligrosidad": "",
+            "nivelPeligrosidad": null,
             "comportamiento": "Solitario",
             "venenoso": false,
-            "tipoVeneno": "",
+            "tipoVeneno": null,
             "precauciones": []
         }
     ],
     "animales_mamiferos_acuaticos": [
         {
-            "codigo": 1,
+            "codigo": 4,
             "nombre": "Delfín",
             "especie": "Tursiops truncatus",
             "edad": 12,
@@ -90,8 +94,8 @@
             "numAletas": 2,
             "capacidadBuceo": "Hasta 300 metros",
             "mecanismoRespiracion": "Pulmonar",
-            "habitad": "Océano",
-            "ubicacion": "Sector A",
+            "habitad": "Mundo Marino",
+            "ubicacion": "Zona 3",
             "gestacion": true,
             "tipoGestacion": "Vivíparo",
             "tiempoGestacion": "12 meses",
@@ -102,17 +106,17 @@
                 "Pulpos"
             ],
             "peligroso": false,
-            "nivelPeligrosidad": "",
+            "nivelPeligrosidad": null,
             "especiesCompatibles": [
                 "Tiburón",
                 "Orca"
             ],
             "venenoso": false,
-            "tipoVeneno": "",
+            "tipoVeneno": false,
             "precauciones": []
         },
         {
-            "codigo": 2,
+            "codigo": 5,
             "nombre": "Foca",
             "especie": "Phoca vitulina",
             "edad": 8,
@@ -121,8 +125,8 @@
             "numAletas": 4,
             "capacidadBuceo": "Hasta 200 metros",
             "mecanismoRespiracion": "Pulmonar",
-            "habitad": "Ártico",
-            "ubicacion": "Sector B",
+            "habitad": "Mundo Marino",
+            "ubicacion": "Zona 3",
             "gestacion": true,
             "tipoGestacion": "Vivíparo",
             "tiempoGestacion": "9 meses",
@@ -132,17 +136,17 @@
                 "Calamares"
             ],
             "peligroso": false,
-            "nivelPeligrosidad": "",
+            "nivelPeligrosidad": null,
             "especiesCompatibles": [
                 "Lobo marino",
                 "Morsa"
             ],
             "venenoso": false,
-            "tipoVeneno": "",
+            "tipoVeneno": null,
             "precauciones": []
         },
         {
-            "codigo": 3,
+            "codigo": 6,
             "nombre": "Nutria",
             "especie": "Lontra canadensis",
             "edad": 5,
@@ -151,8 +155,8 @@
             "numAletas": 4,
             "capacidadBuceo": "Hasta 5 minutos",
             "mecanismoRespiracion": "Pulmonar",
-            "habitad": "Río",
-            "ubicacion": "Sector C",
+            "habitad": "Mundo Marino",
+            "ubicacion": "Zona 3",
             "gestacion": true,
             "tipoGestacion": "Vivíparo",
             "tiempoGestacion": "2 meses",
@@ -163,102 +167,92 @@
                 "Moluscos"
             ],
             "peligroso": false,
-            "nivelPeligrosidad": "",
+            "nivelPeligrosidad": null,
             "especiesCompatibles": [
                 "Castor",
                 "Nadador experto"
             ],
             "venenoso": false,
-            "tipoVeneno": "",
+            "tipoVeneno": null,
             "precauciones": []
         }
     ],
     "animales_anfibios": [
         {
-            "codigo": 1001,
+            "codigo": 1234,
             "nombre": "Rana arbórea",
             "especie": "Hyla arborea",
-            "edad": 3,
-            "genero": "Macho",
-            "peso": 0.05,
-            "habitad": "Bosques húmedos",
-            "ubicacion": "Terrario 1",
-            "reproduccion": "Sexual",
-            "gestacion": true,
-            "tipoGestacion": "Oviparous",
-            "tiempoGestacion": "14 días",
+            "genero": "Hyla",
+            "habitad": "Bosques",
+            "zona": "Europa",
+            "procedencia": "Italia",
             "dietaPrincipal": "Insectos",
-            "dieta": [
-                "Grillos",
-                "Hormigas",
-                "Mosquitos"
+            "dietaCompleta": [
+                "Insectos",
+                "Larvas"
             ],
+            "temperaturaHabitad": "20-25°C",
+            "riesgoExtincion": "Preocupación menor",
+            "tipoReproduccion": "Oviparous",
             "peligroso": false,
-            "nivelPeligrosidad": "Ninguno",
-            "venenoso": true,
-            "tipoVeneno": "Cutáneo",
-            "precauciones": [
-                "Lavarse las manos después de tocar",
-                "No tocar los ojos"
-            ],
-            "temperaturaHabitad": "Entre 20 y 30 grados"
-        },
-        {
-            "codigo": 1002,
-            "nombre": "Salamandra",
-            "especie": "Salamandra salamandra",
-            "edad": 2,
-            "genero": "Hembra",
-            "peso": 0.1,
-            "habitad": "Bosques templados",
-            "ubicacion": "Terrario 2",
-            "reproduccion": "Sexual",
-            "gestacion": true,
-            "tipoGestacion": "Ovoviviparous",
-            "tiempoGestacion": "6 meses",
-            "dietaPrincipal": "Insectos",
-            "dieta": [
-                "Mosquitos",
-                "Arañas",
-                "Grillos"
-            ],
-            "peligroso": false,
-            "nivelPeligrosidad": "Ninguno",
+            "nivelPeligrosidad": "No aplica",
             "venenoso": false,
-            "tipoVeneno": "",
-            "precauciones": [],
-            "temperaturaHabitad": "Entre 10 y 20 grados"
+            "tipoVeneno": "No aplica",
+            "precauciones": []
         },
         {
-            "codigo": 1003,
+            "codigo": 5678,
+            "nombre": "Salamandra común",
+            "especie": "Salamandra salamandra",
+            "genero": "Salamandra",
+            "habitad": "Bosques húmedos",
+            "zona": "Europa",
+            "procedencia": "España",
+            "dietaPrincipal": "Insectos",
+            "dietaCompleta": [
+                "Insectos",
+                "Lombrices"
+            ],
+            "temperaturaHabitad": "10-20°C",
+            "riesgoExtincion": "Preocupación menor",
+            "tipoReproduccion": "Oviparous",
+            "peligroso": false,
+            "nivelPeligrosidad": "No aplica",
+            "venenoso": false,
+            "tipoVeneno": "No aplica",
+            "precauciones": []
+        },
+        {
+            "codigo": 1234,
             "nombre": "Sapo de espuelas",
             "especie": "Pelobates cultripes",
-            "edad": 5,
-            "genero": "Macho",
-            "peso": 0.2,
-            "habitad": "Terrenos húmedos",
-            "ubicacion": "Terrario 3",
-            "reproduccion": "Sexual",
-            "gestacion": true,
-            "tipoGestacion": "Oviparous",
-            "tiempoGestacion": "21 días",
+            "genero": "Pelobates",
+            "habitat": "Zonas húmedas, lagunas y charcas",
+            "zona": "Europa y norte de África",
+            "procedencia": "Cautiverio",
             "dietaPrincipal": "Insectos",
-            "dieta": [
-                "Hormigas",
-                "Grillos",
-                "Arañas"
+            "dietaCompleta": [
+                "Insectos",
+                "Arañas",
+                "Lombrices",
+                "Caracoles"
             ],
-            "peligroso": false,
-            "nivelPeligrosidad": "Ninguno",
+            "temperaturaHabitad": "18-25°C",
+            "riesgoExtincion": "Preocupación menor",
+            "tipoReproduccion": "Sexual",
+            "peligroso": true,
+            "nivelPeligrosidad": "Bajo",
             "venenoso": false,
-            "tipoVeneno": "",
-            "precauciones": [],
-            "temperaturaHabitad": "Entre 15 y 25 grados"
+            "tipoVeneno": "No aplica",
+            "precauciones": [
+                "No tocar",
+                "Lavarse las manos después de manipularlos"
+            ]
         }
     ],
     "animales_aves_acuaticas": [
         {
-            "codigo": 1001,
+            "codigo": 10,
             "nombre": "Pato Real",
             "especie": "Anas platyrhynchos",
             "edad": 3,
@@ -269,12 +263,12 @@
             "tipoPico": "Aplanado y ancho",
             "colorPlumaje": "Verde y marrón",
             "tiempoBuceo": "20 segundos",
-            "habitad": "Lagos y estanques",
             "tempHabitad": "12-20°C",
-            "ubicacion": "Aviario 1",
+            "habitad": "Mundo Marino",
+            "ubicacion": "Zona 3",
             "gestacion": false,
-            "tipoGestacion": "",
-            "tiempoGestacion": "",
+            "tipoGestacion": null,
+            "tiempoGestacion": null,
             "dietaPrincipal": "Insectos, semillas y plantas acuáticas",
             "dieta": [
                 "Peces pequeños",
@@ -282,13 +276,13 @@
                 "Caracoles"
             ],
             "peligroso": false,
-            "nivelPeligrosidad": "",
+            "nivelPeligrosidad": null,
             "venenoso": false,
-            "tipoVeneno": "",
+            "tipoVeneno": null,
             "precauciones": []
         },
         {
-            "codigo": 1002,
+            "codigo": 11,
             "nombre": "Pelícano",
             "especie": "Pelecanus occidentalis",
             "edad": 5,
@@ -299,12 +293,12 @@
             "tipoPico": "Largo y ancho",
             "colorPlumaje": "Blanco y gris",
             "tiempoBuceo": "15 segundos",
-            "habitad": "Costas y manglares",
+            "habitad": "Mundo Marino",
             "tempHabitad": "22-30°C",
-            "ubicacion": "Laguna 2",
+            "ubicacion": "Zona 3",
             "gestacion": false,
-            "tipoGestacion": "",
-            "tiempoGestacion": "",
+            "tipoGestacion": null,
+            "tiempoGestacion": null,
             "dietaPrincipal": "Peces y crustáceos",
             "dieta": [
                 "Calamares",
@@ -312,13 +306,13 @@
                 "Peces grandes"
             ],
             "peligroso": false,
-            "nivelPeligrosidad": "",
+            "nivelPeligrosidad": null,
             "venenoso": false,
-            "tipoVeneno": "",
+            "tipoVeneno": null,
             "precauciones": []
         },
         {
-            "codigo": 1003,
+            "codigo": 12,
             "nombre": "Cormorán",
             "especie": "Phalacrocorax auritus",
             "edad": 2,
@@ -333,8 +327,8 @@
             "tempHabitad": "15-25°C",
             "ubicacion": "Estanque 3",
             "gestacion": false,
-            "tipoGestacion": "",
-            "tiempoGestacion": "",
+            "tipoGestacion": null,
+            "tiempoGestacion": null,
             "dietaPrincipal": "Peces y crustáceos",
             "dieta": [
                 "Anguilas",

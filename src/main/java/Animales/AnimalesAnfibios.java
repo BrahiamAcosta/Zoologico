@@ -38,11 +38,12 @@ public class AnimalesAnfibios extends Animales{
                 morfologia.getRiesgoExtincion(),
                 morfologia.getGenero(),
                 ubicacion.getHabitad(), 
-                ubicacion.getUbicacion(),
+                ubicacion.getZona(),
                 dieta.getDietaPrincipal(), 
                 dieta.getDieta(),
                 peligrosidad.isPeligroso(), 
-                peligrosidad.isVenenoso()
+                peligrosidad.isVenenoso(),
+                ubicacion.getProcedencia()
         );
         if (peligrosidad.isPeligroso()){
             this.nivelPeligrosidad = peligrosidad.getNivelPeligrosidad();

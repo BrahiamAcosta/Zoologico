@@ -1,7 +1,6 @@
 package Animales;
 
 import java.util.ArrayList;
-import org.json.JSONObject;
 
 /**
  *
@@ -23,10 +22,11 @@ public abstract class Animales {
     public static ArrayList<AnimalesAves> animalesAves = new ArrayList<>();
     public static int cantAnimalesAnfibios = 0;
     public static ArrayList<AnimalesAnfibios> animalesAnfibios = new ArrayList<>();
-    private int codigo, edad, cantidad;
-    private String nombre, especie, genero, dietaPrincipal, dieta[], habitad, ubicacion, riesgoExtincion;
+    private int codigo, edad;
+    private String nombre, especie, genero, dietaPrincipal, dieta[], habitad, ubicacion, riesgoExtincion, procedencia;
     private float peso;
     private boolean peligroso, venenoso, gestacion, maltratado;
+    
     //Constructores
     
     //Constructor Insectos
@@ -41,7 +41,7 @@ public abstract class Animales {
             String dieta[],
             boolean peligroso,
             boolean venenoso,
-            int cantidad          
+            String procedencia
     ){
         this.codigo = codigo;
         this.nombre = nombre;
@@ -51,12 +51,12 @@ public abstract class Animales {
         this.ubicacion = ubicacion;
         this.peligroso = peligroso;
         this.venenoso = venenoso;
-        this.cantidad = cantidad;
         this.dieta = dieta;
         this.riesgoExtincion = riesgoExtincion;
+        this.procedencia = procedencia;
     }
     
-    //Constructor para peces
+    //Constructor para peces y anfibios
     public Animales(
             int codigo, 
             String nombre, 
@@ -69,36 +69,7 @@ public abstract class Animales {
             String dieta[],
             boolean peligroso,
             boolean venenoso,
-            int cantidad
-    )
-    {
-        this.codigo = codigo;
-        this.nombre = nombre;
-        this.especie = especie;
-        this.genero = genero;
-        this.dietaPrincipal = dietaPrincipal;
-        this.habitad = habitad;
-        this.ubicacion = ubicacion;
-        this.peligroso = peligroso;
-        this.venenoso = venenoso;
-        this.dieta = dieta;
-        this.cantidad = cantidad;
-        this.riesgoExtincion = riesgoExtincion;
-    }
-    
-    //Constructor anfibios
-    public Animales(
-            int codigo, 
-            String nombre, 
-            String especie, 
-            String riesgoExtincion,
-            String genero,
-            String habitad,
-            String ubicacion,
-            String dietaPrincipal,
-            String dieta[],
-            boolean peligroso,
-            boolean venenoso
+            String procedencia
     )
     {
         this.codigo = codigo;
@@ -112,6 +83,7 @@ public abstract class Animales {
         this.venenoso = venenoso;
         this.dieta = dieta;
         this.riesgoExtincion = riesgoExtincion;
+        this.procedencia = procedencia;
     }
     
     
@@ -131,7 +103,8 @@ public abstract class Animales {
             String dieta[],
             boolean peligroso,
             boolean venenoso,
-            boolean maltratado
+            boolean maltratado,
+            String procedencia
     )
     {
         this.codigo = codigo;
@@ -149,6 +122,7 @@ public abstract class Animales {
         this.dieta = dieta;
         this.riesgoExtincion = riesgoExtincion;
         this.maltratado = maltratado;
+        this.procedencia = procedencia;
     }
 
     public int getCodigo() {
@@ -247,20 +221,148 @@ public abstract class Animales {
         this.gestacion = gestacion;
     }
 
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
-
     public String[] getDieta() {
         return dieta;
     }
 
     public void setDieta(String[] dieta) {
         this.dieta = dieta;
+    }
+
+    public static int getCantAnimales() {
+        return cantAnimales;
+    }
+
+    public static void setCantAnimales(int cantAnimales) {
+        Animales.cantAnimales = cantAnimales;
+    }
+
+    public static ArrayList<Animales> getAnimales() {
+        return animales;
+    }
+
+    public static void setAnimales(Animales animal) {
+        animales.add(animal);
+    }
+
+    public static int getCantAnimalesReptiles() {
+        return cantAnimalesReptiles;
+    }
+
+    public static void setCantAnimalesReptiles(int cantAnimalesReptiles) {
+        Animales.cantAnimalesReptiles = cantAnimalesReptiles;
+    }
+
+    public static ArrayList<AnimalesReptiles> getAnimalesReptiles() {
+        return animalesReptiles;
+    }
+
+    public static void setAnimalesReptiles(ArrayList<AnimalesReptiles> animalesReptiles) {
+        Animales.animalesReptiles = animalesReptiles;
+    }
+
+    public static int getCantAnimalesPeces() {
+        return cantAnimalesPeces;
+    }
+
+    public static void setCantAnimalesPeces(int cantAnimalesPeces) {
+        Animales.cantAnimalesPeces = cantAnimalesPeces;
+    }
+
+    public static ArrayList<AnimalesPeces> getAnimalesPeces() {
+        return animalesPeces;
+    }
+
+    public static void setAnimalesPeces(ArrayList<AnimalesPeces> animalesPeces) {
+        Animales.animalesPeces = animalesPeces;
+    }
+
+    public static int getCantAnimalesMamiferos() {
+        return cantAnimalesMamiferos;
+    }
+
+    public static void setCantAnimalesMamiferos(int cantAnimalesMamiferos) {
+        Animales.cantAnimalesMamiferos = cantAnimalesMamiferos;
+    }
+
+    public static ArrayList<AnimalesMamiferos> getAnimalesMamiferos() {
+        return animalesMamiferos;
+    }
+
+    public static void setAnimalesMamiferos(ArrayList<AnimalesMamiferos> animalesMamiferos) {
+        Animales.animalesMamiferos = animalesMamiferos;
+    }
+
+    public static int getCantAnimalesInsectos() {
+        return cantAnimalesInsectos;
+    }
+
+    public static void setCantAnimalesInsectos(int cantAnimalesInsectos) {
+        Animales.cantAnimalesInsectos = cantAnimalesInsectos;
+    }
+
+    public static ArrayList<AnimalesInsectos> getAnimalesInsectos() {
+        return animalesInsectos;
+    }
+
+    public static void setAnimalesInsectos(ArrayList<AnimalesInsectos> animalesInsectos) {
+        Animales.animalesInsectos = animalesInsectos;
+    }
+
+    public static int getCantAnimalesAves() {
+        return cantAnimalesAves;
+    }
+
+    public static void setCantAnimalesAves(int cantAnimalesAves) {
+        Animales.cantAnimalesAves = cantAnimalesAves;
+    }
+
+    public static ArrayList<AnimalesAves> getAnimalesAves() {
+        return animalesAves;
+    }
+
+    public static void setAnimalesAves(ArrayList<AnimalesAves> animalesAves) {
+        Animales.animalesAves = animalesAves;
+    }
+
+    public static int getCantAnimalesAnfibios() {
+        return cantAnimalesAnfibios;
+    }
+
+    public static void setCantAnimalesAnfibios(int cantAnimalesAnfibios) {
+        Animales.cantAnimalesAnfibios = cantAnimalesAnfibios;
+    }
+
+    public static ArrayList<AnimalesAnfibios> getAnimalesAnfibios() {
+        return animalesAnfibios;
+    }
+
+    public static void setAnimalesAnfibios(ArrayList<AnimalesAnfibios> animalesAnfibios) {
+        Animales.animalesAnfibios = animalesAnfibios;
+    }
+
+    public String getRiesgoExtincion() {
+        return riesgoExtincion;
+    }
+
+    public void setRiesgoExtincion(String riesgoExtincion) {
+        this.riesgoExtincion = riesgoExtincion;
+    }
+
+    public String getProcedencia() {
+        return procedencia;
+    }
+
+    public void setProcedencia(String procedencia) {
+        this.procedencia = procedencia;
+    }
+
+    public boolean isMaltratado() {
+        return maltratado;
+    }
+
+    public void setMaltratado(boolean maltratado) {
+        this.maltratado = maltratado;
     }
     
     

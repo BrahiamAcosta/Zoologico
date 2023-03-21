@@ -31,12 +31,12 @@ public class AnimalesInsectos extends Animales {
                 morfologia.getEspecie(), 
                 morfologia.getRiesgoExtincion(),
                 ubicacion.getHabitad(), 
-                ubicacion.getUbicacion(),
+                ubicacion.getZona(),
                 dieta.getDietaPrincipal(), 
                 dieta.getDieta(),
                 peligrosidad.isPeligroso(), 
                 peligrosidad.isVenenoso(), 
-                morfologia.getCantidad()
+                ubicacion.getProcedencia()
         );
         if(peligrosidad.isPeligroso()){
             this.nivelPeligrosidad = peligrosidad.getNivelPeligrosidad();

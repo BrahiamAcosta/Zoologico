@@ -15,7 +15,7 @@ import Animales.Caracteristicas.Ubicacion;
  * @author Alisser
  */
 public class AnimalesAvesExoticas extends AnimalesAves{
-    private String origen, especiesCompatibles[];
+    private String especiesCompatibles[];
     
     public AnimalesAvesExoticas(
             int codigo,
@@ -24,7 +24,6 @@ public class AnimalesAvesExoticas extends AnimalesAves{
             Reproduccion reproduccion,
             Dieta dieta,
             Peligrosidad peligrosidad,
-            String origen,
             String[] especiesCompatibles
     ){
         super(
@@ -36,15 +35,6 @@ public class AnimalesAvesExoticas extends AnimalesAves{
                 peligrosidad
         );
         this.especiesCompatibles = especiesCompatibles;
-        this.origen = origen;
-    }
-
-    public String getOrigen() {
-        return origen;
-    }
-
-    public void setOrigen(String origen) {
-        this.origen = origen;
     }
 
     public String[] getEspeciesCompatibles() {

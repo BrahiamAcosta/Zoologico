@@ -45,13 +45,14 @@ public abstract class AnimalesAves extends Animales{
                 morfologia.getGenero(), 
                 morfologia.getPeso(), 
                 ubicacion.getHabitad(), 
-                ubicacion.getUbicacion(),
+                ubicacion.getZona(),
                 reproduccion.isGestacion(),
                 dieta.getDietaPrincipal(), 
                 dieta.getDieta(),
                 peligrosidad.isPeligroso(), 
                 peligrosidad.isVenenoso(),
-                peligrosidad.isMaltratado()
+                peligrosidad.isMaltratado(),
+                ubicacion.getProcedencia()
         );
         if (peligrosidad.isPeligroso()){
             this.nivelPeligrosidad = peligrosidad.getNivelPeligrosidad();

@@ -1,8 +1,10 @@
 package Principal;
+import Animales.Animales;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import Control.*;
+import InfoJSON.GetInfoJSON;
 import InfoJSON.ReadJSON;
 
 /**

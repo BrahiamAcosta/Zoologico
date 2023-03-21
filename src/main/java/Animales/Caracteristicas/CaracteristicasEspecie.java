@@ -60,8 +60,7 @@ public class CaracteristicasEspecie {
             boolean metamorfosis,
             int paresPatas,
             int paresAlas,
-            String riesgoExtincion,
-            int cantidad
+            String riesgoExtincion
     ){
         this.nombre = nombre;
         this.especie = especie;
@@ -69,7 +68,6 @@ public class CaracteristicasEspecie {
         this.paresPatas = paresPatas;
         this.paresAlas = paresAlas;
         this.riesgoExtincion = riesgoExtincion;
-        this.cantidad = cantidad;
     }
     //Constructor Mamiferos
     public CaracteristicasEspecie(

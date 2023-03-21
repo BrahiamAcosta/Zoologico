@@ -9,8 +9,9 @@ package Animales.Caracteristicas;
  * @author Alisser
  */
 public class Ubicacion {
-    private String habitad, zona;
-    public Ubicacion(String habitad, String zona){
+    private String habitad, zona, procedencia;
+    public Ubicacion(String procedencia, String habitad, String zona){
+        this.procedencia = procedencia;
         this.habitad = habitad;
         this.zona = zona;
     }
@@ -23,12 +24,20 @@ public class Ubicacion {
         this.habitad = habitad;
     }
 
-    public String getUbicacion() {
+    public String getZona() {
         return zona;
     }
 
-    public void setUbicacion(String zona) {
+    public void setZona(String zona) {
         this.zona = zona;
+    }
+
+    public String getProcedencia() {
+        return procedencia;
+    }
+
+    public void setProcedencia(String procedencia) {
+        this.procedencia = procedencia;
     }
     
 }

@@ -16,6 +16,7 @@ import Animales.Caracteristicas.Ubicacion;
  */
 public class AnimalesReptilesTerrestres extends AnimalesReptiles{
     private int numPatas;
+    private String comportamiento;
     
     public AnimalesReptilesTerrestres(
         int codigo,
@@ -35,6 +36,7 @@ public class AnimalesReptilesTerrestres extends AnimalesReptiles{
                 peligrosidad
         );
         this.numPatas = numPatas;
+        this.comportamiento = peligrosidad.getComportamientoSocial();
     }
 
     public int getNumPatas() {
