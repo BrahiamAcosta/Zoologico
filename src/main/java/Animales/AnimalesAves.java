@@ -9,12 +9,15 @@ import Animales.Caracteristicas.CaracteristicasEspecie;
 import Animales.Caracteristicas.Peligrosidad;
 import Animales.Caracteristicas.Reproduccion;
 import Animales.Caracteristicas.Ubicacion;
+import java.util.ArrayList;
 
 /**
  *
  * @author Alisser
  */
 public abstract class AnimalesAves extends Animales{
+    public static int cantAnimalesAves = 0;
+    public static ArrayList<AnimalesAves> animalesAves = new ArrayList<>();
     private String 
             nivelPeligrosidad, 
             envergadura, 
@@ -73,5 +76,105 @@ public abstract class AnimalesAves extends Animales{
             this.caracter = peligrosidad.getCaracter();
         }
         this.vuela = morfologia.isVuela();
+    }
+
+    public String getNivelPeligrosidad() {
+        return nivelPeligrosidad;
+    }
+
+    public void setNivelPeligrosidad(String nivelPeligrosidad) {
+        this.nivelPeligrosidad = nivelPeligrosidad;
+    }
+
+    public String getEnvergadura() {
+        return envergadura;
+    }
+
+    public void setEnvergadura(String envergadura) {
+        this.envergadura = envergadura;
+    }
+
+    public String getTipoPico() {
+        return tipoPico;
+    }
+
+    public void setTipoPico(String tipoPico) {
+        this.tipoPico = tipoPico;
+    }
+
+    public String getColorPlumaje() {
+        return colorPlumaje;
+    }
+
+    public void setColorPlumaje(String colorPlumaje) {
+        this.colorPlumaje = colorPlumaje;
+    }
+
+    public String getTipoVeneno() {
+        return tipoVeneno;
+    }
+
+    public void setTipoVeneno(String tipoVeneno) {
+        this.tipoVeneno = tipoVeneno;
+    }
+
+    public String getTipoGestacion() {
+        return tipoGestacion;
+    }
+
+    public void setTipoGestacion(String tipoGestacion) {
+        this.tipoGestacion = tipoGestacion;
+    }
+
+    public String getTiempoGestacion() {
+        return tiempoGestacion;
+    }
+
+    public void setTiempoGestacion(String tiempoGestacion) {
+        this.tiempoGestacion = tiempoGestacion;
+    }
+
+    public String[] getPrecauciones() {
+        return precauciones;
+    }
+
+    public void setPrecauciones(String[] precauciones) {
+        this.precauciones = precauciones;
+    }
+
+    public String getComportamientoSocial() {
+        return comportamientoSocial;
+    }
+
+    public void setComportamientoSocial(String comportamientoSocial) {
+        this.comportamientoSocial = comportamientoSocial;
+    }
+
+    public String getCaracter() {
+        return caracter;
+    }
+
+    public void setCaracter(String caracter) {
+        this.caracter = caracter;
+    }
+
+    public boolean isVuela() {
+        return vuela;
+    }
+
+    public void setVuela(boolean vuela) {
+        this.vuela = vuela;
+    }
+    public static int getCantAnimalesAves() {
+        return cantAnimalesAves;
+    }
+
+    public static ArrayList<AnimalesAves> getAnimalesAves() {
+        return animalesAves;
+    }
+
+    public static void setAnimalesAves(AnimalesAves animal) {
+        AnimalesAves.animalesAves.add(animal);
+        AnimalesAves.cantAnimalesAves+=1;
     }
 }

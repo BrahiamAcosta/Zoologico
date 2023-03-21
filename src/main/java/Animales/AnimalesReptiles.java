@@ -9,12 +9,15 @@ import Animales.Caracteristicas.CaracteristicasEspecie;
 import Animales.Caracteristicas.Peligrosidad;
 import Animales.Caracteristicas.Reproduccion;
 import Animales.Caracteristicas.Ubicacion;
+import java.util.ArrayList;
 
 /**
  *
  * @author Alisser
  */
 public abstract class AnimalesReptiles extends Animales{
+    public static int cantAnimalesReptiles = 0;
+    public static ArrayList<AnimalesReptiles> animalesReptiles = new ArrayList<>();
     private String 
             nivelPeligrosidad,
             tempEncubacion,
@@ -73,5 +76,105 @@ public abstract class AnimalesReptiles extends Animales{
         if(peligrosidad.isVenenoso()){
             this.tipoVeneno = peligrosidad.getTipoVeneno();
         }
+    }
+
+    public String getNivelPeligrosidad() {
+        return nivelPeligrosidad;
+    }
+
+    public void setNivelPeligrosidad(String nivelPeligrosidad) {
+        this.nivelPeligrosidad = nivelPeligrosidad;
+    }
+
+    public String getTempEncubacion() {
+        return tempEncubacion;
+    }
+
+    public void setTempEncubacion(String tempEncubacion) {
+        this.tempEncubacion = tempEncubacion;
+    }
+
+    public String getTipoVeneno() {
+        return tipoVeneno;
+    }
+
+    public void setTipoVeneno(String tipoVeneno) {
+        this.tipoVeneno = tipoVeneno;
+    }
+
+    public String getTipoPiel() {
+        return tipoPiel;
+    }
+
+    public void setTipoPiel(String tipoPiel) {
+        this.tipoPiel = tipoPiel;
+    }
+
+    public String getColoracion() {
+        return coloracion;
+    }
+
+    public void setColoracion(String coloracion) {
+        this.coloracion = coloracion;
+    }
+
+    public String getReproduccion() {
+        return reproduccion;
+    }
+
+    public void setReproduccion(String reproduccion) {
+        this.reproduccion = reproduccion;
+    }
+
+    public String getTipoGestacion() {
+        return tipoGestacion;
+    }
+
+    public void setTipoGestacion(String tipoGestacion) {
+        this.tipoGestacion = tipoGestacion;
+    }
+
+    public String getTiempoGestacion() {
+        return tiempoGestacion;
+    }
+
+    public void setTiempoGestacion(String tiempoGestacion) {
+        this.tiempoGestacion = tiempoGestacion;
+    }
+
+    public String[] getPrecauciones() {
+        return precauciones;
+    }
+
+    public void setPrecauciones(String[] precauciones) {
+        this.precauciones = precauciones;
+    }
+
+    public String getComportamientoSocial() {
+        return comportamientoSocial;
+    }
+
+    public void setComportamientoSocial(String comportamientoSocial) {
+        this.comportamientoSocial = comportamientoSocial;
+    }
+
+    public String getCaracter() {
+        return caracter;
+    }
+
+    public void setCaracter(String caracter) {
+        this.caracter = caracter;
+    }
+    public static int getCantAnimalesReptiles() {
+        return cantAnimalesReptiles;
+    }
+
+    public static ArrayList<AnimalesReptiles> getAnimalesReptiles() {
+        return animalesReptiles;
+    }
+
+    public static void setAnimalesReptiles(AnimalesReptiles animal) {
+        AnimalesReptiles.animalesReptiles.add(animal);
+        AnimalesReptiles.cantAnimalesReptiles++;
     }
 }

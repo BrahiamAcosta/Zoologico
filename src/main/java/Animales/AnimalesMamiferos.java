@@ -9,12 +9,15 @@ import Animales.Caracteristicas.CaracteristicasEspecie;
 import Animales.Caracteristicas.Peligrosidad;
 import Animales.Caracteristicas.Reproduccion;
 import Animales.Caracteristicas.Ubicacion;
+import java.util.ArrayList;
 
 /**
  *
  * @author Alisser
  */
 public abstract class AnimalesMamiferos extends Animales{
+    public static int cantAnimalesMamiferos = 0;
+    public static ArrayList<AnimalesMamiferos> animalesMamiferos = new ArrayList<>();
     private String 
             tipoGestacion, 
             nivelPeligrosidad, 
@@ -66,4 +69,73 @@ public abstract class AnimalesMamiferos extends Animales{
             this.tipoVeneno = peligrosidad.getTipoVeneno();
         }
     }
+
+    public String getTipoGestacion() {
+        return tipoGestacion;
+    }
+
+    public void setTipoGestacion(String tipoGestacion) {
+        this.tipoGestacion = tipoGestacion;
+    }
+
+    public String getNivelPeligrosidad() {
+        return nivelPeligrosidad;
+    }
+
+    public void setNivelPeligrosidad(String nivelPeligrosidad) {
+        this.nivelPeligrosidad = nivelPeligrosidad;
+    }
+
+    public String getTipoVeneno() {
+        return tipoVeneno;
+    }
+
+    public void setTipoVeneno(String tipoVeneno) {
+        this.tipoVeneno = tipoVeneno;
+    }
+
+    public String getTiempoGestacion() {
+        return tiempoGestacion;
+    }
+
+    public void setTiempoGestacion(String tiempoGestacion) {
+        this.tiempoGestacion = tiempoGestacion;
+    }
+
+    public String[] getPrecauciones() {
+        return precauciones;
+    }
+
+    public void setPrecauciones(String[] precauciones) {
+        this.precauciones = precauciones;
+    }
+
+    public String getComportamientoSocial() {
+        return comportamientoSocial;
+    }
+
+    public void setComportamientoSocial(String comportamientoSocial) {
+        this.comportamientoSocial = comportamientoSocial;
+    }
+
+    public String getCaracter() {
+        return caracter;
+    }
+
+    public void setCaracter(String caracter) {
+        this.caracter = caracter;
+    }
+    public static int getCantAnimalesMamiferos() {
+        return cantAnimalesMamiferos;
+    }
+
+    public static ArrayList<AnimalesMamiferos> getAnimalesMamiferos() {
+        return animalesMamiferos;
+    }
+
+    public static void setAnimalesMamiferos(AnimalesMamiferos animal) {
+        AnimalesMamiferos.animalesMamiferos.add(animal);
+        AnimalesMamiferos.cantAnimalesMamiferos++;
+    }
+    
 }

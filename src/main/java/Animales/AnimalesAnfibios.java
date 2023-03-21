@@ -9,12 +9,15 @@ import Animales.Caracteristicas.CaracteristicasEspecie;
 import Animales.Caracteristicas.Peligrosidad;
 import Animales.Caracteristicas.Reproduccion;
 import Animales.Caracteristicas.Ubicacion;
+import java.util.ArrayList;
 
 /**
  *
  * @author Alisser
  */
 public class AnimalesAnfibios extends Animales{
+    public static int cantAnimalesAnfibios = 0;
+    public static ArrayList<AnimalesAnfibios> animalesAnfibios = new ArrayList<>();
     private String 
             tipoVeneno, 
             reproduccion, 
@@ -54,5 +57,57 @@ public class AnimalesAnfibios extends Animales{
         if(peligrosidad.isVenenoso()){
             this.tipoVeneno = peligrosidad.getTipoVeneno();
         }
+    }
+
+    public String getTipoVeneno() {
+        return tipoVeneno;
+    }
+
+    public void setTipoVeneno(String tipoVeneno) {
+        this.tipoVeneno = tipoVeneno;
+    }
+
+    public String getReproduccion() {
+        return reproduccion;
+    }
+
+    public void setReproduccion(String reproduccion) {
+        this.reproduccion = reproduccion;
+    }
+
+    public String getTemperaturaHabitad() {
+        return temperaturaHabitad;
+    }
+
+    public void setTemperaturaHabitad(String temperaturaHabitad) {
+        this.temperaturaHabitad = temperaturaHabitad;
+    }
+
+    public String getNivelPeligrosidad() {
+        return nivelPeligrosidad;
+    }
+
+    public void setNivelPeligrosidad(String nivelPeligrosidad) {
+        this.nivelPeligrosidad = nivelPeligrosidad;
+    }
+
+    public String[] getPrecauciones() {
+        return precauciones;
+    }
+
+    public void setPrecauciones(String[] precauciones) {
+        this.precauciones = precauciones;
+    }
+    public static int getCantAnimalesAnfibios() {
+        return cantAnimalesAnfibios;
+    }
+
+    public static ArrayList<AnimalesAnfibios> getAnimalesAnfibios() {
+        return animalesAnfibios;
+    }
+
+    public static void setAnimalesAnfibios(AnimalesAnfibios animal) {
+        AnimalesAnfibios.animalesAnfibios.add(animal);
+        AnimalesAnfibios.cantAnimalesAnfibios+=1;
     }
 }

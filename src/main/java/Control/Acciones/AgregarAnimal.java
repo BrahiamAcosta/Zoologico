@@ -43,6 +43,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, precauciones);
         AnimalesAnfibios anfibio = new AnimalesAnfibios(codigo, caracteristicas, ubicacion, reproduccion, dieta, peligrosidad);
+        AnimalesAnfibios.setAnimalesAnfibios(anfibio);
+        Animales.setAnimales(anfibio);
         return anfibio;
     }
 
@@ -83,6 +85,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         AnimalesAvesAcuaticas aveAcuatica = new AnimalesAvesAcuaticas(codigo, caracteristicas, ubicacion, reproduccion, dieta, peligrosidad, tempHabitad, tiempoBuceo);
+        AnimalesAves.setAnimalesAves(aveAcuatica);
+        Animales.setAnimales(aveAcuatica);
         return aveAcuatica;
     }
 
@@ -122,6 +126,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         AnimalesAvesCarroñaRapiña aveCarroñaRapiña = new AnimalesAvesCarroñaRapiña(codigo, caracteristicas, ubicacion, reproduccion, dieta, peligrosidad, especiesCompatibles);
+        AnimalesAves.setAnimalesAves(aveCarroñaRapiña);
+        Animales.setAnimales(aveCarroñaRapiña);
         return aveCarroñaRapiña;
     }
 
@@ -161,6 +167,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         AnimalesAvesExoticas aveExotica = new AnimalesAvesExoticas(codigo, caracteristicas, ubicacion, reproduccion, dieta, peligrosidad, especiesCompatibles);
+        AnimalesAves.setAnimalesAves(aveExotica);
+        Animales.setAnimales(aveExotica);
         return aveExotica;
     }
 
@@ -200,6 +208,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         AnimalesAvesTerrestres aveTerrestre = new AnimalesAvesTerrestres(codigo, caracteristicas, ubicacion, reproduccion, dieta, peligrosidad, aveDeCorral);
+        AnimalesAves.setAnimalesAves(aveTerrestre);
+        Animales.setAnimales(aveTerrestre);
         return aveTerrestre;
     }
 
@@ -228,6 +238,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, precauciones);
         AnimalesInsectos insecto = new AnimalesInsectos(codigo, caracteristicas, ubicacion, dieta, peligrosidad);
+        AnimalesInsectos.setAnimalesInsectos(insecto, cantidad);
+        Animales.setAnimales(insecto);
         return insecto;
     }
 
@@ -266,6 +278,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         AnimalesMamiferosAcuaticos mamiferoAcuatico = new AnimalesMamiferosAcuaticos(codigo, caracteristicas, ubicacion, reproduccion, dieta, peligrosidad, numAletas, tiempoBuceo, especiesCompatibles, mecanismoRespiracion);
+        AnimalesMamiferos.setAnimalesMamiferos(mamiferoAcuatico);
+        Animales.setAnimales(mamiferoAcuatico);
         return mamiferoAcuatico;
     }
 
@@ -302,6 +316,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         AnimalesMamiferosTerrestres mamiferoTerrestre = new AnimalesMamiferosTerrestres(codigo, caracteristicas, ubicacion, reproduccion, dieta, peligrosidad, numPatas, comportamiento);
+        AnimalesMamiferos.setAnimalesMamiferos(mamiferoTerrestre);
+        Animales.setAnimales(mamiferoTerrestre);
         return mamiferoTerrestre;
     }
 
@@ -334,6 +350,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, especiesCompatibles, precauciones);
         AnimalesPeces pez = new AnimalesPeces(codigo, caracteristicas, ubicacion, tipoAgua, tempAcuario, reprod, dieta, peligrosidad);
+        AnimalesPeces.setAnimalesPeces(pez, cantidad);
+        Animales.setAnimales(pez);
         return pez;
     }
 
@@ -357,7 +375,7 @@ public class AgregarAnimal {
             boolean gestacion,
             String tipoGestacion,
             String tiempoGestacion,
-             String tempEncubacion,
+            String tempEncubacion,
             boolean peligroso,
             String nivelPeligrosidad,
             boolean venenoso,
@@ -373,6 +391,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         AnimalesReptilesAcuaticos reptilAcuatico = new AnimalesReptilesAcuaticos(codigo, caracteristicas, ubicacion, reproduccion, dieta, peligrosidad, metodoRespiracion, numAletas);
+        AnimalesReptiles.setAnimalesReptiles(reptilAcuatico);
+        Animales.setAnimales(reptilAcuatico);
         return reptilAcuatico;
     }
 
@@ -395,7 +415,7 @@ public class AgregarAnimal {
             boolean gestacion,
             String tipoGestacion,
             String tiempoGestacion,
-             String tempEncubacion,
+            String tempEncubacion,
             boolean peligroso,
             String nivelPeligrosidad,
             boolean venenoso,
@@ -411,6 +431,8 @@ public class AgregarAnimal {
         Dieta dieta = new Dieta(dietaPrincipal, dietaCompleta);
         Peligrosidad peligrosidad = new Peligrosidad(peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         AnimalesReptilesTerrestres reptilTerrestre = new AnimalesReptilesTerrestres(codigo, caracteristicas, ubicacion, reproduccion, dieta, peligrosidad, numPatas);
+        AnimalesReptiles.setAnimalesReptiles(reptilTerrestre);
+        Animales.setAnimales(reptilTerrestre);
         return reptilTerrestre;
     }
 }

@@ -9,12 +9,15 @@ import Animales.Caracteristicas.CaracteristicasEspecie;
 import Animales.Caracteristicas.Peligrosidad;
 import Animales.Caracteristicas.Reproduccion;
 import Animales.Caracteristicas.Ubicacion;
+import java.util.ArrayList;
 
 /**
  *
  * @author Alisser
  */
 public class AnimalesPeces extends Animales{
+    public static int cantAnimalesPeces = 0;
+    public static ArrayList<AnimalesPeces> animalesPeces = new ArrayList<>();
     private String 
             tipoAgua, 
             temperaturaAcuario, 
@@ -78,4 +81,65 @@ public class AnimalesPeces extends Animales{
     public void setTemperaturaAcuario(String temperaturaAcuario) {
         this.temperaturaAcuario = temperaturaAcuario;
     }
+
+    public String getNivelPeligrosidad() {
+        return nivelPeligrosidad;
+    }
+
+    public void setNivelPeligrosidad(String nivelPeligrosidad) {
+        this.nivelPeligrosidad = nivelPeligrosidad;
+    }
+
+    public String getColoracion() {
+        return coloracion;
+    }
+
+    public void setColoracion(String coloracion) {
+        this.coloracion = coloracion;
+    }
+
+    public String getReproduccion() {
+        return reproduccion;
+    }
+
+    public void setReproduccion(String reproduccion) {
+        this.reproduccion = reproduccion;
+    }
+
+    public String[] getEspeciesCompatibles() {
+        return especiesCompatibles;
+    }
+
+    public void setEspeciesCompatibles(String[] especiesCompatibles) {
+        this.especiesCompatibles = especiesCompatibles;
+    }
+
+    public String getTipoVeneno() {
+        return tipoVeneno;
+    }
+
+    public void setTipoVeneno(String tipoVeneno) {
+        this.tipoVeneno = tipoVeneno;
+    }
+
+    public String[] getPrecauciones() {
+        return precauciones;
+    }
+
+    public void setPrecauciones(String[] precauciones) {
+        this.precauciones = precauciones;
+    }
+    public static int getCantAnimalesPeces() {
+        return cantAnimalesPeces;
+    }
+
+    public static ArrayList<AnimalesPeces> getAnimalesPeces() {
+        return animalesPeces;
+    }
+
+    public static void setAnimalesPeces(AnimalesPeces animal, int cantidad) {
+        AnimalesPeces.animalesPeces.add(animal);
+        AnimalesPeces.cantAnimalesPeces+=cantidad;
+    }
 }
+

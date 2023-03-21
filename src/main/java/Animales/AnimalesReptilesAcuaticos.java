@@ -56,5 +56,5 @@ public class AnimalesReptilesAcuaticos extends AnimalesReptiles {
     public void setNumAletas(int numAletas) {
         this.numAletas = numAletas;
     }
-
+    
 }

@@ -46,6 +46,14 @@ public class AnimalesReptilesTerrestres extends AnimalesReptiles{
     public void setNumPatas(int numPatas) {
         this.numPatas = numPatas;
     }
+
+    public String getComportamiento() {
+        return comportamiento;
+    }
+
+    public void setComportamiento(String comportamiento) {
+        this.comportamiento = comportamiento;
+    }
     
     
 }

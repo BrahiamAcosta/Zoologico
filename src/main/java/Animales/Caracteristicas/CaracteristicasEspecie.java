@@ -122,6 +122,14 @@ public class CaracteristicasEspecie {
         this.riesgoExtincion = riesgoExtincion;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getEspecie() {
         return especie;
     }
@@ -178,6 +186,22 @@ public class CaracteristicasEspecie {
         this.tipoPiel = tipoPiel;
     }
 
+    public String getRiesgoExtincion() {
+        return riesgoExtincion;
+    }
+
+    public void setRiesgoExtincion(String riesgoExtincion) {
+        this.riesgoExtincion = riesgoExtincion;
+    }
+
+    public String getTemperaturaHabitad() {
+        return temperaturaHabitad;
+    }
+
+    public void setTemperaturaHabitad(String temperaturaHabitad) {
+        this.temperaturaHabitad = temperaturaHabitad;
+    }
+
     public float getPeso() {
         return peso;
     }
@@ -210,6 +234,14 @@ public class CaracteristicasEspecie {
         this.edad = edad;
     }
 
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
     public boolean isMetamorfosis() {
         return metamorfosis;
     }
@@ -218,44 +250,12 @@ public class CaracteristicasEspecie {
         this.metamorfosis = metamorfosis;
     }
 
-    public String getRiesgoExtincion() {
-        return riesgoExtincion;
-    }
-
-    public void setRiesgoExtincion(String riesgoExtincion) {
-        this.riesgoExtincion = riesgoExtincion;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getTemperaturaHabitad() {
-        return temperaturaHabitad;
-    }
-
-    public void setTemperaturaHabitad(String temperaturaHabitad) {
-        this.temperaturaHabitad = temperaturaHabitad;
-    }
-
     public boolean isVuela() {
         return vuela;
     }
 
     public void setVuela(boolean vuela) {
         this.vuela = vuela;
-    }
-
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
     }
     
 }
