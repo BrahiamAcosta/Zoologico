@@ -1,16 +1,13 @@
 package Control;
-import Entidades.AnimalesAcuaticos;
-import Entidades.AnimalesMenores;
-import Entidades.AnimalesTerrestres;
+
+import Animales.Animales;
 
 /**
  *
  * @author brahiam.acosta
  */
 public class DptoLogistica {
-    
-    public void agregarAnimal(){
-                
+    public void añadirAnimal(){
     }
     public void modificarAnimal(){
     }

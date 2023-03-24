@@ -1,0 +1,886 @@
+{
+    "animales_mamiferos_terrestres": [
+        {
+            "codigo": 1,
+            "nombre": "Tigre",
+            "especie": "Panthera tigris",
+            "genero": "Macho",
+            "peso": 250.0,
+            "dietaPrincipal": "Carnívoro",
+            "dietaCompleta": [
+                "Carne de animales grandes"
+            ],
+            "edad": 7,
+            "numPatas": 4,
+            "habitad": "Bosques y junglas",
+            "zona": "Asia",
+            "procedencia": "India",
+            "riesgoExtincion": "En peligro de extinción",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "peligroso": true,
+            "nivelPeligrosidad": "Alto",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "maltratado": false,
+            "comportamientoSocial": "Solitario",
+            "caracter": "Agresivo",
+            "comportamiento": "Caza en solitario",
+            "precauciones": [
+                "Mantener distancia",
+                "No provocar",
+                "Evitar contacto directo"
+            ]
+        },
+        {
+            "codigo": 2,
+            "nombre": "León",
+            "especie": "Panthera leo",
+            "genero": "Hembra",
+            "peso": 180.0,
+            "dietaPrincipal": "Carnívoro",
+            "dietaCompleta": [
+                "Carne de animales grandes"
+            ],
+            "edad": 6,
+            "numPatas": 4,
+            "habitad": "Savanas",
+            "zona": "África",
+            "procedencia": "Kenia",
+            "riesgoExtincion": "Vulnerable",
+            "gestacion": true,
+            "tipoGestacion": "Vivíparo",
+            "tiempoGestacion": "110 días",
+            "peligroso": true,
+            "nivelPeligrosidad": "Alto",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "maltratado": false,
+            "comportamientoSocial": "Manada",
+            "caracter": "Dominante",
+            "comportamiento": "Caza en manada",
+            "precauciones": [
+                "Mantener distancia",
+                "No provocar",
+                "Evitar contacto directo"
+            ]
+        },
+        {
+            "codigo": 123,
+            "nombre": "Oso pardo",
+            "especie": "Ursus arctos",
+            "genero": "Macho",
+            "peso": 250,
+            "dietaPrincipal": "Omnívoro",
+            "dietaCompleta": [
+                "Peces",
+                "Bayas",
+                "Insectos"
+            ],
+            "edad": 7,
+            "numPatas": 4,
+            "habitad": "Bosques y montañas",
+            "zona": "Hemisferio norte",
+            "procedencia": "Europa, Asia y Norteamérica",
+            "riesgoExtincion": "Vulnerable",
+            "gestacion": true,
+            "tipoGestacion": "Vivíparo",
+            "tiempoGestacion": "7-8 meses",
+            "peligroso": true,
+            "nivelPeligrosidad": "Alto",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "maltratado": false,
+            "comportamientoSocial": "Solitario",
+            "caracter": "Fuerte y territorial",
+            "comportamiento": "Activo en la noche y el día",
+            "precauciones": [
+                "No acercarse a un oso pardo en la naturaleza",
+                "No alimentar a los osos"
+            ]
+        }
+    ],
+    "animales_mamiferos_acuaticos": [
+        {
+            "codigo": 123,
+            "nombre": "Delfín",
+            "especie": "Tursiops truncatus",
+            "genero": "Macho",
+            "peso": 250,
+            "dietaPrincipal": "Peces",
+            "dietaCompleta": [
+                "Peces",
+                "Pulpos",
+                "Calamares"
+            ],
+            "edad": 15,
+            "tiempoBuceo": "10 minutos",
+            "mecanismoRespiracion": "Pulmonar",
+            "numAletas": 2,
+            "habitad": "Océano",
+            "zona": "Tropical",
+            "procedencia": "Atlántico",
+            "riesgoExtincion": "Preocupación menor",
+            "gestacion": true,
+            "tipoGestacion": "Vivíparo",
+            "tiempoGestacion": "12 meses",
+            "peligroso": false,
+            "nivelPeligrosidad": "No peligroso",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "maltratado": false,
+            "comportamientoSocial": "Muy social",
+            "caracter": "Inteligente",
+            "precauciones": [
+                "No alimentar",
+                "No nadar demasiado cerca"
+            ],
+            "especiesCompatibles": [
+                "Orcas",
+                "Ballenas"
+            ]
+        }
+    ],
+    "animales_anfibios": [
+        {
+            "codigo": 1234,
+            "nombre": "Rana arbórea",
+            "especie": "Hyla arborea",
+            "genero": "Hyla",
+            "habitad": "Bosques",
+            "zona": "Europa",
+            "procedencia": "Italia",
+            "dietaPrincipal": "Insectos",
+            "dietaCompleta": [
+                "Insectos",
+                "Larvas"
+            ],
+            "temperaturaHabitad": "20-25°C",
+            "riesgoExtincion": "Preocupación menor",
+            "tipoReproduccion": "Oviparous",
+            "peligroso": false,
+            "nivelPeligrosidad": "No aplica",
+            "venenoso": false,
+            "tipoVeneno": "No aplica",
+            "precauciones": []
+        },
+        {
+            "codigo": 5678,
+            "nombre": "Salamandra común",
+            "especie": "Salamandra salamandra",
+            "genero": "Salamandra",
+            "habitad": "Bosques húmedos",
+            "zona": "Europa",
+            "procedencia": "España",
+            "dietaPrincipal": "Insectos",
+            "dietaCompleta": [
+                "Insectos",
+                "Lombrices"
+            ],
+            "temperaturaHabitad": "10-20°C",
+            "riesgoExtincion": "Preocupación menor",
+            "tipoReproduccion": "Oviparous",
+            "peligroso": false,
+            "nivelPeligrosidad": "No aplica",
+            "venenoso": false,
+            "tipoVeneno": "No aplica",
+            "precauciones": []
+        },
+        {
+            "codigo": 1234,
+            "nombre": "Sapo de espuelas",
+            "especie": "Pelobates cultripes",
+            "genero": "Pelobates",
+            "habitad": "Zonas húmedas, lagunas y charcas",
+            "zona": "Europa y norte de África",
+            "procedencia": "Cautiverio",
+            "dietaPrincipal": "Insectos",
+            "dietaCompleta": [
+                "Insectos",
+                "Arañas",
+                "Lombrices",
+                "Caracoles"
+            ],
+            "temperaturaHabitad": "18-25°C",
+            "riesgoExtincion": "Preocupación menor",
+            "tipoReproduccion": "Sexual",
+            "peligroso": true,
+            "nivelPeligrosidad": "Bajo",
+            "venenoso": false,
+            "tipoVeneno": "No aplica",
+            "precauciones": [
+                "No tocar",
+                "Lavarse las manos después de manipularlos"
+            ]
+        }
+    ],
+    "animales_aves_acuaticas": [
+        {
+            "codigo": 123,
+            "nombre": "Pato real",
+            "especie": "Anas platyrhynchos",
+            "genero": "Anas",
+            "edad": 5,
+            "peso": 1.5,
+            "dietaPrincipal": "Hierbas acuáticas",
+            "dietaCompleta": [
+                "Hierbas acuáticas",
+                "Semillas",
+                "Insectos",
+                "Crustáceos"
+            ],
+            "envergadura": "80-95 cm",
+            "vuela": true,
+            "tipoPico": "Ancho y aplanado",
+            "colorPlumaje": "Marrón y verde",
+            "habitad": "Lagos, ríos y pantanos",
+            "zona": "América, Europa y Asia",
+            "procedencia": "Nativo",
+            "tempHabitad": "Frío y templado",
+            "tiempoBuceo": "10-20 segundos",
+            "riesgoExtincion": "Preocupación menor",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "maltratado": false,
+            "comportamientoSocial": "Suelen formar parejas",
+            "caracter": "Manso y sociable",
+            "precauciones": [
+                "No alimentar con pan",
+                "Evitar que se acerquen a carreteras"
+            ]
+        },
+        {
+            "codigo": 1234,
+            "nombre": "Gaviota Plateada",
+            "especie": "Larus argentatus",
+            "genero": "Larus",
+            "edad": 5,
+            "peso": 0.8,
+            "dietaPrincipal": "Peces",
+            "dietaCompleta": [
+                "Peces",
+                "Crustáceos"
+            ],
+            "envergadura": "1.5 metros",
+            "vuela": true,
+            "tipoPico": "Recto",
+            "colorPlumaje": "Blanco y gris",
+            "habitad": "Costas",
+            "zona": "Templada",
+            "procedencia": "Europa",
+            "tempHabitad": "15 - 20°C",
+            "tiempoBuceo": "30 segundos",
+            "riesgoExtincion": "Preocupación menor",
+            "gestacion": false,
+            "tipoGestacion": "-",
+            "tiempoGestacion": "-",
+            "peligroso": false,
+            "nivelPeligrosidad": "-",
+            "venenoso": false,
+            "tipoVeneno": "-",
+            "maltratado": false,
+            "comportamientoSocial": "Suelen vivir en colonias y son muy territoriales.",
+            "caracter": "Son muy inteligentes y astutas.",
+            "precauciones": [
+                "No acercarse demasiado a sus nidos",
+                "No alimentarlas con comida humana"
+            ]
+        },
+        {
+            "codigo": 5678,
+            "nombre": "Cormorán Imperial",
+            "especie": "Leucocarbo atriceps",
+            "genero": "Leucocarbo",
+            "edad": 8,
+            "peso": 2.5,
+            "dietaPrincipal": "Peces",
+            "dietaCompleta": [
+                "Peces",
+                "Calamares",
+                "Crustáceos"
+            ],
+            "envergadura": "1.5 metros",
+            "vuela": true,
+            "tipoPico": "Gancho",
+            "colorPlumaje": "Negro",
+            "habitad": "Costas y ríos",
+            "zona": "Templada a fría",
+            "procedencia": "Sudamérica",
+            "tempHabitad": "10 - 15°C",
+            "tiempoBuceo": "1 minuto",
+            "riesgoExtincion": "Preocupación menor",
+            "gestacion": false,
+            "tipoGestacion": "-",
+            "tiempoGestacion": "-",
+            "peligroso": false,
+            "nivelPeligrosidad": "-",
+            "venenoso": false,
+            "tipoVeneno": "-",
+            "maltratado": false,
+            "comportamientoSocial": "Suelen vivir en colonias y son muy territoriales.",
+            "caracter": "Son muy buenos pescadores y buceadores.",
+            "precauciones": [
+                "No acercarse demasiado a sus nidos",
+                "No alimentarlas con comida humana"
+            ]
+        }
+    ],
+    "animales_aves_terrestres": [
+        {
+            "codigo": 456,
+            "nombre": "Avestruz común",
+            "especie": "Struthio camelus",
+            "genero": "Struthio",
+            "edad": 8,
+            "peso": 150,
+            "dietaPrincipal": "Vegetales",
+            "dietaCompleta": [
+                "Vegetales",
+                "Insectos",
+                "Pequeños mamíferos"
+            ],
+            "envergadura": "2-2.7 m",
+            "vuela": false,
+            "tipoPico": "Plano y ancho",
+            "colorPlumaje": "Marrón oscuro",
+            "habitad": "Sabanas y desiertos",
+            "zona": "África",
+            "procedencia": "Criado en cautiverio",
+            "riesgoExtincion": "Preocupación menor",
+            "gestacion": true,
+            "tipoGestacion": "Oviparidad",
+            "tiempoGestacion": "42-46 días",
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "maltratado": false,
+            "comportamientoSocial": "Suelen vivir en grupos pequeños",
+            "caracter": "Son animales muy territoriales",
+            "precauciones": [
+                "No acercarse demasiado al animal",
+                "No molestarlo"
+            ],
+            "aveDeCorral": false
+        },
+        {
+            "codigo": 456,
+            "nombre": "Flamenco rosado",
+            "especie": "Phoenicopterus roseus",
+            "genero": "Phoenicopterus",
+            "edad": 8,
+            "peso": 3.5,
+            "dietaPrincipal": "Algas y pequeños crustáceos",
+            "dietaCompleta": [
+                "Algas",
+                "Crustáceos",
+                "Moluscos"
+            ],
+            "envergadura": "120-150 cm",
+            "vuela": true,
+            "tipoPico": "Curvado hacia abajo",
+            "colorPlumaje": "Rosa intenso",
+            "habitad": "Lagunas y salinas",
+            "zona": "Europa, Asia y África",
+            "procedencia": "Europa",
+            "riesgoExtincion": "Preocupación menor",
+            "gestacion": true,
+            "tipoGestacion": "Oviparous",
+            "tiempoGestacion": "28-32 días",
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "maltratado": false,
+            "comportamientoSocial": "Suelen vivir en colonias grandes",
+            "caracter": "Animales muy sociales y gregarios",
+            "precauciones": [
+                "Mantener una distancia prudencial",
+                "Evitar perturbarlos durante la nidificación"
+            ],
+            "aveDeCorral": false
+        }
+    ],
+    "animales_aves_exoticas": [
+        {
+            "codigo": 12345,
+            "nombre": "Rainbow",
+            "especie": "Ara ararauna",
+            "genero": "Masculino",
+            "edad": 5,
+            "peso": 1.2,
+            "dietaPrincipal": "Frutas y semillas",
+            "dietaCompleta": [
+                "Manzanas",
+                "Papaya",
+                "Semillas de girasol",
+                "Maíz"
+            ],
+            "envergadura": "1 metro",
+            "vuela": true,
+            "tipoPico": "Fuerte y curvo",
+            "colorPlumaje": "Verde, azul y amarillo",
+            "habitad": "Bosques tropicales",
+            "zona": "América del Sur",
+            "procedencia": "Criadero en Brasil",
+            "riesgoExtincion": "Preocupación menor",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "maltratado": false,
+            "comportamientoSocial": "Sociable",
+            "caracter": "Curioso y juguetón",
+            "precauciones": [
+                "Evitar el contacto con niños pequeños",
+                "No dejarlo suelto en áreas abiertas"
+            ],
+            "especiesCompatibles": [
+                "Otras araras"
+            ]
+        },
+        {
+            "codigo": 123,
+            "nombre": "Faisán dorado",
+            "especie": "Chrysolophus pictus",
+            "genero": "Chrysolophus",
+            "edad": 5,
+            "peso": 1.5,
+            "dietaPrincipal": "Insectos",
+            "dietaCompleta": [
+                "Insectos",
+                "Semillas"
+            ],
+            "envergadura": "90-105 cm",
+            "vuela": true,
+            "tipoPico": "Fuerte y curvado",
+            "colorPlumaje": "Dorado, rojo y verde",
+            "habitad": "Bosques montañosos",
+            "zona": "Asia",
+            "procedencia": "China",
+            "riesgoExtincion": "No amenazado",
+            "gestacion": false,
+            "tipoGestacion": "",
+            "tiempoGestacion": "",
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "maltratado": false,
+            "comportamientoSocial": "Suelen vivir en grupos pequeños",
+            "caracter": "Son animales muy territoriales",
+            "precauciones": [
+                "No acercarse demasiado al animal",
+                "No molestarlo"
+            ],
+            "especiesCompatibles": [
+                "Otras especies de faisanes"
+            ]
+        }
+    ],
+    "animales_aves_carroña_rapiña": [
+        {
+            "codigo": 1234,
+            "nombre": "Buitre leonado",
+            "especie": "Gyps fulvus",
+            "genero": "Gyps",
+            "edad": 10,
+            "peso": 7.5,
+            "dietaPrincipal": "Carroña",
+            "dietaCompleta": [
+                "Carroña",
+                "Restos de animales muertos"
+            ],
+            "envergadura": "2.5 metros",
+            "vuela": true,
+            "tipoPico": "Curvo",
+            "colorPlumaje": "Marrón oscuro",
+            "habitad": "Zonas montañosas y abiertas",
+            "zona": "Eurasia y África",
+            "procedencia": "Europa",
+            "riesgoExtincion": "Casi amenazado",
+            "gestacion": false,
+            "tipoGestacion": "-",
+            "tiempoGestacion": "-",
+            "peligroso": false,
+            "nivelPeligrosidad": "-",
+            "venenoso": false,
+            "tipoVeneno": "-",
+            "maltratado": false,
+            "comportamientoSocial": "Suelen vivir en grupos y son muy territoriales.",
+            "caracter": "Tienen un excelente sentido del olfato que les permite detectar carroña desde grandes distancias.",
+            "precauciones": [
+                "No alimentarlas con comida humana",
+                "No acercarse demasiado a su nido"
+            ],
+            "especiesCompatibles": [
+                "Águila real",
+                "Alimoche"
+            ]
+        },
+        {
+            "codigo": 5678,
+            "nombre": "Águila real",
+            "especie": "Aquila chrysaetos",
+            "genero": "Aquila",
+            "edad": 15,
+            "peso": 6.5,
+            "dietaPrincipal": "Carne",
+            "dietaCompleta": [
+                "Mamíferos",
+                "Aves"
+            ],
+            "envergadura": "2.5 metros",
+            "vuela": true,
+            "tipoPico": "Gancho",
+            "colorPlumaje": "Marrón oscuro",
+            "habitad": "Montañas y zonas rocosas",
+            "zona": "América del Norte, Europa y Asia",
+            "procedencia": "América del Norte",
+            "riesgoExtincion": "Preocupación menor",
+            "gestacion": false,
+            "tipoGestacion": "-",
+            "tiempoGestacion": "-",
+            "peligroso": true,
+            "nivelPeligrosidad": "Alto",
+            "venenoso": false,
+            "tipoVeneno": "-",
+            "maltratado": false,
+            "comportamientoSocial": "Suelen vivir en pareja y son muy territoriales.",
+            "caracter": "Son muy buenos cazadores y pueden cazar animales de gran tamaño.",
+            "precauciones": [
+                "No acercarse demasiado a su nido",
+                "No alimentarlas con comida humana"
+            ],
+            "especiesCompatibles": [
+                "Búho real",
+                "Halcón peregrino"
+            ]
+        }
+    ],
+    "animales_insectos": [
+        {
+            "codigo": 1,
+            "nombre": "Mariquita de siete puntos",
+            "especie": "Coccinella septempunctata",
+            "metamorfosis": true,
+            "habitad": "Praderas y bosques",
+            "zona": "Europa, Asia y África",
+            "procedencia": "Europa",
+            "cantidad": 10,
+            "paresPatas": 3,
+            "paresAlas": 1,
+            "riesgoExtincion": "Preocupación menor",
+            "dietaPrincipal": "Pulgones",
+            "dietaCompleta": [
+                "Pulgones",
+                "Áfidos"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [
+                "No manipular excesivamente"
+            ]
+        },
+        {
+            "codigo": 2,
+            "nombre": "Mantis religiosa",
+            "especie": "Mantis religiosa",
+            "metamorfosis": true,
+            "habitad": "Zonas arbustivas y boscosas",
+            "zona": "Todo el mundo",
+            "procedencia": "",
+            "cantidad": 3,
+            "paresPatas": 3,
+            "paresAlas": 0,
+            "riesgoExtincion": "No evaluado",
+            "dietaPrincipal": "Insectos pequeños",
+            "dietaCompleta": [
+                "Hormigas",
+                "Mosquitos",
+                "Moscas"
+            ],
+            "peligroso": false,
+            "nivelPeligrosidad": "",
+            "venenoso": false,
+            "tipoVeneno": "",
+            "precauciones": [
+                "Evitar manipularlas",
+                "No mantener en cautiverio"
+            ]
+        },
+        {
+            "codigo": 3,
+            "nombre": "Avispa",
+            "especie": "Vespula vulgaris",
+            "metamorfosis": true,
+            "habitad": "Bosques y zonas abiertas",
+            "zona": "Hemisferio norte",
+            "procedencia": "",
+            "cantidad": 2,
+            "paresPatas": 3,
+            "paresAlas": 1,
+            "riesgoExtincion": "No evaluado",
+            "dietaPrincipal": "Insectos, néctar y frutas",
+            "dietaCompleta": [
+                "Abejas",
+                "Hormigas",
+                "Moscas"
+            ],
+            "peligroso": true,
+            "nivelPeligrosidad": "Alto",
+            "venenoso": true,
+            "tipoVeneno": "Neurotoxina",
+            "precauciones": [
+                "Evitar molestarlas",
+                "No mantenerlas en cautiverio"
+            ]
+        }
+    ],
+    "animales_peces": [
+        {
+            "codigo": 1,
+            "nombre": "Pez payaso",
+            "especie": "Amphiprioninae",
+            "genero": "Amphiprion",
+            "coloracion": "Naranja y blanco",
+            "tipoAgua": "Agua salada",
+            "tempAcuario": "24-28 °C",
+            "dietaPrincipal": "Omnívoro",
+            "dietaCompleta": [
+                "Artemia",
+                "Pellets",
+                "Algas"
+            ],
+            "habitad": "Arrecifes de coral",
+            "zona": "Indopacífico",
+            "procedencia": "Criadero",
+            "cantidad": 3,
+            "riesgoExtincion": "Preocupación menor",
+            "reproduccion": "Ovíparo",
+            "peligroso": false,
+            "nivelPeligrosidad": "N/A",
+            "venenoso": false,
+            "tipoVeneno": "N/A",
+            "precauciones": [],
+            "especiesCompatibles": [
+                "Cangrejo ermitaño",
+                "Estrella de mar"
+            ]
+        },
+        {
+            "codigo": 2,
+            "nombre": "Pez globo",
+            "especie": "Tetraodontidae",
+            "genero": "Tetraodon",
+            "coloracion": "Amarillo y negro",
+            "tipoAgua": "Agua salada",
+            "tempAcuario": "24-28 °C",
+            "dietaPrincipal": "Carnívoro",
+            "dietaCompleta": [
+                "Peces pequeños",
+                "Mariscos"
+            ],
+            "habitad": "Arrecifes de coral",
+            "zona": "Indopacífico",
+            "procedencia": "Capturado en la naturaleza",
+            "cantidad": 2,
+            "riesgoExtincion": "Preocupación menor",
+            "reproduccion": "Ovíparo",
+            "peligroso": true,
+            "nivelPeligrosidad": "Alto",
+            "venenoso": true,
+            "tipoVeneno": "Tetrodotoxina",
+            "precauciones": [
+                "No mantener con otros peces",
+                "Manipular con cuidado"
+            ],
+            "especiesCompatibles": []
+        },
+        {
+            "codigo": 3,
+            "nombre": "Pez betta",
+            "especie": "Betta splendens",
+            "genero": "Betta",
+            "coloracion": "Rojo",
+            "tipoAgua": "Agua dulce",
+            "tempAcuario": "24-28 °C",
+            "dietaPrincipal": "Carnívoro",
+            "dietaCompleta": [
+                "Gusanos",
+                "Artemia"
+            ],
+            "habitad": "Arrozales y charcas",
+            "zona": "Sudeste Asiático",
+            "procedencia": "Criadero",
+            "cantidad": 1,
+            "riesgoExtincion": "No evaluado",
+            "reproduccion": "Ovíparo",
+            "peligroso": false,
+            "nivelPeligrosidad": "N/A",
+            "venenoso": false,
+            "tipoVeneno": "N/A",
+            "precauciones": [],
+            "especiesCompatibles": [
+                "Corydoras"
+            ]
+        }
+    ],
+    "animales_reptiles_acuaticos": [
+        {
+            "codigo": 1,
+            "nombre": "Tortuga laúd",
+            "especie": "Dermochelys coriacea",
+            "genero": "Dermochelys",
+            "peso": 600,
+            "edad": 30,
+            "dietaPrincipal": "Medusas",
+            "dietaCompleta": [
+                "Peces",
+                "Crustáceos"
+            ],
+            "tipoPiel": "Piel de cuero",
+            "coloracion": "Negro",
+            "metodoRespiracion": "Pulmonar",
+            "numAletas": 0,
+            "habitad": "Océanos",
+            "zona": "Todas",
+            "procedencia": "Capturado en la naturaleza",
+            "riesgoExtincion": "En peligro crítico",
+            "gestacion": false,
+            "tipoGestacion": "N/A",
+            "tiempoGestacion": "N/A",
+            "tempEncubacion": "N/A",
+            "peligroso": false,
+            "nivelPeligrosidad": "N/A",
+            "venenoso": false,
+            "tipoVeneno": "N/A",
+            "maltratado": false,
+            "comportamientoSocial": "Solitario",
+            "caracter": "Resistente",
+            "precauciones": [
+                "No molestar"
+            ]
+        },
+        {
+            "codigo": 2,
+            "nombre": "Cocodrilo de agua salada",
+            "especie": "Crocodylus porosus",
+            "genero": "Crocodylus",
+            "peso": 1000,
+            "edad": 50,
+            "dietaPrincipal": "Carnívoro",
+            "dietaCompleta": [
+                "Peces",
+                "Mamíferos",
+                "Aves"
+            ],
+            "tipoPiel": "Piel con escamas",
+            "coloracion": "Marrón",
+            "metodoRespiracion": "Pulmonar",
+            "numAletas": 4,
+            "habitad": "Ríos, estuarios y manglares",
+            "zona": "Sudeste Asiático, Australia y Pacífico",
+            "procedencia": "Capturado en la naturaleza",
+            "riesgoExtincion": "Preocupación menor",
+            "gestacion": true,
+            "tipoGestacion": "Ovípara",
+            "tiempoGestacion": "80 días",
+            "tempEncubacion": "32-34 °C",
+            "peligroso": true,
+            "nivelPeligrosidad": "Alto",
+            "venenoso": false,
+            "tipoVeneno": "N/A",
+            "maltratado": true,
+            "comportamientoSocial": "Solitario",
+            "caracter": "Agresivo",
+            "precauciones": [
+                "Mantener en recinto seguro",
+                "No acercarse al agua"
+            ]
+        }
+    ],
+    "animales_reptiles_terrestres": [
+        {
+            "codigo": 1,
+            "nombre": "Iguana verde",
+            "especie": "Iguana iguana",
+            "genero": "Indeterminado",
+            "peso": 1.5,
+            "edad": 4,
+            "dietaPrincipal": "Vegetales",
+            "dietaCompleta": [
+                "Vegetales",
+                "Frutas"
+            ],
+            "tipoPiel": "Escamosa",
+            "coloracion": "Verde",
+            "numPatas": 4,
+            "habitad": "Bosque tropical",
+            "zona": "América Central",
+            "procedencia": "Criadero",
+            "riesgoExtincion": "No se encuentra en peligro de extinción",
+            "gestacion": true,
+            "tipoGestacion": "Oviparo",
+            "tiempoGestacion": "80 dias",
+            "tempEncubacion": "27-30°C",
+            "peligroso": false,
+            "nivelPeligrosidad": "No es peligroso",
+            "venenoso": false,
+            "tipoVeneno": "N/A",
+            "maltratado": false,
+            "comportamientoSocial": "Solitario",
+            "caracter": "Docil",
+            "precauciones": [
+                "No tocar su cola",
+                "Mantener en un recinto amplio"
+            ]
+        },
+        {
+            "codigo": 2,
+            "nombre": "Serpiente de cascabel",
+            "especie": "Crotalus adamanteus",
+            "genero": "Indeterminado",
+            "peso": 2.5,
+            "edad": 6,
+            "dietaPrincipal": "Carnivora",
+            "dietaCompleta": [
+                "Roedores",
+                "Aves"
+            ],
+            "tipoPiel": "Escamosa",
+            "coloracion": "Marron",
+            "numPatas": 0,
+            "habitad": "Desierto",
+            "zona": "Norte de América",
+            "procedencia": "Rescate animal",
+            "riesgoExtincion": "No se encuentra en peligro de extinción",
+            "gestacion": true,
+            "tipoGestacion": "Viviparo",
+            "tiempoGestacion": "6 meses",
+            "tempEncubacion": "N/A",
+            "peligroso": true,
+            "nivelPeligrosidad": "Peligroso",
+            "venenoso": true,
+            "tipoVeneno": "Hemotoxico",
+            "maltratado": true,
+            "comportamientoSocial": "Solitario",
+            "caracter": "Agresivo",
+            "precauciones": [
+                "Mantener alejado de las personas",
+                "No intentar atraparla"
+            ]
+        }
+    ]
+}
