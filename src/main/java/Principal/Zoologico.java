@@ -46,7 +46,6 @@ public class Zoologico {
         }while(continua);
         switch(opcion){
             case 1 -> new DptoLogistica();
-            case 2 -> new DptoGerencial();
             case 3 -> new DptoComercial();
         }
         
