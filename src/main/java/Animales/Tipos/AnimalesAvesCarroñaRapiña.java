@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Animales;
+package Animales.Tipos;
 
 import Animales.Caracteristicas.CaracteristicasEspecie;
 import Animales.Caracteristicas.Dieta;
@@ -14,21 +14,18 @@ import Animales.Caracteristicas.Ubicacion;
  *
  * @author Alisser
  */
-public class AnimalesReptilesAcuaticos extends AnimalesReptiles {
-
-    private String metodoRespiracion;
-    private int numAletas;
-
-    public AnimalesReptilesAcuaticos(
+public class AnimalesAvesCarroñaRapiña extends AnimalesAves{
+    private String especiesCompatibles[];
+    
+    public AnimalesAvesCarroñaRapiña(
             int codigo,
             CaracteristicasEspecie morfologia,
             Ubicacion ubicacion,
             Reproduccion reproduccion,
             Dieta dieta,
             Peligrosidad peligrosidad,
-            String metodoRespiracion,
-            int numAletas
-    ) {
+            String[] especiesCompatibles
+    ){
         super(
                 codigo,
                 morfologia,
@@ -37,24 +34,15 @@ public class AnimalesReptilesAcuaticos extends AnimalesReptiles {
                 dieta,
                 peligrosidad
         );
-        this.metodoRespiracion = metodoRespiracion;
-        this.numAletas = numAletas;
+        this.especiesCompatibles = especiesCompatibles;
     }
 
-    public String getMetodoRespiracion() {
-        return metodoRespiracion;
+    public String[] getEspeciesCompatibles() {
+        return especiesCompatibles;
     }
 
-    public void setMetodoRespiracion(String metodoRespiracion) {
-        this.metodoRespiracion = metodoRespiracion;
-    }
-
-    public int getNumAletas() {
-        return numAletas;
-    }
-
-    public void setNumAletas(int numAletas) {
-        this.numAletas = numAletas;
+    public void setEspeciesCompatibles(String[] especiesCompatibles) {
+        this.especiesCompatibles = especiesCompatibles;
     }
     
 }

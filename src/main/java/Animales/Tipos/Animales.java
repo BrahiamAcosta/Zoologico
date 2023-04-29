@@ -1,4 +1,4 @@
-package Animales;
+package Animales.Tipos;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,20 @@
-package Control.Acciones;
+package CopiaAnimales;
 
-import Animales.*;
-import Animales.AnimalesAnfibios;
+import Animales.Tipos.AnimalesAvesTerrestres;
+import Animales.Tipos.AnimalesMamiferosAcuaticos;
+import Animales.Tipos.AnimalesReptilesAcuaticos;
+import Animales.Tipos.Animales;
+import Animales.Tipos.AnimalesMamiferos;
+import Animales.Tipos.AnimalesPeces;
+import Animales.Tipos.AnimalesMamiferosTerrestres;
+import Animales.Tipos.AnimalesAvesExoticas;
+import Animales.Tipos.AnimalesInsectos;
+import Animales.Tipos.AnimalesReptilesTerrestres;
+import Animales.Tipos.AnimalesAvesAcuaticas;
+import Animales.Tipos.AnimalesAves;
+import Animales.Tipos.AnimalesReptiles;
+import Animales.Tipos.AnimalesAvesCarroñaRapiña;
+import Animales.Tipos.AnimalesAnfibios;
 import Animales.Caracteristicas.CaracteristicasEspecie;
 import Animales.Caracteristicas.Dieta;
 import Animales.Caracteristicas.Peligrosidad;
@@ -12,7 +25,7 @@ import Animales.Caracteristicas.Ubicacion;
  *
  * @author Alisser
  */
-public class AgregarAnimal {
+public class CopiarAnimal {
 
     public AnimalesAnfibios crearAnfibio(
             int codigo,

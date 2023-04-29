@@ -1,12 +1,12 @@
 package Principal;
-import Animales.Animales;
-import Animales.AnimalesAves;
+import Animales.Tipos.Animales;
+import Animales.Tipos.AnimalesAves;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import Control.*;
-import InfoJSON.GetInfoJSON;
-import InfoJSON.ReadJSON;
+import CopiaAnimales.InfoJSON.GetInfoJSON;
+import CopiaAnimales.InfoJSON.ReadJSON;
 
 /**
  *

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Animales;
+package Animales.Tipos;
 
 import Animales.Caracteristicas.CaracteristicasEspecie;
 import Animales.Caracteristicas.Dieta;
@@ -14,18 +14,21 @@ import Animales.Caracteristicas.Ubicacion;
  *
  * @author Alisser
  */
-public class AnimalesAvesTerrestres extends AnimalesAves{
-    private boolean aveDeCorral;
-    
-    public AnimalesAvesTerrestres(
+public class AnimalesReptilesAcuaticos extends AnimalesReptiles {
+
+    private String metodoRespiracion;
+    private int numAletas;
+
+    public AnimalesReptilesAcuaticos(
             int codigo,
             CaracteristicasEspecie morfologia,
             Ubicacion ubicacion,
             Reproduccion reproduccion,
             Dieta dieta,
             Peligrosidad peligrosidad,
-            boolean aveDeCorral
-    ){
+            String metodoRespiracion,
+            int numAletas
+    ) {
         super(
                 codigo,
                 morfologia,
@@ -34,16 +37,24 @@ public class AnimalesAvesTerrestres extends AnimalesAves{
                 dieta,
                 peligrosidad
         );
-        
-        this.aveDeCorral = aveDeCorral;
+        this.metodoRespiracion = metodoRespiracion;
+        this.numAletas = numAletas;
     }
 
-    public boolean isAveDeCorral() {
-        return aveDeCorral;
+    public String getMetodoRespiracion() {
+        return metodoRespiracion;
     }
 
-    public void setAveDeCorral(boolean aveDeCorral) {
-        this.aveDeCorral = aveDeCorral;
+    public void setMetodoRespiracion(String metodoRespiracion) {
+        this.metodoRespiracion = metodoRespiracion;
+    }
+
+    public int getNumAletas() {
+        return numAletas;
+    }
+
+    public void setNumAletas(int numAletas) {
+        this.numAletas = numAletas;
     }
     
 }

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Animales;
+package Animales.Tipos;
 
 import Animales.Caracteristicas.Dieta;
 import Animales.Caracteristicas.CaracteristicasEspecie;
@@ -15,25 +15,29 @@ import java.util.ArrayList;
  *
  * @author Alisser
  */
-public abstract class AnimalesMamiferos extends Animales{
-    public static int cantAnimalesMamiferos = 0;
-    public static ArrayList<AnimalesMamiferos> animalesMamiferos = new ArrayList<>();
+public abstract class AnimalesAves extends Animales{
+    public static int cantAnimalesAves = 0;
+    public static ArrayList<AnimalesAves> animalesAves = new ArrayList<>();
     private String 
-            tipoGestacion, 
             nivelPeligrosidad, 
+            envergadura, 
+            tipoPico, 
+            colorPlumaje, 
             tipoVeneno, 
+            tipoGestacion, 
             tiempoGestacion,
             precauciones[],
             comportamientoSocial,
             caracter;
+    private boolean vuela;
     
-    public AnimalesMamiferos(
-            int codigo, 
-            CaracteristicasEspecie morfologia,
-            Ubicacion ubicacion,
-            Reproduccion reproduccion,
-            Dieta dieta,
-            Peligrosidad peligrosidad
+    public AnimalesAves(
+        int codigo, 
+        CaracteristicasEspecie morfologia,
+        Ubicacion ubicacion,
+        Reproduccion reproduccion,
+        Dieta dieta,
+        Peligrosidad peligrosidad
     ){
         super(
                 codigo, 
@@ -57,25 +61,21 @@ public abstract class AnimalesMamiferos extends Animales{
             this.nivelPeligrosidad = peligrosidad.getNivelPeligrosidad();
             this.precauciones = peligrosidad.getPrecauciones();
         }
-        if(peligrosidad.isMaltratado()){
-            this.comportamientoSocial = peligrosidad.getComportamientoSocial();
-            this.caracter = peligrosidad.getCaracter();
-        }
         if(reproduccion.isGestacion()){
             this.tipoGestacion = reproduccion.getTipoGestacion();
             this.tiempoGestacion = reproduccion.getTiempoGestacion();
         }
+        this.envergadura = morfologia.getEnvergadura();
+        this.tipoPico = morfologia.getTipoPico();
+        this.colorPlumaje = morfologia.getColorPlumaje();
         if(peligrosidad.isVenenoso()){
             this.tipoVeneno = peligrosidad.getTipoVeneno();
         }
-    }
-
-    public String getTipoGestacion() {
-        return tipoGestacion;
-    }
-
-    public void setTipoGestacion(String tipoGestacion) {
-        this.tipoGestacion = tipoGestacion;
+        if(peligrosidad.isMaltratado()){
+            this.comportamientoSocial = peligrosidad.getComportamientoSocial();
+            this.caracter = peligrosidad.getCaracter();
+        }
+        this.vuela = morfologia.isVuela();
     }
 
     public String getNivelPeligrosidad() {
@@ -86,12 +86,44 @@ public abstract class AnimalesMamiferos extends Animales{
         this.nivelPeligrosidad = nivelPeligrosidad;
     }
 
+    public String getEnvergadura() {
+        return envergadura;
+    }
+
+    public void setEnvergadura(String envergadura) {
+        this.envergadura = envergadura;
+    }
+
+    public String getTipoPico() {
+        return tipoPico;
+    }
+
+    public void setTipoPico(String tipoPico) {
+        this.tipoPico = tipoPico;
+    }
+
+    public String getColorPlumaje() {
+        return colorPlumaje;
+    }
+
+    public void setColorPlumaje(String colorPlumaje) {
+        this.colorPlumaje = colorPlumaje;
+    }
+
     public String getTipoVeneno() {
         return tipoVeneno;
     }
 
     public void setTipoVeneno(String tipoVeneno) {
         this.tipoVeneno = tipoVeneno;
+    }
+
+    public String getTipoGestacion() {
+        return tipoGestacion;
+    }
+
+    public void setTipoGestacion(String tipoGestacion) {
+        this.tipoGestacion = tipoGestacion;
     }
 
     public String getTiempoGestacion() {
@@ -125,17 +157,24 @@ public abstract class AnimalesMamiferos extends Animales{
     public void setCaracter(String caracter) {
         this.caracter = caracter;
     }
-    public static int getCantAnimalesMamiferos() {
-        return cantAnimalesMamiferos;
+
+    public boolean isVuela() {
+        return vuela;
     }
 
-    public static ArrayList<AnimalesMamiferos> getAnimalesMamiferos() {
-        return animalesMamiferos;
+    public void setVuela(boolean vuela) {
+        this.vuela = vuela;
+    }
+    public static int getCantAnimalesAves() {
+        return cantAnimalesAves;
     }
 
-    public static void setAnimalesMamiferos(AnimalesMamiferos animal) {
-        AnimalesMamiferos.animalesMamiferos.add(animal);
-        AnimalesMamiferos.cantAnimalesMamiferos++;
+    public static ArrayList<AnimalesAves> getAnimalesAves() {
+        return animalesAves;
     }
-    
+
+    public static void setAnimalesAves(AnimalesAves animal) {
+        AnimalesAves.animalesAves.add(animal);
+        AnimalesAves.cantAnimalesAves+=1;
+    }
 }

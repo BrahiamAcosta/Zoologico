@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package InfoJSON;
+package CopiaAnimales.InfoJSON;
 
-import Control.Acciones.AgregarAnimal;
+import CopiaAnimales.CopiarAnimal;
 import java.io.IOException;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -63,8 +63,13 @@ public class GetInfoJSON {
             nivelPeligrosidad = anfibio.getString("nivelPeligrosidad");
             peligroso = anfibio.getBoolean("peligroso");
             venenoso = anfibio.getBoolean("venenoso");
-            AgregarAnimal animal = new AgregarAnimal();
-            animal.crearAnfibio(codigo, nombre, especie, genero, habitad, zona, procedencia, dietaPrincipal, dietaCompleta, temperaturaHabitad, riesgoExtincion, tipoReproduccion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, precauciones);
+            CopiarAnimal animal = new CopiarAnimal();
+            animal.crearAnfibio(
+                    codigo, nombre, especie, genero, habitad, zona, 
+                    procedencia, dietaPrincipal, dietaCompleta, temperaturaHabitad, 
+                    riesgoExtincion, tipoReproduccion, peligroso, nivelPeligrosidad, 
+                    venenoso, tipoVeneno, precauciones
+                    );
         }
     }
 
@@ -138,7 +143,7 @@ public class GetInfoJSON {
             peligroso = ave.getBoolean("peligroso");
             venenoso = ave.getBoolean("venenoso");
             maltratado = ave.getBoolean("maltratado");
-            AgregarAnimal animal = new AgregarAnimal();
+            CopiarAnimal animal = new CopiarAnimal();
             animal.crearAveAcuatica(codigo, nombre, especie, genero, edad, peso, dietaPrincipal, dietaCompleta, envergadura, vuela, tipoPico, colorPlumaje, habitad, zona, procedencia, tempHabitad, tiempoBuceo, riesgoExtincion, gestacion, tipoGestacion, tiempoGestacion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         }
     }
@@ -215,7 +220,7 @@ public class GetInfoJSON {
             for (int j = 0; j < especiesComp.length(); j++) {
                 especiesCompatibles[j] = especiesComp.get(j).toString();
             }
-            AgregarAnimal animal = new AgregarAnimal();
+            CopiarAnimal animal = new CopiarAnimal();
             animal.crearAveCarroñaRapiña(codigo, nombre, especie, genero, edad, peso, dietaPrincipal, dietaCompleta, envergadura, vuela, tipoPico, colorPlumaje, habitad, zona, procedencia, riesgoExtincion, gestacion, tipoGestacion, tiempoGestacion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones, especiesCompatibles);
         }
     }
@@ -292,7 +297,7 @@ public class GetInfoJSON {
             for (int j = 0; j < especiesComp.length(); j++) {
                 especiesCompatibles[j] = especiesComp.get(j).toString();
             }
-            AgregarAnimal animal = new AgregarAnimal();
+            CopiarAnimal animal = new CopiarAnimal();
             animal.crearAveExotica(codigo, nombre, especie, genero, edad, peso, dietaPrincipal, dietaCompleta, envergadura, vuela, tipoPico, colorPlumaje, habitad, zona, procedencia, riesgoExtincion, gestacion, tipoGestacion, tiempoGestacion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones, especiesCompatibles);
         }
     }
@@ -365,7 +370,7 @@ public class GetInfoJSON {
             venenoso = ave.getBoolean("venenoso");
             maltratado = ave.getBoolean("maltratado");
             aveDeCorral = ave.getBoolean("aveDeCorral");
-            AgregarAnimal animal = new AgregarAnimal();
+            CopiarAnimal animal = new CopiarAnimal();
             animal.crearAveTerrestre(codigo, nombre, especie, genero, edad, peso, dietaPrincipal, dietaCompleta, envergadura, vuela, tipoPico, colorPlumaje, habitad, zona, procedencia, riesgoExtincion, gestacion, tipoGestacion, tiempoGestacion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones, aveDeCorral);
         }
     }
@@ -414,7 +419,7 @@ public class GetInfoJSON {
             peligroso = insecto.getBoolean("peligroso");
             venenoso = insecto.getBoolean("venenoso");
             cantidad = insecto.getInt("cantidad");
-            AgregarAnimal animal = new AgregarAnimal();
+            CopiarAnimal animal = new CopiarAnimal();
             animal.crearInsectos(codigo, nombre, especie, metamorfosis, habitad, zona, procedencia, cantidad, paresPatas, paresAlas, riesgoExtincion, dietaPrincipal, dietaCompleta, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, precauciones);
         }
     }
@@ -488,7 +493,7 @@ public class GetInfoJSON {
             for (int j = 0; j < especiesComp.length(); j++) {
                 especiesCompatibles[j] = especiesComp.get(j).toString();
             }
-            AgregarAnimal animal = new AgregarAnimal();
+            CopiarAnimal animal = new CopiarAnimal();
             animal.crearMamiferoAcuatico(codigo, nombre, especie, genero, peso, dietaPrincipal, dietaCompleta, edad, tiempoBuceo, mecanismoRespiracion, numAletas, habitad, zona, procedencia, riesgoExtincion, gestacion, tipoGestacion, tiempoGestacion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones, especiesCompatibles);
         }
     }
@@ -554,7 +559,7 @@ public class GetInfoJSON {
             venenoso = mamifero.getBoolean("venenoso");
             maltratado = mamifero.getBoolean("maltratado");
             comportamiento = mamifero.getString("comportamiento");
-            AgregarAnimal animal = new AgregarAnimal();
+            CopiarAnimal animal = new CopiarAnimal();
             animal.crearMamiferoTerrestre(codigo, nombre, especie, genero, peso, dietaPrincipal, dietaCompleta, edad, numPatas, habitad, zona, procedencia, riesgoExtincion, gestacion, tipoGestacion, tiempoGestacion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, comportamiento, precauciones);
         }
     }
@@ -617,7 +622,7 @@ public class GetInfoJSON {
             for (int j = 0; j < especiesComp.length(); j++) {
                 especiesCompatibles[j] = especiesComp.get(j).toString();
             }
-            AgregarAnimal animal = new AgregarAnimal();
+            CopiarAnimal animal = new CopiarAnimal();
             animal.crearPeces(codigo, nombre, especie, genero, coloracion, tipoAgua, tempAcuario, dietaPrincipal, dietaCompleta, habitad, zona, procedencia, cantidad, riesgoExtincion, reproduccion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, precauciones, especiesCompatibles);
         }
     }
@@ -689,7 +694,7 @@ public class GetInfoJSON {
             peligroso = reptil.getBoolean("peligroso");
             venenoso = reptil.getBoolean("venenoso");
             maltratado = reptil.getBoolean("maltratado");
-            AgregarAnimal animal = new AgregarAnimal();
+            CopiarAnimal animal = new CopiarAnimal();
             animal.crearReptilesAcuaticos(codigo, nombre, especie, genero, peso, edad, dietaPrincipal, dietaCompleta, tipoPiel, coloracion, metodoRespiracion, numAletas, habitad, zona, procedencia, riesgoExtincion, gestacion, tipoGestacion, tiempoGestacion, tempEncubacion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         }
     }
@@ -759,7 +764,7 @@ public class GetInfoJSON {
             peligroso = reptil.getBoolean("peligroso");
             venenoso = reptil.getBoolean("venenoso");
             maltratado = reptil.getBoolean("maltratado");
-            AgregarAnimal animal = new AgregarAnimal();
+            CopiarAnimal animal = new CopiarAnimal();
             animal.crearReptilesTerrestres(codigo, nombre, especie, genero, peso, edad, dietaPrincipal, dietaCompleta, tipoPiel, coloracion, numPatas, habitad, zona, procedencia, riesgoExtincion, gestacion, tipoGestacion, tiempoGestacion, tempEncubacion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
         }
     }

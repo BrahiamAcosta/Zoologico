@@ -1,6 +1,6 @@
 package Control;
 
-import Animales.Animales;
+import Animales.Tipos.Animales;
 
 /**
  *

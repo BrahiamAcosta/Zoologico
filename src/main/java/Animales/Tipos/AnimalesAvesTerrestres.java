@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Animales;
+package Animales.Tipos;
 
 import Animales.Caracteristicas.CaracteristicasEspecie;
 import Animales.Caracteristicas.Dieta;
@@ -14,17 +14,17 @@ import Animales.Caracteristicas.Ubicacion;
  *
  * @author Alisser
  */
-public class AnimalesAvesCarroñaRapiña extends AnimalesAves{
-    private String especiesCompatibles[];
+public class AnimalesAvesTerrestres extends AnimalesAves{
+    private boolean aveDeCorral;
     
-    public AnimalesAvesCarroñaRapiña(
+    public AnimalesAvesTerrestres(
             int codigo,
             CaracteristicasEspecie morfologia,
             Ubicacion ubicacion,
             Reproduccion reproduccion,
             Dieta dieta,
             Peligrosidad peligrosidad,
-            String[] especiesCompatibles
+            boolean aveDeCorral
     ){
         super(
                 codigo,
@@ -34,15 +34,16 @@ public class AnimalesAvesCarroñaRapiña extends AnimalesAves{
                 dieta,
                 peligrosidad
         );
-        this.especiesCompatibles = especiesCompatibles;
+        
+        this.aveDeCorral = aveDeCorral;
     }
 
-    public String[] getEspeciesCompatibles() {
-        return especiesCompatibles;
+    public boolean isAveDeCorral() {
+        return aveDeCorral;
     }
 
-    public void setEspeciesCompatibles(String[] especiesCompatibles) {
-        this.especiesCompatibles = especiesCompatibles;
+    public void setAveDeCorral(boolean aveDeCorral) {
+        this.aveDeCorral = aveDeCorral;
     }
     
 }
