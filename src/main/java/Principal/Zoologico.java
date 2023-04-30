@@ -15,9 +15,6 @@ import CopiaAnimales.InfoJSON.ReadJSON;
 public class Zoologico {
 
     public static void main(String[] args) throws IOException{
-        boolean continua;
-        int opcion = 0;
-        do{
             //JSON info to Animals static attributes (ArrayList)
             GetInfoJSON info = new GetInfoJSON();
             info.GetInfoAnfibios();
@@ -33,22 +30,7 @@ public class Zoologico {
             info.GetInfoReptilesTerrestres();
             
             System.out.println("Nuestros Animales: \n");
-            System.out.println(Animales.animales);
-            
-            System.out.println("\n\nBienvenido \n ¿Que desea hacer?: \n1. Gestionar Animales \n2. Consultar contabilidad \n3. Vender plan");
-            try{
-                continua = false;
-                opcion = Integer.parseInt(Leer());
-            }catch(NumberFormatException e){
-            System.out.println("Ingrese la opción en números");
-            continua = true;
-            }   
-        }while(continua);
-        switch(opcion){
-            case 1 -> new DptoLogistica();
-            case 3 -> new DptoComercial();
-        }
-        
+            System.out.println(Animales.getAnimales());
     }
     public static String Leer() throws IOException{
         BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
