@@ -4,7 +4,7 @@
  */
 package Principal;
 import Principal.paneles.PanelInforme;
-import Principal.paneles.PanelVentaEstudiante;
+import Principal.paneles.PanelVentaIndividual;
 import Principal.paneles.PanelVentas;
 import javax.swing.*;
 import java.awt.*;
@@ -90,9 +90,9 @@ public class InitView extends JFrame{
         
     }
 
-    public void showPanelVentaEstudiante(){
-        PanelVentaEstudiante venta =new PanelVentaEstudiante(this); 
-        panelPrincipal.add(venta,BorderLayout.CENTER);
+    public void showPanelVentaIndividual(){
+        PanelVentaIndividual venta =new PanelVentaIndividual(this); 
+        panelPrincipal.add(venta);
     }
     public void showPanelVenta(){
         panelPrincipal.add(panelVentas);

@@ -20,25 +20,24 @@ public class PanelInforme extends JPanel {
 
     public PanelInforme(InitView principal) {
         this.prinipal = principal;
-        setLayout(new GridLayout(1,1));
+        setLayout(new GridLayout(1,2));
+        setBounds(50,250,800,250);
 
         // Creamos el JLabel y lo añadimos al panel
         informeLabel = new JLabel("Informe generado exitosamente");
         informeLabel.setHorizontalAlignment(JLabel.CENTER);
         informeLabel.setBounds(50, 300, 800, 50);
-        principal.add(informeLabel, BorderLayout.NORTH);;
+        add(informeLabel);;
 
         // Creamos el JButton y lo añadimos al panel
         regresarButton = new JButton("Regresar");
-        principal.add(regresarButton, BorderLayout.SOUTH);
+        add(regresarButton);
         
         regresarButton.addActionListener(new ActionListener() {
            @Override
             public void actionPerformed(ActionEvent e) {
                 // Eliminamos los botones de ventas
                 setVisible(false);
-                principal.remove(informeLabel);
-                principal.remove(regresarButton);
                 // Mostramos los botones anteriores
                 principal.showPrincipal();
             }

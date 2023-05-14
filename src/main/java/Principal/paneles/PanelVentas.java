@@ -46,7 +46,7 @@ public class PanelVentas extends JPanel{
                 // Eliminamos los botones de ventas
                 setVisible(false);
                 // Mostramos los botones anteriores
-                principal.showPanelVentaEstudiante();
+                principal.showPanelVentaIndividual();
             }
         });
     }

@@ -16,14 +16,14 @@ import java.awt.event.ActionListener;
  *
  * @author Brahiam
  */
-public class PanelVentaEstudiante extends JPanel{
+public class PanelVentaIndividual extends JPanel{
     private InitView principal;
     private JPanel panelbotones;
     private JButton btnIndividual;
     private JButton btnFamiliar;
     private JButton btnregresar;
     
-    public PanelVentaEstudiante(InitView principal){
+    public PanelVentaIndividual(InitView principal){
         this.principal = principal;
         this.setLayout(new GridLayout(1,3,50,0));
         setBounds(50,250,800,250);
@@ -33,17 +33,19 @@ public class PanelVentaEstudiante extends JPanel{
         btnIndividual.setPreferredSize(new Dimension(200, 250));
         add(btnIndividual);
         
-        //regresar
-        btnregresar = new JButton("Regresar");
-        btnIndividual.setPreferredSize(new Dimension(200, 250));
-        add(btnregresar);
-        
         // Botón de familiar
         btnFamiliar = new JButton("Regular");
         btnFamiliar.setPreferredSize(new Dimension(200, 250));
         add(btnFamiliar);
         panelbotones = new JPanel();
         panelbotones.add(this);
+        
+        //regresar
+        btnregresar = new JButton("Regresar");
+        btnIndividual.setPreferredSize(new Dimension(200, 250));
+        add(btnregresar);
+        
+        
         
         btnregresar.addActionListener(new ActionListener() {
            @Override
