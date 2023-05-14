@@ -4,27 +4,31 @@
  */
 package Principal.paneles;
 
+import Principal.View.InitView;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
 /**
  *
  * @author Brahiam
  */
-import Principal.View.InitView;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-
-public class PanelInforme extends JPanel {
+public class PanelVentaExitosa extends JPanel{
     private InitView prinipal;
     private JLabel informeLabel;
     private JButton btnRegresar;
 
-    public PanelInforme(InitView principal) {
+    public PanelVentaExitosa(InitView principal) {
         this.prinipal = principal;
         setLayout(new GridLayout(1,2));
         setBounds(50,250,800,250);
 
         // Creamos el JLabel y lo añadimos al panel
-        informeLabel = new JLabel("Informe generado exitosamente");
+        informeLabel = new JLabel("Venta Exitosa");
         informeLabel.setFont(new Font("Arial",Font.BOLD,25));
         informeLabel.setHorizontalAlignment(JLabel.CENTER);
         informeLabel.setBounds(50, 300, 800, 50);

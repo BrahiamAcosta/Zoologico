@@ -4,7 +4,7 @@
  */
 package Principal.paneles;
 
-import Principal.InitView;
+import Principal.View.InitView;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

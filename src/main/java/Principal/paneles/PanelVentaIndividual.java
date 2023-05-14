@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Principal.paneles;
-import Principal.InitView;
+import Principal.View.InitView;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -19,8 +19,8 @@ import java.awt.event.ActionListener;
 public class PanelVentaIndividual extends JPanel{
     private InitView principal;
     private JPanel panelbotones;
-    private JButton btnIndividual;
-    private JButton btnFamiliar;
+    private JButton btnEstudiante;
+    private JButton btnRegular;
     private JButton btnregresar;
     
     public PanelVentaIndividual(InitView principal){
@@ -29,24 +29,24 @@ public class PanelVentaIndividual extends JPanel{
         setBounds(50,250,800,250);
         
         // Botón de individual
-        btnIndividual = new JButton("Estudiante");
-        btnIndividual.setPreferredSize(new Dimension(200, 250));
-        add(btnIndividual);
+        btnEstudiante = new JButton("Estudiante");
+        btnEstudiante.setPreferredSize(new Dimension(200, 250));
+        add(btnEstudiante);
         
         // Botón de familiar
-        btnFamiliar = new JButton("Regular");
-        btnFamiliar.setPreferredSize(new Dimension(200, 250));
-        add(btnFamiliar);
+        btnRegular = new JButton("Regular");
+        btnRegular.setPreferredSize(new Dimension(200, 250));
+        add(btnRegular);
         panelbotones = new JPanel();
         panelbotones.add(this);
         
         //regresar
         btnregresar = new JButton("Regresar");
-        btnIndividual.setPreferredSize(new Dimension(200, 250));
+        btnEstudiante.setPreferredSize(new Dimension(200, 250));
         add(btnregresar);
         
         
-        
+        //Accion boton regresar
         btnregresar.addActionListener(new ActionListener() {
            @Override
             public void actionPerformed(ActionEvent e) {
@@ -56,5 +56,27 @@ public class PanelVentaIndividual extends JPanel{
                 principal.showPrincipal();
             }
         });
+        
+        //Accion boton venta a estudiante
+        btnEstudiante.addActionListener(new ActionListener() {
+           @Override
+            public void actionPerformed(ActionEvent e) {
+                // Eliminamos los botones de ventas
+                setVisible(false);
+                // Mostramos los botones anteriores
+                principal.showVentaExitosa();
+            }
+        });
+        //Accion boton venta a regular
+        btnRegular.addActionListener(new ActionListener() {
+           @Override
+            public void actionPerformed(ActionEvent e) {
+                // Eliminamos los botones de ventas
+                setVisible(false);
+                // Mostramos los botones anteriores
+                principal.showVentaRegular();
+            }
+        });
+        
 }
 }

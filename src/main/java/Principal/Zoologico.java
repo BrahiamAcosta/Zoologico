@@ -1,12 +1,12 @@
 package Principal;
-import Animales.Tipos.Animales;
-import Animales.Tipos.AnimalesAves;
+import Principal.View.InitView;
+import Control.GestionAnimales.Animales.Tipos.Animales;
+import Control.GestionAnimales.Animales.Tipos.AnimalesAves;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
-import Control.*;
-import CopiaAnimales.InfoJSON.GetInfoJSON;
-import CopiaAnimales.InfoJSON.ReadJSON;
+import Control.GestionAnimales.CopiaAnimales.InfoJSON.GetInfoJSON;
+import Control.GestionAnimales.CopiaAnimales.InfoJSON.ReadJSON;
 
 /**
  *
@@ -29,11 +29,8 @@ public class Zoologico {
             info.GetInfoReptilesAcuaticos();
             info.GetInfoReptilesTerrestres();
             
-            System.out.println("Nuestros Animales: \n");
             System.out.println(Animales.getAnimales());
-    }
-    public static String Leer() throws IOException{
-        BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-        return stdin.readLine();
+            
+            InitView iniciar = new InitView();
     }
 }
