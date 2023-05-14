@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Principal;
+import Principal.paneles.PanelInforme;
 import Principal.paneles.PanelVentaEstudiante;
 import Principal.paneles.PanelVentas;
 import javax.swing.*;
@@ -69,6 +70,16 @@ public class InitView extends JFrame{
             }
         });
         
+        btnReporte.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Eliminamos los botones anteriores
+                panelBotones.setVisible(false);
+
+                // Creamos el panel para los nuevos botones
+                showReporte();
+            }
+        });
+        
         
         // Agregamos el panel principal al JFrame
         add(panelPrincipal);
@@ -82,13 +93,16 @@ public class InitView extends JFrame{
     public void showPanelVentaEstudiante(){
         PanelVentaEstudiante venta =new PanelVentaEstudiante(this); 
         panelPrincipal.add(venta,BorderLayout.CENTER);
-        setVisible(true);  
     }
     public void showPanelVenta(){
         panelPrincipal.add(panelVentas);
     }
     public void showPrincipal(){
         panelBotones.setVisible(true);
+    }
+    public void showReporte(){
+        PanelInforme info = new PanelInforme(this);
+        panelPrincipal.add(info);
     }
     
     public static void main(String[] args) {

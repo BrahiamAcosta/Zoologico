@@ -36,7 +36,7 @@ public class PanelVentaEstudiante extends JPanel{
         //regresar
         btnregresar = new JButton("Regresar");
         btnIndividual.setPreferredSize(new Dimension(200, 250));
-        add(btnIndividual);
+        add(btnregresar);
         
         // Botón de familiar
         btnFamiliar = new JButton("Regular");
@@ -45,7 +45,7 @@ public class PanelVentaEstudiante extends JPanel{
         panelbotones = new JPanel();
         panelbotones.add(this);
         
-        btnIndividual.addActionListener(new ActionListener() {
+        btnregresar.addActionListener(new ActionListener() {
            @Override
             public void actionPerformed(ActionEvent e) {
                 // Eliminamos los botones de ventas
