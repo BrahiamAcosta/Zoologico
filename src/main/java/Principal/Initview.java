@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Principal;
+import Principal.paneles.PanelVentas;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -11,13 +12,13 @@ import java.awt.event.*;
  *
  * @author Brahiam
  */
-public class Initview extends JFrame{
+public class InitView extends JFrame{
     private JPanel panelPrincipal, panelBotones;
-    private JPanel panelVentas;
+    private PanelVentas panelVentas;
     private JLabel labelTitulo;
     private JButton btnGestion, btnVentas, btnReporte, btnIndividual, btnFamiliar;
 
-    public Initview(){
+    public InitView(){
         // Configuración del JFrame
         setTitle("Zoologico");
         setSize(900, 750);
@@ -63,33 +64,33 @@ public class Initview extends JFrame{
                 panelBotones.setVisible(false);
 
                 // Creamos el panel para los nuevos botones
-                panelVentas = new JPanel(new GridLayout(1, 2, 50, 0));
-                panelVentas.setBounds(50, 350, 800, 250);
+                panelVentas = new PanelVentas();
+                panelPrincipal.add(panelVentas);
 
-                // Botón de individual
-                btnIndividual = new JButton("Individual");
-                btnIndividual.setPreferredSize(new Dimension(200, 250));
-                panelVentas.add(btnIndividual);
-
-                // Botón de familiar
-                btnFamiliar = new JButton("Familiar");
-                btnFamiliar.setPreferredSize(new Dimension(200, 250));
-                panelVentas.add(btnFamiliar);
-
-                // Agregamos el panel de ventas al panel principal
-                panelPrincipal.add(panelVentas, BorderLayout.CENTER);
-                panelVentas.setVisible(true);
-
-                // Acción del botón Individual
-                btnIndividual.addActionListener(new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                        // Eliminamos los botones de ventas
-                        panelVentas.setVisible(false);
-
-                        // Mostramos los botones anteriores
-                        panelBotones.setVisible(true);
-                    }
-        });
+//                // Botón de individual
+//                btnIndividual = new JButton("Individual");
+//                btnIndividual.setPreferredSize(new Dimension(200, 250));
+//                panelVentas.add(btnIndividual);
+//
+//                // Botón de familiar
+//                btnFamiliar = new JButton("Familiar");
+//                btnFamiliar.setPreferredSize(new Dimension(200, 250));
+//                panelVentas.add(btnFamiliar);
+//
+//                // Agregamos el panel de ventas al panel principal
+//                panelPrincipal.add(panelVentas, BorderLayout.CENTER);
+//                panelVentas.setVisible(true);
+//
+//                // Acción del botón Individual
+//                btnIndividual.addActionListener(new ActionListener() {
+//                    public void actionPerformed(ActionEvent e) {
+//                        // Eliminamos los botones de ventas
+//                        panelVentas.setVisible(false);
+//
+//                        // Mostramos los botones anteriores
+//                        panelBotones.setVisible(true);
+//                    }
+//        });
             }
         });
         
@@ -102,7 +103,7 @@ public class Initview extends JFrame{
     }
     
     public static void main(String[] args) {
-        new Initview();
+        new InitView();
     }
     
 }
