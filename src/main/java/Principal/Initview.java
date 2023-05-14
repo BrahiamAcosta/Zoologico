@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Principal;
+import Principal.paneles.PanelVentaEstudiante;
 import Principal.paneles.PanelVentas;
 import javax.swing.*;
 import java.awt.*;
@@ -14,9 +15,9 @@ import java.awt.event.*;
  */
 public class InitView extends JFrame{
     private JPanel panelPrincipal, panelBotones;
-    private PanelVentas panelVentas;
+    private PanelVentas panelVentas = new PanelVentas(this);
     private JLabel labelTitulo;
-    private JButton btnGestion, btnVentas, btnReporte, btnIndividual, btnFamiliar;
+    private JButton btnGestion, btnVentas, btnReporte;
 
     public InitView(){
         // Configuración del JFrame
@@ -64,33 +65,7 @@ public class InitView extends JFrame{
                 panelBotones.setVisible(false);
 
                 // Creamos el panel para los nuevos botones
-                panelVentas = new PanelVentas();
-                panelPrincipal.add(panelVentas);
-
-//                // Botón de individual
-//                btnIndividual = new JButton("Individual");
-//                btnIndividual.setPreferredSize(new Dimension(200, 250));
-//                panelVentas.add(btnIndividual);
-//
-//                // Botón de familiar
-//                btnFamiliar = new JButton("Familiar");
-//                btnFamiliar.setPreferredSize(new Dimension(200, 250));
-//                panelVentas.add(btnFamiliar);
-//
-//                // Agregamos el panel de ventas al panel principal
-//                panelPrincipal.add(panelVentas, BorderLayout.CENTER);
-//                panelVentas.setVisible(true);
-//
-//                // Acción del botón Individual
-//                btnIndividual.addActionListener(new ActionListener() {
-//                    public void actionPerformed(ActionEvent e) {
-//                        // Eliminamos los botones de ventas
-//                        panelVentas.setVisible(false);
-//
-//                        // Mostramos los botones anteriores
-//                        panelBotones.setVisible(true);
-//                    }
-//        });
+                showPanelVenta();
             }
         });
         
@@ -100,6 +75,20 @@ public class InitView extends JFrame{
 
         // Hacemos el JFrame visible
         setVisible(true);
+        
+        
+    }
+
+    public void showPanelVentaEstudiante(){
+        PanelVentaEstudiante venta =new PanelVentaEstudiante(this); 
+        panelPrincipal.add(venta,BorderLayout.CENTER);
+        setVisible(true);  
+    }
+    public void showPanelVenta(){
+        panelPrincipal.add(panelVentas);
+    }
+    public void showPrincipal(){
+        panelBotones.setVisible(true);
     }
     
     public static void main(String[] args) {

@@ -6,6 +6,7 @@ package Principal.paneles;
 import Principal.InitView;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -16,34 +17,42 @@ import java.awt.event.ActionListener;
  * @author Brahiam
  */
 public class PanelVentaEstudiante extends JPanel{
-    private JLabel confirmacion;
-    private JButton regreso;
+    private InitView principal;
+    private JPanel panelbotones;
+    private JButton btnIndividual;
+    private JButton btnFamiliar;
+    private JButton btnregresar;
     
-    public PanelVentaEstudiante(){
-        this.setLayout(null);
+    public PanelVentaEstudiante(InitView principal){
+        this.principal = principal;
+        this.setLayout(new GridLayout(1,3,50,0));
         setBounds(50,250,800,250);
-        //Label de confirmacion
-        confirmacion = new JLabel("La venta ha sido exitosa");
-        confirmacion.setFont(new Font("Arial",Font.BOLD,44));
-        confirmacion.setHorizontalAlignment(JLabel.CENTER);
-        confirmacion.setVerticalAlignment(JLabel.CENTER);
         
-        //Boton de regreso al inicio
-        regreso = new JButton("regresar al inicio");
-        regreso.setPreferredSize(new Dimension(100,100));
+        // Botón de individual
+        btnIndividual = new JButton("Estudiante");
+        btnIndividual.setPreferredSize(new Dimension(200, 250));
+        add(btnIndividual);
         
-        add(regreso);
-        add(confirmacion);
+        //regresar
+        btnregresar = new JButton("Regresar");
+        btnIndividual.setPreferredSize(new Dimension(200, 250));
+        add(btnIndividual);
         
-        //accion boton regreso
-        regreso.addActionListener(new ActionListener() {
+        // Botón de familiar
+        btnFamiliar = new JButton("Regular");
+        btnFamiliar.setPreferredSize(new Dimension(200, 250));
+        add(btnFamiliar);
+        panelbotones = new JPanel();
+        panelbotones.add(this);
+        
+        btnIndividual.addActionListener(new ActionListener() {
            @Override
             public void actionPerformed(ActionEvent e) {
-                // Eliminamos el panel
+                // Eliminamos los botones de ventas
                 setVisible(false);
                 // Mostramos los botones anteriores
-                new InitView();
+                principal.showPrincipal();
             }
         });
-    }
+}
 }

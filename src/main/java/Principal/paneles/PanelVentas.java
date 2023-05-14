@@ -4,6 +4,7 @@
  */
 package Principal.paneles;
 
+import Principal.InitView;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -16,10 +17,13 @@ import javax.swing.JPanel;
  * @author Brahiam
  */
 public class PanelVentas extends JPanel{
+    private InitView principal;
     private JPanel panelbotones;
     private JButton btnIndividual;
     private JButton btnFamiliar;
-    public PanelVentas(){
+    
+    public PanelVentas(InitView principal){
+        this.principal = principal;
         this.setLayout(new GridLayout(1,2,50,0));
         setBounds(50,250,800,250);
         
@@ -40,11 +44,9 @@ public class PanelVentas extends JPanel{
            @Override
             public void actionPerformed(ActionEvent e) {
                 // Eliminamos los botones de ventas
-                panelbotones.setVisible(false);
+                setVisible(false);
                 // Mostramos los botones anteriores
-                PanelVentaEstudiante estudiante = new PanelVentaEstudiante();
-                add(estudiante);
-                estudiante.setVisible(true);
+                principal.showPanelVentaEstudiante();
             }
         });
     }
