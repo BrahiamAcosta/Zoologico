@@ -3,12 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Principal.paneles;
+import Control.GestionReporte.Planes;
 import Principal.View.InitView;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.GridLayout;
 import javax.swing.JButton;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -63,6 +62,10 @@ public class PanelVentaIndividual extends JPanel{
             public void actionPerformed(ActionEvent e) {
                 // Eliminamos los botones de ventas
                 setVisible(false);
+                Planes planEstudiante = new Planes("Estudiante");
+                //nueva venta
+                String[] venta = {"Estudiante","1",""+planEstudiante.getPrecioPlan(),"false"};
+                principal.addVenta(venta);
                 // Mostramos los botones anteriores
                 principal.showVentaExitosa();
             }

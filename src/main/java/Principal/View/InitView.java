@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Principal.View;
+import Control.GestionReporte.ReporteVentas;
 import Principal.paneles.PanelInforme;
 import Principal.paneles.PanelVentaExitosa;
 import Principal.paneles.PanelVentaIndividual;
@@ -11,6 +12,7 @@ import Principal.paneles.PanelVentas;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 
 /**
  *
@@ -20,6 +22,7 @@ public class InitView extends JFrame{
     private JPanel panelPrincipal, panelBotones;
     private JLabel labelTitulo;
     private JButton btnGestion, btnVentas, btnReporte;
+    private static ArrayList<String[]> ventas = new ArrayList<>();
 
     public InitView(){
         // Configuración del JFrame
@@ -103,6 +106,7 @@ public class InitView extends JFrame{
         panelBotones.setVisible(true);
     }
     public void showReporte(){
+        new ReporteVentas(getVentas());
         PanelInforme info = new PanelInforme(this);
         panelPrincipal.add(info);
     }
@@ -115,4 +119,13 @@ public class InitView extends JFrame{
         PanelVentaRegular ventaRegular = new PanelVentaRegular(this);
         panelPrincipal.add(ventaRegular);
     }
+    public void addVenta(String[] venta){
+        this.ventas.add(venta);
+    }
+
+    public static ArrayList<String[]> getVentas() {
+        return ventas;
+    }
+    
+    
 }

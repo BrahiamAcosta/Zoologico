@@ -34,6 +34,8 @@ public class PanelInforme extends JPanel {
         btnRegresar = new JButton("Regresar");
         add(btnRegresar);
         
+        
+        
         btnRegresar.addActionListener(new ActionListener() {
            @Override
             public void actionPerformed(ActionEvent e) {

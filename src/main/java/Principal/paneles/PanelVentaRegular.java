@@ -5,6 +5,7 @@
 package Principal.paneles;
 
 import Principal.View.InitView;
+import java.awt.GridLayout;
 import javax.swing.JPanel;
 
 /**
@@ -19,6 +20,7 @@ public class PanelVentaRegular extends JPanel{
     
     public PanelVentaRegular(InitView principal){
         this.principal = principal;
+        this.setLayout(new GridLayout());
         
     }
 }
