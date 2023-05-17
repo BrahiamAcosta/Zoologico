@@ -7,20 +7,22 @@ package Principal.paneles;
 import Principal.View.InitView;
 import java.awt.GridLayout;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
  * @author Brahiam
  */
-public class PanelVentaRegular extends JPanel{
-    private boolean tieneGuia = false;
+public class PanelVentaValidacion extends JPanel{
     private InitView principal;
-    private int identificacion;
-    private int cantPuntos;
+    private JTextField campoId;
     
-    public PanelVentaRegular(InitView principal){
+    public PanelVentaValidacion(InitView principal){
         this.principal = principal;
-        this.setLayout(new GridLayout());
+        this.setLayout(new GridLayout(1,3,100,0));
+        setBounds(50,250,800,200);
         
+        campoId = new JTextField(19);
     }
+    
 }

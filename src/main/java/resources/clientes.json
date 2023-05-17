@@ -1,0 +1,24 @@
+{
+    "clientes": [
+      {
+        "nombre": "John Doe",
+        "identificacion": 123456789,
+        "puntos": 1000
+      },
+      {
+        "nombre": "Jane Smith",
+        "identificacion": 987654321,
+        "puntos": 500
+      },
+      {
+        "nombre": "Michael Johnson",
+        "identificacion": 456789123,
+        "puntos": 750
+      },
+      {
+        "nombre": "Sarah Williams",
+        "identificacion": 789123456,
+        "puntos": 1200
+      }
+    ]
+}  

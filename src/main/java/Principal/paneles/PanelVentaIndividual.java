@@ -41,7 +41,7 @@ public class PanelVentaIndividual extends JPanel{
         
         //regresar
         btnregresar = new JButton("Regresar");
-        btnEstudiante.setPreferredSize(new Dimension(200, 250));
+        btnregresar.setPreferredSize(new Dimension(200, 250));
         add(btnregresar);
         
         
