@@ -25,7 +25,7 @@ import Control.GestionAnimales.Animales.Caracteristicas.Ubicacion;
  *
  * @author Alisser
  */
-public class CopiarAnimal {
+public class CrearAnimal {
 
     public AnimalesAnfibios crearAnfibio(
             int codigo,

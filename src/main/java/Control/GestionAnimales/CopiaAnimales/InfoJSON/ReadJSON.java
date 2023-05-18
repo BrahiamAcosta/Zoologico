@@ -15,7 +15,7 @@ import org.json.JSONArray;
  * @author Alisser
  */
 public class ReadJSON {
-    private JSONObject JsonInfo() throws IOException {
+    public JSONObject JsonInfo() throws IOException {
         String jsonString = new String(Files.readAllBytes(Paths.get("Animales.json")));
         JSONObject json = new JSONObject(jsonString);
         return json;
