@@ -67,7 +67,7 @@ public class Clientes {
         return clienteNuevo();
     }
     
-    public static void modificarPuntosCliente(int identificacion, int nuevosPuntos) {
+    public void modificarPuntosCliente(int identificacion, int nuevosPuntos) {
         try {
             StringBuilder jsonContent = new StringBuilder();
 

@@ -32,6 +32,7 @@ public class InitView extends JFrame{
         setSize(900, 750);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        setResizable(false);
 
         // Panel principal y su layout
         panelPrincipal = new JPanel();

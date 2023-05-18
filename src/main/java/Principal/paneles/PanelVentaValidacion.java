@@ -57,10 +57,7 @@ public class PanelVentaValidacion extends JPanel{
                 revalidate();
                 repaint();
                 idCliente = Integer.parseInt(campoId.getText());
-                if(idCliente <= 0){
-                    principal.showVentaValidacion();
-                }
-                else{
+                
                 Clientes cliente = new Clientes(idCliente);
                 if(cliente.getSize() == 0){
                     //cliente nuevo
@@ -99,7 +96,7 @@ public class PanelVentaValidacion extends JPanel{
                     setVisible(false);
                     principal.showVentaRegular(getIdCliente());
                 }
-            }
+            
             }
         });
         

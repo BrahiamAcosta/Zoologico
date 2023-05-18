@@ -1,1 +1,27 @@
-{"clientes":[{"identificacion":123456789,"puntos":1000,"nombre":"John Doe"},{"identificacion":987654321,"puntos":500,"nombre":"Jane Smith"},{"identificacion":456789123,"puntos":750,"nombre":"Michael Johnson"},{"identificacion":789123456,"puntos":1200,"nombre":"Sarah Williams"},{"identificacion":123654789,"puntos":0,"nombre":"Marco diaz"}]}
+{"clientes": [
+  {
+    "identificacion": 123456789,
+    "puntos": 850,
+    "nombre": "John Doe"
+  },
+  {
+    "identificacion": 987654321,
+    "puntos": 500,
+    "nombre": "Jane Smith"
+  },
+  {
+    "identificacion": 456789123,
+    "puntos": 750,
+    "nombre": "Michael Johnson"
+  },
+  {
+    "identificacion": 789123456,
+    "puntos": 1200,
+    "nombre": "Sarah Williams"
+  },
+  {
+    "identificacion": 123654789,
+    "puntos": 0,
+    "nombre": "Marco diaz"
+  }
+]}
