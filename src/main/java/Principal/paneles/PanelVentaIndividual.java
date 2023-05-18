@@ -77,7 +77,7 @@ public class PanelVentaIndividual extends JPanel{
                 // Eliminamos los botones de ventas
                 setVisible(false);
                 // Mostramos los botones anteriores
-                principal.showVentaRegular();
+                principal.showVentaValidacion();
             }
         });
         
