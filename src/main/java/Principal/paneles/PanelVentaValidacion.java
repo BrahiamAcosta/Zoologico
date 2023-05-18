@@ -27,7 +27,7 @@ public class PanelVentaValidacion extends JPanel{
     private JLabel id;
     
     //atributos cliente
-    private String nombreCliente;
+    private static String nombreCliente;
     private int puntosCliente;
     
     public PanelVentaValidacion(InitView principal){
@@ -78,15 +78,17 @@ public class PanelVentaValidacion extends JPanel{
                     btnRegistrar.setBounds(50, 300, 600, 50);
                     add(btnRegistrar);
                     
-                    setNombre(campoNombre.getText());
-                    setPuntos(0);
+                    
+                    
+                    
                     
                     //accion boton registrar
                     btnRegistrar.addActionListener(new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
-                            System.out.println(getNombre());
+                            setNombre(campoNombre.getText());
+                            setPuntos(0);
                             setVisible(false);
-//                            cliente.agregarCliente(getNombre(), puntosCliente);
+                            cliente.agregarCliente(getNombre(), puntosCliente);
                             principal.showVentaRegular(getIdCliente());  
                         }
                         });
@@ -94,7 +96,8 @@ public class PanelVentaValidacion extends JPanel{
                     
                 }
                 else{
-                    System.out.println("Cliente antiguo");
+                    setVisible(false);
+                    principal.showVentaRegular(getIdCliente());
                 }
             }
             }
@@ -115,7 +118,7 @@ public class PanelVentaValidacion extends JPanel{
     }
 
     public String getNombre() {
-        return nombreCliente;
+        return this.nombreCliente;
     }
     
     

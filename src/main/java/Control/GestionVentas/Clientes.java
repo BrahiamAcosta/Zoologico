@@ -67,6 +67,40 @@ public class Clientes {
         return clienteNuevo();
     }
     
+    public static void modificarPuntosCliente(int identificacion, int nuevosPuntos) {
+        try {
+            StringBuilder jsonContent = new StringBuilder();
+
+            FileInputStream fis = new FileInputStream(RUTA);
+            InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8);
+            BufferedReader reader = new BufferedReader(isr);
+            String line;
+            while ((line = reader.readLine()) != null) {
+                jsonContent.append(line);
+            }
+            reader.close();
+
+            JSONObject jsonObject = new JSONObject(jsonContent.toString());
+            JSONArray clientes = jsonObject.getJSONArray("clientes");
+
+            for (int i = 0; i < clientes.length(); i++) {
+                JSONObject cliente = clientes.getJSONObject(i);
+                long id = cliente.getLong("identificacion");
+                if (id == identificacion) {
+                    cliente.put("puntos", nuevosPuntos);
+                    break;
+                }
+            }
+
+            FileWriter file = new FileWriter(RUTA);
+            file.write(jsonObject.toString(2));
+            file.close();
+
+        } catch (IOException | JSONException e) {
+            e.printStackTrace();
+        }
+    }
+    
     public void agregarCliente(String nombre, int puntos){
         try {
             // Leer el archivo JSON existente
@@ -113,8 +147,12 @@ public class Clientes {
         return this.arrayCliente.size();
     }
 
+    public int getPuntos() {
+        return puntos;
+    }
+    
+
     public int getIdCliente() {
         return idCliente;
     }
-    
 }
