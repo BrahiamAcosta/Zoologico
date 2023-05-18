@@ -580,7 +580,7 @@ public class CrearNuevoAnimal {
         return crear.crearPeces(codigo, nombre, especie, genero, coloracion, tipoAgua, tempAcuario, dietaPrincipal, dietaCompleta, habitad, zona, procedencia, cantidad, riesgoExtincion, reproduccion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, precauciones, especiesCompatibles);
     }
 
-    public AnimalesReptilesAcuaticos crearNuevoReptilAcuaticos(
+    public AnimalesReptilesAcuaticos crearNuevoReptilAcuatico(
             int codigo,
             String nombre,
             String especie,
@@ -648,7 +648,7 @@ public class CrearNuevoAnimal {
         return crear.crearReptilesAcuaticos(codigo, nombre, especie, genero, peso, edad, dietaPrincipal, dietaCompleta, tipoPiel, coloracion, metodoRespiracion, numAletas, habitad, zona, procedencia, riesgoExtincion, gestacion, tipoGestacion, tiempoGestacion, tempEncubacion, peligroso, nivelPeligrosidad, venenoso, tipoVeneno, maltratado, comportamientoSocial, caracter, precauciones);
     }
 
-    public AnimalesReptilesTerrestres crearNuevoReptilTerrestres(
+    public AnimalesReptilesTerrestres crearNuevoReptilTerrestre(
             int codigo,
             String nombre,
             String especie,
