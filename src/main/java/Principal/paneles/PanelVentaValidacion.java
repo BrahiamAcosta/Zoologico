@@ -27,8 +27,8 @@ public class PanelVentaValidacion extends JPanel{
     private JLabel id;
     
     //atributos cliente
-    private String nombre;
-    private int puntos;
+    private String nombreCliente;
+    private int puntosCliente;
     
     public PanelVentaValidacion(InitView principal){
         this.idCliente = 0;
@@ -65,11 +65,11 @@ public class PanelVentaValidacion extends JPanel{
                 if(cliente.getSize() == 0){
                     //cliente nuevo
                     System.out.println("Cliente nuevo");
-                    JLabel nombre = new JLabel("Nombre del cliente: ");
-                    nombre.setFont(new Font("Arial",Font.BOLD,15));
-                    nombre.setHorizontalAlignment(JLabel.CENTER);
-                    nombre.setBounds(50, 300, 600, 50);
-                    add(nombre);
+                    JLabel nombreC = new JLabel("Nombre del cliente: ");
+                    nombreC.setFont(new Font("Arial",Font.BOLD,15));
+                    nombreC.setHorizontalAlignment(JLabel.CENTER);
+                    nombreC.setBounds(50, 300, 600, 50);
+                    add(nombreC);
                     
                     JTextField campoNombre = new JTextField(19);
                     add(campoNombre);
@@ -84,7 +84,9 @@ public class PanelVentaValidacion extends JPanel{
                     //accion boton registrar
                     btnRegistrar.addActionListener(new ActionListener() {
                         public void actionPerformed(ActionEvent e) {
+                            System.out.println(getNombre());
                             setVisible(false);
+//                            cliente.agregarCliente(getNombre(), puntosCliente);
                             principal.showVentaRegular(getIdCliente());  
                         }
                         });
@@ -101,15 +103,21 @@ public class PanelVentaValidacion extends JPanel{
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.nombreCliente = nombre;
     }
 
     public void setPuntos(int puntos) {
-        this.puntos = puntos;
+        this.puntosCliente = puntos;
     }
 
     public int getIdCliente() {
         return idCliente;
     }
+
+    public String getNombre() {
+        return nombreCliente;
+    }
+    
+    
     
 }
