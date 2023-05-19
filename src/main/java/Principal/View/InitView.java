@@ -4,7 +4,11 @@
  */
 package Principal.View;
 import Control.GestionReporte.ReporteVentas;
+import Principal.paneles.Animales.PanelAnfibio;
+import Principal.paneles.PanelAgregarAnimal;
+import Principal.paneles.PanelAnimalAgregado;
 import Principal.paneles.PanelInforme;
+import Principal.paneles.PanelOpcionesGestion;
 import Principal.paneles.PanelVentaExitosa;
 import Principal.paneles.PanelVentaIndividual;
 import Principal.paneles.PanelVentaRegular;
@@ -86,6 +90,16 @@ public class InitView extends JFrame{
             }
         });
         
+        btnGestion.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Eliminamos los botones anteriores
+                panelBotones.setVisible(false);
+
+                // Creamos el panel para los nuevos botones
+                showPanelOpcionesGestion();
+            }
+        });
+        
         
         // Agregamos el panel principal al JFrame
         add(panelPrincipal);
@@ -95,7 +109,26 @@ public class InitView extends JFrame{
         
         
     }
-
+    
+    public void showPanelAnfibio(){
+        PanelAnfibio anfibio = new PanelAnfibio(this);
+        panelPrincipal.add(anfibio);
+    }
+    public void showPanelAnimalAgregado(){
+        PanelAnimalAgregado animal = new PanelAnimalAgregado(this);
+        panelPrincipal.add(animal);
+    }
+    
+    public void showPanelOpcionesGestion(){
+        PanelOpcionesGestion opciones = new PanelOpcionesGestion(this);
+        panelPrincipal.add(opciones);
+    }
+    
+    public void showPanelAgregarAnimal(){
+        PanelAgregarAnimal agregarAnimal = new PanelAgregarAnimal(this);
+        panelPrincipal.add(agregarAnimal);
+    }
+    
     public void showPanelVentaIndividual(){
         PanelVentaIndividual venta =new PanelVentaIndividual(this); 
         panelPrincipal.add(venta);

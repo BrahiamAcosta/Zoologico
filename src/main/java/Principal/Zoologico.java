@@ -30,6 +30,7 @@ public class Zoologico {
             info.GetInfoReptilesTerrestres();
             
             System.out.println(Animales.getAnimales());
+            System.out.println(Animales.cantAnimales);
             
             InitView iniciar = new InitView();
     }
