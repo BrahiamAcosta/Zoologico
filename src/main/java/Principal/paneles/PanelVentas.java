@@ -21,10 +21,11 @@ public class PanelVentas extends JPanel{
     private JPanel panelbotones;
     private JButton btnIndividual;
     private JButton btnFamiliar;
+    private JButton btnRegresar;
     
     public PanelVentas(InitView principal){
         this.principal = principal;
-        this.setLayout(new GridLayout(1,2,50,0));
+        this.setLayout(new GridLayout(1,3,50,0));
         setBounds(50,250,800,250);
         
         // Botón de individual
@@ -39,6 +40,11 @@ public class PanelVentas extends JPanel{
         panelbotones = new JPanel();
         panelbotones.add(this);
         
+        //boton Regresar
+        btnRegresar = new JButton("Regresar");
+        btnRegresar.setPreferredSize(new Dimension(200, 250));
+        add(btnRegresar);
+        
         //Accion del boton Individual
         btnIndividual.addActionListener(new ActionListener() {
            @Override
@@ -47,6 +53,28 @@ public class PanelVentas extends JPanel{
                 setVisible(false);
                 // Mostramos los botones anteriores
                 principal.showPanelVentaIndividual();
+            }
+        });
+        
+        //Accion del boton familiar
+        btnFamiliar.addActionListener(new ActionListener() {
+           @Override
+            public void actionPerformed(ActionEvent e) {
+                // Eliminamos los botones de ventas
+                setVisible(false);
+                // Mostramos los botones anteriores
+                principal.showVentaValidacion();
+            }
+        });
+        
+        //Accion boton regresar
+        btnRegresar.addActionListener(new ActionListener() {
+           @Override
+            public void actionPerformed(ActionEvent e) {
+                // Eliminamos los botones de ventas
+                setVisible(false);
+                // Mostramos los botones anteriores
+                principal.showPrincipal();
             }
         });
     }

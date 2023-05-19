@@ -8,6 +8,7 @@ import Principal.paneles.PanelInforme;
 import Principal.paneles.PanelVentaExitosa;
 import Principal.paneles.PanelVentaIndividual;
 import Principal.paneles.PanelVentaRegular;
+import Principal.paneles.PanelVentaValidacion;
 import Principal.paneles.PanelVentas;
 import javax.swing.*;
 import java.awt.*;
@@ -30,6 +31,7 @@ public class InitView extends JFrame{
         setSize(900, 750);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+        setResizable(false);
 
         // Panel principal y su layout
         panelPrincipal = new JPanel();
@@ -115,9 +117,13 @@ public class InitView extends JFrame{
         PanelVentaExitosa ventaExitosa = new PanelVentaExitosa(this);
         panelPrincipal.add(ventaExitosa);
     }
-    public void showVentaRegular(){
-        PanelVentaRegular ventaRegular = new PanelVentaRegular(this);
+    public void showVentaValidacion(){
+        PanelVentaValidacion ventaRegular = new PanelVentaValidacion(this);
         panelPrincipal.add(ventaRegular);
+    }
+    public void showVentaRegular(int id){
+        PanelVentaRegular nuevoCliente = new PanelVentaRegular(this, id);
+        panelPrincipal.add(nuevoCliente);
     }
     public void addVenta(String[] venta){
         this.ventas.add(venta);

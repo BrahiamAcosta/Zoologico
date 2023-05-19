@@ -4,6 +4,10 @@
  */
 package Principal.paneles;
 
+/**
+ *
+ * @author Brahiam
+ */
 import Control.GestionReporte.Planes;
 import Control.GestionVentas.Clientes;
 import Principal.View.InitView;
@@ -21,7 +25,7 @@ import javax.swing.JTextField;
  *
  * @author Brahiam
  */
-public class PanelVentaRegular extends JPanel{
+public class PanelVentaFamiliar extends JPanel{
     private Clientes cliente;
     private InitView principal;
     private int id;
@@ -34,7 +38,7 @@ public class PanelVentaRegular extends JPanel{
     private JButton btnVender;
     private String cantidad;
     
-    public PanelVentaRegular(InitView principal, int id){
+    public PanelVentaFamiliar(InitView principal, int id){
         this.principal = principal;
         this.id = id;
         this.cliente = new Clientes(id);
@@ -44,7 +48,7 @@ public class PanelVentaRegular extends JPanel{
         setBounds(50,250,800,300);
         
         
-        if(cliente.getPuntos()<200){
+        if(cliente.getPuntos()<350){
             //Jlabel auxiliar (para mantener la estructura)
             JLabel aux = new JLabel("");
             aux.setFont(new Font("Arial",Font.BOLD,15));
@@ -117,10 +121,10 @@ public class PanelVentaRegular extends JPanel{
                 // Eliminamos los botones de ventas
                 setVisible(false);
                 if(conGuia){
-                    Planes planRegularCon = new Planes("Regular con guía");
-                    String[] venta = {"Regular con guía",campoCantidad.getText(),""+planRegularCon.getPrecioPlan(),""+isDescuento()};
+                    Planes planRegularCon = new Planes("Familiar con guía");
+                    String[] venta = {"Familiar con guía",campoCantidad.getText(),""+planRegularCon.getPrecioPlan(),""+isDescuento()};
                     if(isDescuento()){
-                        cliente.modificarPuntosCliente(id, (cliente.getPuntos()-200));
+                        cliente.modificarPuntosCliente(id, (cliente.getPuntos()-350));
                     }
                     else{
                         cliente.modificarPuntosCliente(id, (cliente.getPuntos()+(int)planRegularCon.getPuntos()));
@@ -128,10 +132,10 @@ public class PanelVentaRegular extends JPanel{
                     principal.addVenta(venta);
                 }
                 else{
-                    Planes planRegularSin = new Planes("Regular");
-                    String[] venta = {"Regular",campoCantidad.getText(),""+planRegularSin.getPrecioPlan(),""+isDescuento()};
+                    Planes planRegularSin = new Planes("Familiar");
+                    String[] venta = {"Familiar",campoCantidad.getText(),""+planRegularSin.getPrecioPlan(),""+isDescuento()};
                     if(isDescuento()){
-                        cliente.modificarPuntosCliente(id, (cliente.getPuntos()-200));
+                        cliente.modificarPuntosCliente(id, (cliente.getPuntos()-350));
                     }
                     else{
                         cliente.modificarPuntosCliente(id, (cliente.getPuntos()+(int)planRegularSin.getPuntos()));
@@ -153,7 +157,6 @@ public class PanelVentaRegular extends JPanel{
     public boolean isDescuento() {
         return descuento;
     }
-    
-    
+ 
     
 }
