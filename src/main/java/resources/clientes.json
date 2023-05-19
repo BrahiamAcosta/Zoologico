@@ -1,7 +1,7 @@
 {"clientes": [
   {
     "identificacion": 123456789,
-    "puntos": 850,
+    "puntos": 650,
     "nombre": "John Doe"
   },
   {
@@ -20,8 +20,13 @@
     "nombre": "Sarah Williams"
   },
   {
-    "identificacion": 123654789,
-    "puntos": 0,
-    "nombre": "Marco diaz"
+    "identificacion": 71753417,
+    "puntos": 75,
+    "nombre": "Carlos mati"
+  },
+  {
+    "identificacion": 43158401,
+    "puntos": 50,
+    "nombre": "nancy bedoya"
   }
 ]}

@@ -56,6 +56,17 @@ public class PanelVentas extends JPanel{
             }
         });
         
+        //Accion del boton familiar
+        btnFamiliar.addActionListener(new ActionListener() {
+           @Override
+            public void actionPerformed(ActionEvent e) {
+                // Eliminamos los botones de ventas
+                setVisible(false);
+                // Mostramos los botones anteriores
+                principal.showVentaValidacion();
+            }
+        });
+        
         //Accion boton regresar
         btnRegresar.addActionListener(new ActionListener() {
            @Override

@@ -4,7 +4,6 @@
  */
 package Principal.View;
 import Control.GestionReporte.ReporteVentas;
-import Control.GestionVentas.Clientes;
 import Principal.paneles.PanelInforme;
 import Principal.paneles.PanelVentaExitosa;
 import Principal.paneles.PanelVentaIndividual;
