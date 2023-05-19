@@ -71,6 +71,15 @@ public class PanelAgregarAnimal extends JPanel{
                 else if(opcionSeleccionada.equals("Ave Acuatica")){
                     principal.showPanelAveAcuatica();
                 }
+                else if(opcionSeleccionada.equals("Ave carroña rapiña")){
+                    principal.showPanelAveCarroña();
+                }
+                else if(opcionSeleccionada.equals("Ave exótica")){
+                    principal.showPanelAveExotica();
+                }
+                else if(opcionSeleccionada.equals("Ave terrestre")){
+                    principal.showPanelAveTerrestre();
+                }
             }
         });
     }

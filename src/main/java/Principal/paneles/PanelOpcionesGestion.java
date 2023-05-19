@@ -57,7 +57,7 @@ public class PanelOpcionesGestion extends JPanel{
                 // Eliminamos los botones de ventas
                 setVisible(false);
                 // Mostramos los botones anteriores
-                principal.showVentaValidacion();
+                principal.showPanelEliminarAnimal();
             }
         });
     }

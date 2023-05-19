@@ -6,8 +6,13 @@ package Principal.View;
 import Control.GestionReporte.ReporteVentas;
 import Principal.paneles.Animales.PanelAnfibio;
 import Principal.paneles.Animales.PanelAveAcuatica;
+import Principal.paneles.Animales.PanelAveCarroña;
+import Principal.paneles.Animales.PanelAveExotica;
+import Principal.paneles.Animales.PanelAveTerrestre;
 import Principal.paneles.PanelAgregarAnimal;
 import Principal.paneles.PanelAnimalAgregado;
+import Principal.paneles.PanelAnimalEliminado;
+import Principal.paneles.PanelEliminarAnimal;
 import Principal.paneles.PanelInforme;
 import Principal.paneles.PanelOpcionesGestion;
 import Principal.paneles.PanelVentaExitosa;
@@ -115,8 +120,29 @@ public class InitView extends JFrame{
         PanelAnfibio anfibio = new PanelAnfibio(this);
         panelPrincipal.add(anfibio);
     }
+    public void showPanelAveTerrestre(){
+        PanelAveTerrestre animal = new PanelAveTerrestre(this);
+        panelPrincipal.add(animal);
+    }
+    public void showPanelEliminarAnimal(){
+        PanelEliminarAnimal animal = new PanelEliminarAnimal(this);
+        panelPrincipal.add(animal);
+    }
+    public void showPanelAnimalEliminado(){
+        PanelAnimalEliminado animal = new PanelAnimalEliminado(this);
+        panelPrincipal.add(animal);
+    }
+    
     public void showPanelAveAcuatica(){
         PanelAveAcuatica anfibio = new PanelAveAcuatica(this);
+        panelPrincipal.add(anfibio);
+    }
+    public void showPanelAveCarroña(){
+        PanelAveCarroña anfibio = new PanelAveCarroña(this);
+        panelPrincipal.add(anfibio);
+    }
+    public void showPanelAveExotica(){
+        PanelAveExotica anfibio = new PanelAveExotica(this);
         panelPrincipal.add(anfibio);
     }
     public void showPanelAnimalAgregado(){
