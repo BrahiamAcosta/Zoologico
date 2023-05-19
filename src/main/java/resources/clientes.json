@@ -1,7 +1,7 @@
 {"clientes": [
   {
     "identificacion": 123456789,
-    "puntos": 650,
+    "puntos": 250,
     "nombre": "John Doe"
   },
   {
@@ -28,5 +28,10 @@
     "identificacion": 43158401,
     "puntos": 50,
     "nombre": "nancy bedoya"
+  },
+  {
+    "identificacion": 1000762385,
+    "puntos": 75,
+    "nombre": "Brahiam Acosta"
   }
 ]}

@@ -50,6 +50,7 @@ public class CrearNuevoAnimal {
             String tipoVeneno,
             String precauciones[]
     ) throws IOException {
+        System.out.println(nombre);
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray anfibios = readJson.AnimalesAnfibiosJSON();
         JSONObject nuevoAnfibio = new JSONObject();

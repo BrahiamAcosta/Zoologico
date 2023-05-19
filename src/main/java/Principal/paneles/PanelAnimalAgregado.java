@@ -32,7 +32,7 @@ public class PanelAnimalAgregado extends JPanel{
         setBounds(50,250,800,250);
 
         // Creamos el JLabel y lo añadimos al panel
-        informeLabel = new JLabel("Venta Exitosa");
+        informeLabel = new JLabel("Animal Agregado");
         informeLabel.setFont(new Font("Arial",Font.BOLD,25));
         informeLabel.setHorizontalAlignment(JLabel.CENTER);
         informeLabel.setBounds(50, 300, 800, 50);

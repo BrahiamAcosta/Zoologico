@@ -66,15 +66,11 @@ public class PanelAgregarAnimal extends JPanel{
                 // Ejecutar las clases según la opción seleccionada
                 if (opcionSeleccionada.equals("Anfibio")) {
                     principal.showPanelAnfibio();
-                    // Realiza las operaciones necesarias con la instancia de ClaseUno
+                    
                 }
-//                else if (opcionSeleccionada.equals("Opción 2")) {
-//                    ClaseDos claseDos = new ClaseDos();
-//                    // Realiza las operaciones necesarias con la instancia de ClaseDos
-//                } else if (opcionSeleccionada.equals("Opción 3")) {
-//                    ClaseTres claseTres = new ClaseTres();
-//                    // Realiza las operaciones necesarias con la instancia de ClaseTres
-//                }
+                else if(opcionSeleccionada.equals("Ave Acuatica")){
+                    principal.showPanelAveAcuatica();
+                }
             }
         });
     }

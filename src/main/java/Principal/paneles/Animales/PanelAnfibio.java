@@ -25,6 +25,7 @@ import javax.swing.JTextField;
 public class PanelAnfibio extends JPanel{
     //labels y campos para llenar animal
     private InitView principal;
+    
     private JLabel codigoLabel;
     private JTextField codigoField;
     private JLabel nombreLabel;

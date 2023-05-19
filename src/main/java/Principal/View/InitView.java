@@ -5,6 +5,7 @@
 package Principal.View;
 import Control.GestionReporte.ReporteVentas;
 import Principal.paneles.Animales.PanelAnfibio;
+import Principal.paneles.Animales.PanelAveAcuatica;
 import Principal.paneles.PanelAgregarAnimal;
 import Principal.paneles.PanelAnimalAgregado;
 import Principal.paneles.PanelInforme;
@@ -112,6 +113,10 @@ public class InitView extends JFrame{
     
     public void showPanelAnfibio(){
         PanelAnfibio anfibio = new PanelAnfibio(this);
+        panelPrincipal.add(anfibio);
+    }
+    public void showPanelAveAcuatica(){
+        PanelAveAcuatica anfibio = new PanelAveAcuatica(this);
         panelPrincipal.add(anfibio);
     }
     public void showPanelAnimalAgregado(){
