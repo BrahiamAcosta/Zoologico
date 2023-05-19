@@ -4,17 +4,6 @@
  */
 package Control.GestionAnimales.Animales.Gestionar;
 
-import Control.GestionAnimales.Animales.Tipos.AnimalesAnfibios;
-import Control.GestionAnimales.Animales.Tipos.AnimalesAvesAcuaticas;
-import Control.GestionAnimales.Animales.Tipos.AnimalesAvesCarroñaRapiña;
-import Control.GestionAnimales.Animales.Tipos.AnimalesAvesExoticas;
-import Control.GestionAnimales.Animales.Tipos.AnimalesAvesTerrestres;
-import Control.GestionAnimales.Animales.Tipos.AnimalesInsectos;
-import Control.GestionAnimales.Animales.Tipos.AnimalesMamiferosAcuaticos;
-import Control.GestionAnimales.Animales.Tipos.AnimalesMamiferosTerrestres;
-import Control.GestionAnimales.Animales.Tipos.AnimalesPeces;
-import Control.GestionAnimales.Animales.Tipos.AnimalesReptilesAcuaticos;
-import Control.GestionAnimales.Animales.Tipos.AnimalesReptilesTerrestres;
 import Control.GestionAnimales.CopiaAnimales.InfoJSON.ReadJSON;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -30,12 +19,12 @@ public class EliminarAnimal {
 
     ReadJSON readJson = new ReadJSON();
 
-    public void EliminarAnfibio(AnimalesAnfibios animalAnfibio) throws IOException {
+    public void EliminarAnfibio(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray anfibios = readJson.AnimalesAnfibiosJSON();
         for (int i = 0; i < anfibios.length(); i++) {
             JSONObject anfibio = (JSONObject) anfibios.get(i);
-            if (anfibio.get("codigo").equals(animalAnfibio.getCodigo())) {
+            if (anfibio.getInt("codigo") == codigo) {
                 anfibios.remove(i);
                 break;
             }
@@ -45,12 +34,12 @@ public class EliminarAnimal {
         Files.write(Paths.get("Animales.json"), infoJson.toString().getBytes());
     }
     
-    public void EliminarAveAcuatica(AnimalesAvesAcuaticas animalAveAcuatica) throws IOException {
+    public void EliminarAveAcuatica(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray avesAcuaticas = readJson.AnimalesAvesAcuaticasJSON();
         for (int i = 0; i < avesAcuaticas.length(); i++) {
             JSONObject aveAcuatica = (JSONObject) avesAcuaticas.get(i);
-            if (aveAcuatica.get("codigo").equals(animalAveAcuatica.getCodigo())) {
+            if (aveAcuatica.getInt("codigo") == codigo) {
                 avesAcuaticas.remove(i);
                 break;
             }
@@ -60,12 +49,12 @@ public class EliminarAnimal {
         Files.write(Paths.get("Animales.json"), infoJson.toString().getBytes());
     }
     
-    public void EliminarAveCarroñaRapiña(AnimalesAvesCarroñaRapiña animalAveCarroñaRapiña) throws IOException {
+    public void EliminarAveCarroñaRapiña(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray avesCarroñaRapiña = readJson.AnimalesAvesCarroñaRapiñaJSON();
         for (int i = 0; i < avesCarroñaRapiña.length(); i++) {
             JSONObject aveCarroñaRapiña = (JSONObject) avesCarroñaRapiña.get(i);
-            if (aveCarroñaRapiña.get("codigo").equals(animalAveCarroñaRapiña.getCodigo())) {
+            if (aveCarroñaRapiña.getInt("codigo") == codigo) {
                 avesCarroñaRapiña.remove(i);
                 break;
             }
@@ -75,12 +64,12 @@ public class EliminarAnimal {
         Files.write(Paths.get("Animales.json"), infoJson.toString().getBytes());
     }
     
-    public void EliminarAveExotica(AnimalesAvesExoticas animalAveExotica) throws IOException {
+    public void EliminarAveExotica(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray avesExoticas = readJson.AnimalesAvesExoticasJSON();
         for (int i = 0; i < avesExoticas.length(); i++) {
             JSONObject aveExotica = (JSONObject) avesExoticas.get(i);
-            if (aveExotica.get("codigo").equals(animalAveExotica.getCodigo())) {
+            if (aveExotica.getInt("codigo") == codigo) {
                 avesExoticas.remove(i);
                 break;
             }
@@ -90,12 +79,12 @@ public class EliminarAnimal {
         Files.write(Paths.get("Animales.json"), infoJson.toString().getBytes());
     }
     
-    public void EliminarAveTerrestre(AnimalesAvesTerrestres animalAveTerrestre) throws IOException {
+    public void EliminarAveTerrestre(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray avesTerrestres = readJson.AnimalesAvesTerrestresJSON();
         for (int i = 0; i < avesTerrestres.length(); i++) {
             JSONObject aveTerrestre = (JSONObject) avesTerrestres.get(i);
-            if (aveTerrestre.get("codigo").equals(animalAveTerrestre.getCodigo())) {
+            if (aveTerrestre.getInt("codigo") == codigo) {
                 avesTerrestres.remove(i);
                 break;
             }
@@ -105,12 +94,12 @@ public class EliminarAnimal {
         Files.write(Paths.get("Animales.json"), infoJson.toString().getBytes());
     }
     
-    public void EliminarInsectos(AnimalesInsectos animalInsecto) throws IOException {
+    public void EliminarInsectos(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray insectos = readJson.AnimalesInsectosJSON();
         for (int i = 0; i < insectos.length(); i++) {
             JSONObject insecto = (JSONObject) insectos.get(i);
-            if (insecto.get("codigo").equals(animalInsecto.getCodigo())) {
+            if (insecto.getInt("codigo") == codigo) {
                 insectos.remove(i);
                 break;
             }
@@ -120,12 +109,12 @@ public class EliminarAnimal {
         Files.write(Paths.get("Animales.json"), infoJson.toString().getBytes());
     }
     
-    public void EliminarMamiferoAcuatico(AnimalesMamiferosAcuaticos animalMamiferoAcuatico) throws IOException {
+    public void EliminarMamiferoAcuatico(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray mamiferosAcuaticos = readJson.AnimalesMamiferosAcuaticosJSON();
         for (int i = 0; i < mamiferosAcuaticos.length(); i++) {
             JSONObject mamiferoAcuatico = (JSONObject) mamiferosAcuaticos.get(i);
-            if (mamiferoAcuatico.get("codigo").equals(animalMamiferoAcuatico.getCodigo())) {
+            if (mamiferoAcuatico.getInt("codigo") == codigo) {
                 mamiferosAcuaticos.remove(i);
                 break;
             }
@@ -135,12 +124,12 @@ public class EliminarAnimal {
         Files.write(Paths.get("Animales.json"), infoJson.toString().getBytes());
     }
     
-    public void EliminarMamiferoTerrestre(AnimalesMamiferosTerrestres animalMamiferoTerrestre) throws IOException {
+    public void EliminarMamiferoTerrestre(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray mamiferosTerrestres = readJson.AnimalesMamiferosTerrestresJSON();
         for (int i = 0; i < mamiferosTerrestres.length(); i++) {
             JSONObject mamiferoTerrestre = (JSONObject) mamiferosTerrestres.get(i);
-            if (mamiferoTerrestre.get("codigo").equals(animalMamiferoTerrestre.getCodigo())) {
+            if (mamiferoTerrestre.getInt("codigo") == codigo) {
                 mamiferosTerrestres.remove(i);
                 break;
             }
@@ -150,12 +139,12 @@ public class EliminarAnimal {
         Files.write(Paths.get("Animales.json"), infoJson.toString().getBytes());
     }
     
-    public void EliminarPeces(AnimalesPeces animalPez) throws IOException {
+    public void EliminarPeces(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray peces = readJson.AnimalesAnfibiosJSON();
         for (int i = 0; i < peces.length(); i++) {
             JSONObject pez = (JSONObject) peces.get(i);
-            if (pez.get("codigo").equals(animalPez.getCodigo())) {
+            if (pez.getInt("codigo") == codigo) {
                 peces.remove(i);
                 break;
             }
@@ -165,12 +154,12 @@ public class EliminarAnimal {
         Files.write(Paths.get("Animales.json"), infoJson.toString().getBytes());
     }
     
-    public void EliminarReptilAcuatico(AnimalesReptilesAcuaticos animalReptilAcuatico) throws IOException {
+    public void EliminarReptilAcuatico(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray reptilesAcuaticos = readJson.AnimalesAnfibiosJSON();
         for (int i = 0; i < reptilesAcuaticos.length(); i++) {
             JSONObject reptilAcuatico = (JSONObject) reptilesAcuaticos.get(i);
-            if (reptilAcuatico.get("codigo").equals(animalReptilAcuatico.getCodigo())) {
+            if (reptilAcuatico.getInt("codigo") == codigo) {
                 reptilesAcuaticos.remove(i);
                 break;
             }
@@ -180,12 +169,12 @@ public class EliminarAnimal {
         Files.write(Paths.get("Animales.json"), infoJson.toString().getBytes());
     }
     
-    public void EliminarReptilTerrestre(AnimalesReptilesTerrestres animalReptilTerrestre) throws IOException {
+    public void EliminarReptilTerrestre(int codigo) throws IOException {
         JSONObject infoJson = readJson.JsonInfo();
         JSONArray reptilesTerrestres = readJson.AnimalesAnfibiosJSON();
         for (int i = 0; i < reptilesTerrestres.length(); i++) {
             JSONObject reptilTerrestre = (JSONObject) reptilesTerrestres.get(i);
-            if (reptilTerrestre.get("codigo").equals(animalReptilTerrestre.getCodigo())) {
+            if (reptilTerrestre.getInt("codigo") == codigo) {
                 reptilesTerrestres.remove(i);
                 break;
             }
